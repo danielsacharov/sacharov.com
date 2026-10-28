@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <base href="./">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results into action — Prevent Health App | Daniel Sacharov</title>
+    <meta name="description" content="Case Study Prevent Health App: Bluttestergebnisse verständlich und nutzbar machen. UX Research, UX/UI Design und digitale Patient:innen-Experience – Portfolio von Daniel Sacharov.">
+    <meta name="keywords" content="Prevent Health App, UX Case Study, UI Design, Digital Health, Bluttest App, Gesundheitsapp, UX Research, Daniel Sacharov">
+    <meta name="author" content="Daniel Sacharov">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.sacharov.com/prevent.html">
+    <link rel="alternate" hreflang="de" href="https://www.sacharov.com/prevent.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.sacharov.com/prevent.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Prevent Health App – UX/UI Case Study | Daniel Sacharov">
+    <meta property="og:description" content="Wie statische Labor-PDFs in eine verständliche, handlungsorientierte Health-App überführt werden – Research, Konzept und UI.">
+    <meta property="og:url" content="https://www.sacharov.com/prevent.html">
+    <meta property="og:site_name" content="Daniel Sacharov – UX/UI Designer">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://www.sacharov.com/assets/projects/prevent/health_app_booking_screens.png">
+    <meta property="og:image:width" content="2400">
+    <meta property="og:image:height" content="1350">
+    <meta property="og:image:alt" content="Prevent Health App – Buchungsflow und UI-Mockups">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prevent Health App – Case Study | Daniel Sacharov">
+    <meta name="twitter:description" content="UX/UI Case Study: Bluttestergebnisse verständlich machen – Research, Konzept und Umsetzung der Prevent Health App.">
+    <meta name="twitter:image" content="https://www.sacharov.com/assets/projects/prevent/health_app_booking_screens.png">
+    <meta name="twitter:image:alt" content="Prevent Health App – Buchungsflow und UI-Mockups">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.sacharov.com/#website",
+          "url": "https://www.sacharov.com",
+          "name": "Daniel Sacharov – UX/UI Designer"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.sacharov.com/prevent.html#webpage",
+          "url": "https://www.sacharov.com/prevent.html",
+          "name": "Prevent Health App – Case Study | Daniel Sacharov",
+          "description": "Case Study Prevent Health App: Bluttestergebnisse verständlich und nutzbar machen. UX Research, UX/UI Design und digitale Patient:innen-Experience.",
+          "inLanguage": "de",
+          "isPartOf": { "@id": "https://www.sacharov.com/#website" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.sacharov.com/assets/projects/prevent/health_app_booking_screens.png",
+            "width": 2400,
+            "height": 1350
+          },
+          "mainEntity": { "@id": "https://www.sacharov.com/prevent.html#project" },
+          "breadcrumb": { "@id": "https://www.sacharov.com/prevent.html#breadcrumb" }
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://www.sacharov.com/prevent.html#project",
+          "name": "Prevent Health App",
+          "headline": "Prevent Health App – digitale Gesundheit und verständliche Bluttestergebnisse",
+          "description": "UX Research, Konzept und UI Design für eine App, die Laborwerte erklärt und Nutzer:innen in den Alltag begleitet.",
+          "author": { "@id": "https://www.sacharov.com/#person" },
+          "image": "https://www.sacharov.com/assets/projects/prevent/health_app_booking_screens.png",
+          "genre": "Design case study",
+          "keywords": "UX Research, UX Design, UI Design, Digital Health, Blood test results, Patient experience"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.sacharov.com/#person",
+          "name": "Daniel Sacharov",
+          "url": "https://www.sacharov.com",
+          "jobTitle": "UX/UI Designer",
+          "sameAs": ["https://www.linkedin.com/in/sacharov/"]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.sacharov.com/prevent.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://www.sacharov.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Prevent Health App",
+              "item": "https://www.sacharov.com/prevent.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32-1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css?v=20260907-phone">
+    <link rel="stylesheet" href="css/nerdstack-footer.css?v=20260827-f">
+    <script async src="https://plausible.io/js/pa--3S-kQAgYRJ7SBbwj0ShH.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+    <script src="js/vendor/gsap.min.js"></script>
+    <script src="js/vendor/ScrollTrigger.min.js"></script>
+</head>
+<body class="page-prevent-health page-prevent page-transition-enter">
+    <script src="js/page-transition.js?v=20260831-hash2"></script>
+    <div class="container" id="main-container">
+        <div class="wrapper">
+            <div class="main-content main-content--case">
+                <div class="header-wrapper header-wrapper--home">
+                    <div class="logo logo--home">
+                        <a href="/"><img id="logo-img-prevent" src="images/logo-normal.svg" alt="Daniel Sacharov Logo"></a>
+                        <span class="logo-tooltip" id="logo-tooltip-prevent">To Homepage</span>
+                    </div>
+                                        <div class="header__navs">
+                    <nav class="header__nav header__nav--left" aria-label="Main">
+<a data-elastic-pulse-btn="" href="/" class="elastic-pulse-btn-navi">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Start</span>
+                            </div>
+                        </a>
+<a data-elastic-pulse-btn="" href="#" class="elastic-pulse-btn-navi navi-coming-soon">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">About</span>
+                            </div>
+                            <span class="navi-tooltip">Coming Soon</span>
+                        </a>
+<a data-elastic-pulse-btn="" href="/#success-stories" class="elastic-pulse-btn-navi">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Work</span>
+                            </div>
+                        </a>
+                    </nav>
+                    <nav class="header__nav header__nav--right" aria-label="More">
+<a data-elastic-pulse-btn="" href="#" class="elastic-pulse-btn-navi navi-coming-soon">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Skills</span>
+                            </div>
+                            <span class="navi-tooltip">Coming Soon</span>
+                        </a>
+<a data-elastic-pulse-btn="" href="#" class="elastic-pulse-btn-navi navi-coming-soon">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Blog</span>
+                            </div>
+                            <span class="navi-tooltip">Coming Soon</span>
+                        </a>
+<a data-elastic-pulse-btn="" href="mailto:daniel@sacharov.com" class="elastic-pulse-btn-navi">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Contact</span>
+                            </div>
+                        </a>
+                    </nav>
+                    </div>
+                </div>
+
+                <section class="prevent-hero">
+                    <div class="prevent-hero__video-wrap">
+                        <video class="prevent-hero__video" autoplay muted loop playsinline aria-hidden="true">
+                            <source src="assets/projects/prevent/smartphone.mp4" type="video/mp4">
+                        </video>
+                        <div class="prevent-hero__overlay"></div>
+                    </div>
+                    <div class="prevent-hero__content">
+                        <h1 class="hero-title prevent-hero__title" style="opacity: 0;">Results into action</h1>
+                        <div class="prevent-hero__text slide-up" style="animation-delay: 1.4s; opacity: 0;">
+                            <p class="hero-subtitle">From static lab results to clear next steps</p>
+                        </div>
+                        <div class="prevent-hero__tags slide-up" style="animation-delay: 1.6s; opacity: 0;">
+                            <span class="prevent-hero__tag">UX Research</span>
+                            <span class="prevent-hero__tag">UX Design</span>
+                            <span class="prevent-hero__tag">UI Design</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <nav class="case-crumbs" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Start</a></li>
+                <li aria-current="page">Results into action</li>
+            </ol>
+        </nav>
+
+        <section class="prevent-context prevent-context--first prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Context</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Germany ranks only <a href="https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2018/november/digitale-gesundheit-deutschland-hinkt-hinterher" target="_blank" rel="noopener noreferrer" class="prevent-context__link">16th out of 17 countries</a> in digital health.</li>
+                        <li class="prevent-context__item">Patient involvement often ends with <a href="https://series.publisso.de/de/journals/gms/volume23/000337" target="_blank" rel="noopener noreferrer" class="prevent-context__link">receiving a PDF</a>.</li>
+                        <li class="prevent-context__item">As a result, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11248737/" target="_blank" rel="noopener noreferrer" class="prevent-context__link">75.8%</a> struggle to understand and use digital health info.</li>
+                    </ul>
+                </div>
+                <div class="prevent-context__illustration">
+                    <video class="prevent-context__video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/germany_digital_health.mp4" type="video/mp4">
+                    </video>
+                    <img class="prevent-context__graphic" src="assets/projects/prevent/patient_involvement.svg" alt="Grafik: Patientenbeteiligung und digitale Gesundheitsinformationen" width="800" height="800" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-hypothesis prevent-reveal">
+            <div class="prevent-hypothesis__inner">
+                <div class="prevent-hypothesis__grid">
+                    <div class="prevent-hypothesis__col prevent-hypothesis__col--media">
+                        <div class="prevent-hypothesis__media">
+                            <img src="assets/projects/prevent/mail_app.jpg" alt="Medical results context" width="960" height="540" loading="lazy" class="prevent-hypothesis__media-img">
+                            <p class="prevent-hypothesis__media-caption" data-hypothesis-caption aria-hidden="true">Competitive analysis reveals an existing problem: Even among competitors, the way results are presented fails to convince users. English translation: &quot;[...] I do not find the evaluation 100% understandable.&quot;</p>
+                            <div class="prevent-hypothesis__tabs" role="tablist" aria-label="Problem, Hypothesis, Research">
+                                <span class="prevent-hypothesis__tab-slider" aria-hidden="true"></span>
+                                <button type="button" class="prevent-hypothesis__tab prevent-hypothesis__tab--active" data-hypothesis-tab="problem">Problem</button>
+                                <button type="button" class="prevent-hypothesis__tab" data-hypothesis-tab="hypothesis">Hypothesis</button>
+                                <button type="button" class="prevent-hypothesis__tab" data-hypothesis-tab="researchQuestion">Research Question</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prevent-hypothesis__col prevent-hypothesis__col--text">
+                        <span class="prevent-hypothesis__label" data-hypothesis-label>Problem</span>
+                        <p class="prevent-hypothesis__text" data-hypothesis-text-content>Most patients receive their medical results as static PDFs without explanation, making it difficult to interpret what the values actually mean.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-three-images prevent-reveal">
+            <div class="prevent-three-images__grid">
+                <div class="prevent-three-images__col prevent-three-images__col--bento">
+                    <div class="prevent-bento">
+                        <div class="prevent-bento__cell"><img src="assets/projects/prevent/user_flow.jpg" alt="Hand-drawn user flow – Paket buchen" width="400" height="300" loading="lazy"></div>
+                        <div class="prevent-bento__cell"><img src="assets/projects/prevent/wireframes.jpg" alt="Wireframe – Paket buchen, Gesundheit Basic" width="400" height="300" loading="lazy"></div>
+                        <div class="prevent-bento__cell prevent-bento__cell--wide"><img src="assets/projects/prevent/customer_journey_map.jpg" alt="Journey map – digital whiteboard" width="400" height="300" loading="lazy"></div>
+                    </div>
+                </div>
+                <div class="prevent-three-images__col">
+                    <img src="assets/projects/prevent/health_app_portfolio_bg.png" alt="Smartphone in nature – yellow flowers, blue sky" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--idea prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__illustration">
+                    <video class="prevent-context__video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/nature.mp4" type="video/mp4">
+                    </video>
+                    <img class="prevent-context__graphic" src="assets/projects/prevent/patient_involvement_germany_digital_health.svg" alt="The Idea – Prevent responds to digital health gaps" width="800" height="800" loading="lazy">
+                </div>
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">The Idea</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Digitalization: Native app instead of paper/PDF—health data where users are</li>
+                        <li class="prevent-context__item">Beyond PDF: Ongoing support: understand results, track changes, learn for everyday life</li>
+                        <li class="prevent-context__item">Digital competence: Plain language, visuals, guided flows—lower the barrier for the 75.8%</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-mockup-section prevent-reveal">
+            <h2 class="prevent-mockup-section__heading">The Implementation</h2>
+            <div class="prevent-mockup-section__inner">
+                <div class="prevent-mockup-section__mockup">
+                    <div class="phone-mockup">
+                    <div class="phone-mockup__frame">
+                        <div class="phone-mockup__screen" id="prevent-screen-viewport">
+                            <div class="prevent-screen prevent-screen--first">
+                                <div class="prevent-screen__bg" role="img" aria-label="Naturhintergrund mit Gras"></div>
+                                <div class="prevent-screen__overlay"></div>
+                                <div class="prevent-screen__inner">
+                                    <div class="prevent-screen__top">
+                                        <img src="assets/projects/prevent/logo.svg" alt="Prevent" class="prevent-screen__logo" width="101" height="57" loading="lazy">
+                                    </div>
+                                    <div class="prevent-screen__title-block">
+                                        <span class="prevent-screen__title">Verstehen, <span class="prevent-screen__title--muted">was in dir steckt</span></span>
+                                    </div>
+                                    <div class="prevent-screen__actions">
+                                        <span class="prevent-screen__btn">Registrieren</span>
+                                        <span class="prevent-screen__login">Login</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prevent-screen prevent-screen--left prevent-screen--second" id="prevent-screen-2">
+                                <div class="prevent-screen__bg prevent-screen__bg--2" role="img" aria-label="Blauer Himmel mit zwei Händen"></div>
+                                <div class="prevent-screen__overlay"></div>
+                                <div class="prevent-screen__inner prevent-screen__inner--left">
+                                    <div class="prevent-screen__top"></div>
+                                    <div class="prevent-screen__title-block prevent-screen__title-block--left">
+                                        <h2 class="prevent-screen__headline"><span class="prevent-screen__headline--muted">In deiner</span><br>Nähe</h2>
+                                        <p class="prevent-screen__subtitle">Bluttests an vielen Standorten in ganz Deutschland</p>
+                                    </div>
+                                    <div class="prevent-screen__swipe-hint" aria-hidden="true"></div>
+                                    <div class="prevent-screen__pagination">
+                                        <span class="prevent-screen__dot prevent-screen__dot--active" aria-current="true"></span>
+                                        <span class="prevent-screen__dot"></span>
+                                        <span class="prevent-screen__dot"></span>
+                                        <span class="prevent-screen__dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prevent-screen prevent-screen--left prevent-screen--third" id="prevent-screen-3">
+                                <div class="prevent-screen__bg prevent-screen__bg--3" role="img" aria-label="Onboarding Blutwerte"></div>
+                                <div class="prevent-screen__overlay"></div>
+                                <div class="prevent-screen__inner prevent-screen__inner--left">
+                                    <div class="prevent-screen__top"></div>
+                                    <div class="prevent-screen__title-block prevent-screen__title-block--left">
+                                        <h2 class="prevent-screen__headline"><span class="prevent-screen__headline--muted">Blutwerte</span><br>verstehen</h2>
+                                        <p class="prevent-screen__subtitle">Komplexe Laborwerte einfach erklärt – verständlich und visuell</p>
+                                    </div>
+                                    <div class="prevent-screen__pagination">
+                                        <span class="prevent-screen__dot"></span>
+                                        <span class="prevent-screen__dot prevent-screen__dot--active" aria-current="true"></span>
+                                        <span class="prevent-screen__dot"></span>
+                                        <span class="prevent-screen__dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prevent-screen prevent-screen--left prevent-screen--fourth" id="prevent-screen-4">
+                                <div class="prevent-screen__bg prevent-screen__bg--4" role="img" aria-label="Smartphone in den Händen"></div>
+                                <div class="prevent-screen__overlay"></div>
+                                <div class="prevent-screen__inner prevent-screen__inner--left">
+                                    <div class="prevent-screen__top"></div>
+                                    <div class="prevent-screen__title-block prevent-screen__title-block--left">
+                                        <h2 class="prevent-screen__headline"><span class="prevent-screen__headline--muted">Kontinuierlich</span><br>lernen</h2>
+                                        <p class="prevent-screen__subtitle">Erhalte medizinisches Wissen zu deinen Werten</p>
+                                    </div>
+                                    <div class="prevent-screen__pagination">
+                                        <span class="prevent-screen__dot"></span>
+                                        <span class="prevent-screen__dot"></span>
+                                        <span class="prevent-screen__dot prevent-screen__dot--active" aria-current="true"></span>
+                                        <span class="prevent-screen__dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prevent-screen prevent-screen--form prevent-screen--fifth" id="prevent-screen-5">
+                                <div class="prevent-screen__form-bg"></div>
+                                <div class="prevent-screen__inner prevent-screen__inner--form">
+                                    <button type="button" class="prevent-form__back" aria-label="Zurück"><img src="assets/projects/prevent/back_icon.svg" alt="" class="prevent-form__back-icon" width="12" height="10"></button>
+                                    <div class="prevent-form__title-block">
+                                        <h2 class="prevent-form__headline"><span class="prevent-form__headline--muted">Verrate uns deine</span><br>Telefonnummer</h2>
+                                        <p class="prevent-form__desc">Zur Bestätigung deiner Identität. Wir verwenden sie nur für Termine und wichtige Infos, kein Spam. Versprochen!</p>
+                                    </div>
+                                    <div class="prevent-form__field">
+                                        <span class="prevent-form__country">
+                                            <span class="prevent-form__flag-wrap"><img src="assets/projects/prevent/flag.svg" alt="" class="prevent-form__flag" width="28" height="28"></span>
+                                            <span>+49</span>
+                                        </span>
+                                        <span class="prevent-form__input-placeholder">Telefonnummer</span>
+                                    </div>
+                                    <button type="button" class="prevent-form__submit">Bestätigungscode senden</button>
+                                    <p class="prevent-form__link-line">Hast du bereits ein Konto? <a href="#" class="prevent-form__link">Anmelden</a></p>
+                                    <a href="#" class="prevent-form__link prevent-form__link--block">Stattdessen E-Mail-Adresse verwenden</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button type="button" class="prevent-project__reload" id="prevent-reload" aria-label="Back to first screen">
+                    <span class="navi-tooltip-subpage">Back to first screen</span>
+                    <svg class="prevent-project__reload-icon" width="20" height="20" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#reload-clip)">
+                            <path d="M133.334 433.333C133.334 580.61 252.725 700 400.001 700C547.277 700 666.667 580.61 666.667 433.333C666.667 286.057 547.277 166.667 400.001 166.667C348.024 166.667 299.523 181.536 258.515 207.254" stroke="currentColor" stroke-width="66.6667" stroke-linecap="round"/>
+                            <path d="M307.946 63.265L249.951 194.639C242.516 211.48 250.142 231.16 266.984 238.595L398.359 296.589" stroke="currentColor" stroke-width="66.6667" stroke-linecap="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="reload-clip">
+                                <rect width="800" height="800" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                </div>
+                <div class="prevent-mockup-section__text">
+                    <h2 class="prevent-mockup-section__title">Onboarding</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Feature education before signup: value proposition communication</li>
+                        <li class="prevent-context__item">Progressive disclosure: cognitive load reduction</li>
+                        <li class="prevent-context__item">Trust messaging: reduced signup friction</li>
+                        <li class="prevent-context__item">Alternative paths: increased signup flexibility</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-fullwidth-section prevent-fullwidth-section--graphic prevent-reveal" aria-hidden="true">
+            <img src="assets/projects/prevent/app_screens.svg" alt="Prevent Health App: Übersicht der App-Bildschirme und UI" class="prevent-fullwidth-section__img" width="3580" height="2032" loading="lazy">
+        </section>
+
+        <section class="prevent-context prevent-context--video-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Dynamic Error Handling</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Contextual feedback & Granular validation</li>
+                        <li class="prevent-context__item">Recovery guidance & Input assistance</li>
+                        <li class="prevent-context__item">Error prevention</li>
+                        <li class="prevent-context__item">Minimization of frustration</li>
+                    </ul>
+                </div>
+                <div class="prevent-context__illustration">
+                    <video class="prevent-context__video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/error_states.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--two-videos prevent-reveal">
+            <div class="prevent-context__grid prevent-context__grid--two-videos">
+                <div class="prevent-context__illustration">
+                    <video class="prevent-context__video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/app_dashboard.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="prevent-context__text prevent-context__text--graphic-box">
+                    <img src="assets/projects/prevent/app_component_states.svg" alt="UI-Komponenten und Zustände der Prevent App" width="800" height="800" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--video-span-two prevent-reveal">
+            <div class="prevent-context__grid prevent-context__grid--video-span-two">
+                <div class="prevent-context__illustration prevent-context__illustration--span-two">
+                    <video class="prevent-context__video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/app_dashboard_screens.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--video-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Progressive Disclosure</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Progressive bottom sheets</li>
+                        <li class="prevent-context__item">Reduction of information overload</li>
+                        <li class="prevent-context__item">Flat layer structure for simple navigation</li>
+                    </ul>
+                </div>
+                <div class="prevent-context__illustration">
+                    <video class="prevent-context__video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/health_app_package_booking.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-fullwidth-section prevent-fullwidth-section--graphic prevent-reveal">
+            <img src="assets/projects/prevent/health_app_booking_screens.png" alt="Prevent app – Buchungsflow und UI-Mockups" class="prevent-fullwidth-section__img" width="2400" height="1350" loading="lazy">
+        </section>
+
+        <section class="prevent-context prevent-context--video-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__illustration">
+                    <video class="prevent-context__video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/bluttest_ergebnisse.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Health Data Learning Experience</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Progressive data disclosure</li>
+                        <li class="prevent-context__item">Clear visual thresholds</li>
+                        <li class="prevent-context__item">Plain-language explanations</li>
+                        <li class="prevent-context__item">Integrated learning modules</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-reveal" aria-label="Profile, support, and onboarding">
+            <div class="prevent-context__grid prevent-context__grid--image-span-two">
+                <div class="prevent-context__image-span">
+                    <img src="assets/projects/prevent/digital_health_learning_app.jpg" alt="Prevent – Profile, health data, support, privacy, and onboarding screens" class="prevent-context__span-img" width="3580" height="2032" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-reveal" aria-label="Learning flows and content">
+            <div class="prevent-context__grid prevent-context__grid--image-span-two">
+                <div class="prevent-context__image-span">
+                    <img src="assets/projects/prevent/app_einstellungen.jpg" alt="Prevent – Interactive learning: categories, topics, modules, and blood-value context" class="prevent-context__span-img" width="3580" height="2032" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--video-only prevent-context--text-top prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__illustration">
+                    <video class="prevent-context__video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/wald_joggen.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Conclusion</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">In interviews, 100% of participants could understand the results</li>
+                        <li class="prevent-context__item">Finished design within 3 months</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-next" aria-label="More work">
+            <h2 class="case-next__heading">More work</h2>
+            <nav class="case-next__grid">
+                <a class="case-next__card case-next__card--natif" href="/natif.html">
+                    <video class="case-next__card-video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/natif1/hero.mp4" type="video/mp4">
+                    </video>
+                    <h3>AI, made usable</h3>
+                    <p>Redesign of natif.ai — structure and clarity for a complex AI product.</p>
+                </a>
+                <a class="case-next__card case-next__card--native" href="/native.html">
+                    <video class="case-next__card-video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/native-experience/phone.mp4?v=2" type="video/mp4">
+                    </video>
+                    <h3>Same product, native experience</h3>
+                    <p>Cross-platform analytics app, rebuilt on native iOS and Android patterns.</p>
+                </a>
+            </nav>
+        </section>
+
+    </div>
+    <!-- Nerdstack Footer 1 (BYQ) — adapted -->
+    <footer class="ns-footer" aria-label="Footer">
+      <div class="ns-footer__inner">
+        <div class="master-footer">
+          <div class="footer_top-tile">
+            <div class="left-footer">
+              <a class="brand_footer" href="/" aria-label="Daniel Sacharov — home">
+                <img loading="lazy" src="images/logo-normal.svg" alt="Daniel Sacharov">
+              </a>
+            </div>
+            <div class="right-footer">
+              <div class="footer_columns">
+                <div class="footer-column">
+                  <div class="footer-column__title">Explore</div>
+                  <div class="footer_links-column">
+                    <a class="link_footer" href="/"><div>Start</div></a>
+                    <a class="link_footer" href="#"><div>About</div></a>
+                    <a class="link_footer" href="#"><div>Work</div></a>
+                    <a class="link_footer" href="#"><div>Skills</div></a>
+                    <a class="link_footer" href="#"><div>Blog</div></a>
+                    <a class="link_footer" href="mailto:daniel@sacharov.com"><div>Contact</div></a>
+                  </div>
+                </div>
+                <div class="footer-column">
+                  <div class="footer-column__title">Connect</div>
+                  <div class="footer_links-column">
+                    <a class="link_footer" href="mailto:daniel@sacharov.com"><div>daniel@sacharov.com</div></a>
+                    <a class="link_footer" href="tel:+491792064054"><div>+49 179 2064 054</div></a>
+                  </div>
+                </div>
+                <div class="footer-column">
+                  <div class="footer-column__title">Legal</div>
+                  <div class="footer_links-column">
+                    <a class="link_footer" href="/impressum.html"><div>Impressum</div></a>
+                    <a class="link_footer" href="/datenschutz.html"><div>Datenschutz</div></a>
+                  </div>
+                </div>
+                <div class="footer-column">
+                  <div class="footer-column__title">Social</div>
+                  <div class="footer_links-column">
+                    <a class="link_footer" href="https://www.instagram.com/sacharovcom/" target="_blank" rel="noopener noreferrer"><div>Instagram</div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom-tile">
+            <p class="footer_copy">© 2026 Daniel Sacharov</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="modal-impressum" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-impressum-title">
+        <button class="modal__close" type="button" data-modal-close>&times;</button>
+        <h2 id="modal-impressum-title" class="modal__title">Impressum</h2>
+        <p class="modal__text">Angaben gemäß § 5 TMG</p>
+        <p class="modal__text">
+          Daniel Sacharov<br>
+          Peter-Eich-Str. 65<br>
+          66386 Sankt Ingbert
+        </p>
+        <p class="modal__text">
+          E-Mail: <a href="mailto:daniel@sacharov.com">daniel@sacharov.com</a><br>
+          Telefon: <a href="tel:+491792064054">0179 20 64 054</a>
+        </p>
+        <p class="modal__text">
+          USt-IdNr.: DE321885908
+        </p>
+      </div>
+    </div>
+
+    <!-- Datenschutz Modal -->
+    <div class="modal" id="modal-datenschutz" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-datenschutz-title">
+        <button class="modal__close" type="button" data-modal-close>&times;</button>
+        <h2 id="modal-datenschutz-title" class="modal__title">Datenschutzerklärung</h2>
+        
+        <p class="modal__text"><strong>1. Verantwortlicher</strong></p>
+        <p class="modal__text">Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+        <p class="modal__text">
+          Daniel Sacharov<br>
+          Peter-Eich-Str. 65<br>
+          66386 Sankt Ingbert
+        </p>
+        <p class="modal__text">
+          E-Mail: <a href="mailto:daniel@sacharov.com">daniel@sacharov.com</a><br>
+          Telefon: <a href="tel:+491792064054">0179 20 64 054</a><br>
+          USt-IdNr.: DE321885908
+        </p>
+
+        <p class="modal__text"><strong>2. Allgemeine Hinweise</strong></p>
+        <p class="modal__text">
+          Der Schutz Ihrer persönlichen Daten ist mir ein besonderes Anliegen.
+          Ich verarbeite personenbezogene Daten ausschließlich im Rahmen der gesetzlichen Bestimmungen der Datenschutz-Grundverordnung (DSGVO) sowie der geltenden nationalen Datenschutzgesetze.
+        </p>
+        <p class="modal__text">
+          Diese Website ist eine statische Website und dient der Bereitstellung von Informationen.
+          Es werden keine Formulare, keine externen Plugins und keine eingebetteten Inhalte von Drittanbietern verwendet.
+          Für die Webanalyse wird Plausible Analytics eingesetzt, ein datenschutzfreundlicher Dienst ohne Cookies.
+        </p>
+
+        <p class="modal__text"><strong>3. Erhebung und Speicherung personenbezogener Daten</strong></p>
+        <p class="modal__text">
+          Beim Aufruf dieser Website werden durch den Hosting-Provider automatisch folgende Daten erhoben und temporär in sogenannten Server-Logfiles gespeichert:
+        </p>
+        <ul class="modal__text" style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
+          <li>IP-Adresse</li>
+          <li>Datum und Uhrzeit der Anfrage</li>
+          <li>Browsertyp und Browserversion</li>
+          <li>verwendetes Betriebssystem</li>
+          <li>Referrer-URL</li>
+          <li>aufgerufene Seite/Datei</li>
+        </ul>
+        <p class="modal__text">
+          Diese Daten sind technisch erforderlich, um die Website korrekt auszuliefern und die Systemsicherheit zu gewährleisten.
+          Eine Zusammenführung dieser Daten mit anderen Datenquellen erfolgt nicht.
+        </p>
+        <p class="modal__text">
+          <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren und stabilen Bereitstellung der Website)
+        </p>
+
+        <p class="modal__text"><strong>4. Cookies</strong></p>
+        <p class="modal__text">Diese Website verwendet keine Cookies. Das eingesetzte Analysetool Plausible Analytics arbeitet ohne Cookies und speichert keine personenbezogenen Daten.</p>
+
+        <p class="modal__text"><strong>5. Tracking- und Analysetools</strong></p>
+        <p class="modal__text">
+          Diese Website verwendet Plausible Analytics, einen datenschutzfreundlichen Webanalysedienst. Plausible Analytics verwendet keine Cookies und speichert keine personenbezogenen Daten. Es werden ausschließlich aggregierte, anonymisierte Daten erfasst (z. B. Seitenaufrufe, Verweildauer, Herkunftsländer). Die Daten werden auf Servern in der EU gespeichert.
+        </p>
+        <p class="modal__text">
+          <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Analyse der Website-Nutzung zur Verbesserung des Angebots)
+        </p>
+        <p class="modal__text">
+          Weitere Informationen finden Sie in der Datenschutzerklärung von Plausible: <a href="https://plausible.io/data-policy" target="_blank" rel="noopener">https://plausible.io/data-policy</a>
+        </p>
+
+        <p class="modal__text"><strong>6. Externe Inhalte und Dienste</strong></p>
+        <p class="modal__text">
+          Diese Website bindet keine externen Inhalte ein (z. B. YouTube, Google Maps, Social Media Plugins oder externe Skripte von Drittanbietern).
+          Für die Webanalyse wird Plausible Analytics verwendet, ein datenschutzfreundlicher Dienst, der keine personenbezogenen Daten erfasst.
+        </p>
+
+        <p class="modal__text"><strong>7. Kontaktaufnahme</strong></p>
+        <p class="modal__text">
+          Eine Kontaktaufnahme ist ausschließlich über die angegebenen Kontaktdaten (E-Mail oder Telefon) möglich.
+          Dabei werden die übermittelten personenbezogenen Daten nur zum Zweck der Bearbeitung der Anfrage gespeichert und nicht an Dritte weitergegeben.
+        </p>
+        <p class="modal__text">
+          <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Vorvertrag) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Kommunikation)
+        </p>
+
+        <p class="modal__text"><strong>8. Weitergabe von Daten</strong></p>
+        <p class="modal__text">Eine Weitergabe personenbezogener Daten an Dritte findet nicht statt.</p>
+
+        <p class="modal__text"><strong>9. Speicherdauer</strong></p>
+        <p class="modal__text">
+          Personenbezogene Daten werden nur so lange gespeichert, wie dies zur Erreichung des jeweiligen Zwecks erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen.
+        </p>
+
+        <p class="modal__text"><strong>10. Rechte der betroffenen Person</strong></p>
+        <p class="modal__text">Sie haben jederzeit das Recht auf:</p>
+        <ul class="modal__text" style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
+          <li>Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)</li>
+          <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+          <li>Löschung Ihrer Daten (Art. 17 DSGVO)</li>
+          <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+          <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+          <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+        </ul>
+        <p class="modal__text">
+          Außerdem haben Sie das Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde.
+        </p>
+
+        <p class="modal__text"><strong>11. Datensicherheit</strong></p>
+        <p class="modal__text">
+          Diese Website nutzt technische und organisatorische Sicherheitsmaßnahmen, um Ihre Daten vor Manipulation, Verlust oder unbefugtem Zugriff zu schützen.
+        </p>
+
+        <p class="modal__text"><strong>12. Aktualität und Änderung dieser Datenschutzerklärung</strong></p>
+        <p class="modal__text">
+          Diese Datenschutzerklärung ist aktuell gültig und hat den Stand: Januar 2026.
+          Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an rechtliche Anforderungen oder Änderungen der Website anzupassen.
+        </p>
+      </div>
+    </div>
+
+    <script src="js/script.js?v=20260907-navtouch"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var viewport = document.getElementById('prevent-screen-viewport');
+        (function initVideoPauseButtons() {
+          var videos = document.querySelectorAll('video');
+          videos.forEach(function(video) {
+            if (video.classList.contains('prevent-hero__video')) return;
+            if (video.closest('.case-next')) return;
+            if (video.dataset.pauseToggleReady === '1') return;
+            video.dataset.pauseToggleReady = '1';
+            var container = video.parentElement;
+            if (!container) return;
+            if (window.getComputedStyle(container).position === 'static') {
+              container.style.position = 'relative';
+            }
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'video-pause-toggle';
+            btn.setAttribute('aria-label', 'Pause video');
+            var svgPlay = '<svg class="video-pause-toggle__icon" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>';
+            btn.textContent = 'II';
+            function toggleVideo() {
+              if (video.paused) {
+                var playPromise = video.play();
+                if (playPromise && typeof playPromise.catch === 'function') playPromise.catch(function() {});
+                btn.textContent = 'II';
+                btn.setAttribute('aria-label', 'Pause video');
+              } else {
+                video.pause();
+                btn.innerHTML = svgPlay;
+                btn.setAttribute('aria-label', 'Play video');
+              }
+            }
+            btn.addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              toggleVideo();
+            });
+            video.addEventListener('click', function(e) {
+              e.preventDefault();
+              toggleVideo();
+            });
+            container.appendChild(btn);
+          });
+        })();
+        (function initSwipeNav() {
+          if (!viewport) return;
+          var registrierenBtn = document.querySelector('.prevent-screen--first .prevent-screen__btn');
+          var reloadBtn = document.getElementById('prevent-reload');
+          var screen2 = document.getElementById('prevent-screen-2');
+          var screen3 = document.getElementById('prevent-screen-3');
+          var screen4 = document.getElementById('prevent-screen-4');
+          var screen5 = document.getElementById('prevent-screen-5');
+          var startX = 0;
+          var lastX = 0;
+          var minSwipe = 50;
+          var didSwipeLeft = false;
+          var didSwipeRight = false;
+          var activePointerId = null;
+          var currentStep = 1;
+          function applyStep() {
+            viewport.classList.remove('show-second-screen', 'show-third-screen', 'show-fourth-screen', 'show-fifth-screen');
+            if (currentStep >= 2) viewport.classList.add('show-second-screen');
+            if (currentStep >= 3) viewport.classList.add('show-third-screen');
+            if (currentStep >= 4) viewport.classList.add('show-fourth-screen');
+            if (currentStep >= 5) viewport.classList.add('show-fifth-screen');
+          }
+          function isScreen2Visible() {
+            return currentStep === 2;
+          }
+          function isScreen3Visible() {
+            return currentStep === 3;
+          }
+          function isScreen4Visible() {
+            return currentStep === 4;
+          }
+          function isScreen5Visible() {
+            return currentStep === 5;
+          }
+          function canSwipe() {
+            return currentStep >= 2 && currentStep < 5;
+          }
+          function advance() {
+            if (currentStep < 5) {
+              currentStep += 1;
+              applyStep();
+            }
+          }
+          function goBack() {
+            if (currentStep > 2) {
+              currentStep -= 1;
+              applyStep();
+            }
+          }
+          viewport.addEventListener('click', function(e) {
+            if (didSwipeLeft || didSwipeRight) return;
+            if (currentStep === 1 || currentStep === 5) return;
+            if (!viewport.contains(e.target)) return;
+            if (currentStep === 2 && screen2 && !screen2.contains(e.target)) return;
+            if (currentStep === 3 && screen3 && !screen3.contains(e.target)) return;
+            if (currentStep === 4 && screen4 && !screen4.contains(e.target)) return;
+            e.preventDefault();
+            advance();
+          });
+          if (registrierenBtn) {
+            registrierenBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              currentStep = 2;
+              applyStep();
+            });
+          }
+          if (reloadBtn) {
+            reloadBtn.addEventListener('click', function() {
+              currentStep = 1;
+              applyStep();
+            });
+          }
+          var backBtn = document.querySelector('.prevent-form__back');
+          if (backBtn) {
+            backBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              goBack();
+            });
+          }
+          viewport.addEventListener('pointerdown', function(e) {
+            if (activePointerId !== null) return;
+            if (backBtn && e.target && backBtn.contains && backBtn.contains(e.target)) return;
+            if (!canSwipe() || !viewport.contains(e.target)) return;
+            activePointerId = e.pointerId;
+            startX = e.clientX;
+            lastX = startX;
+            didSwipeLeft = false;
+            didSwipeRight = false;
+            e.currentTarget.setPointerCapture(e.pointerId);
+          });
+          viewport.addEventListener('pointermove', function(e) {
+            if (e.pointerId !== activePointerId) return;
+            lastX = e.clientX;
+            if (startX - lastX > minSwipe) {
+              didSwipeLeft = true;
+              e.preventDefault();
+            } else if (lastX - startX > minSwipe) {
+              didSwipeRight = true;
+              e.preventDefault();
+            }
+          });
+          viewport.addEventListener('pointerup', function(e) {
+            if (e.pointerId !== activePointerId) return;
+            activePointerId = null;
+            var endX = e.clientX;
+            if (startX - endX > minSwipe) didSwipeLeft = true;
+            else if (endX - startX > minSwipe) didSwipeRight = true;
+            if (didSwipeLeft) advance();
+            else if (didSwipeRight) goBack();
+          });
+          viewport.addEventListener('pointercancel', function(e) {
+            if (e.pointerId === activePointerId) activePointerId = null;
+          });
+        })();
+        if (typeof initSubpageLogoTooltip === 'function') {
+          initSubpageLogoTooltip();
+        }
+        (function initPreventLogoTooltip() {
+          var logo = document.querySelector('.page-prevent-health .logo--home');
+          var tip = document.getElementById('logo-tooltip-prevent');
+          if (!logo || !tip) return;
+          var isMobileLogo = window.innerWidth <= 1080;
+          logo.addEventListener('mouseenter', function() {
+            if (!isMobileLogo) tip.classList.add('visible');
+          });
+          logo.addEventListener('mousemove', function(e) {
+            if (!isMobileLogo) {
+              tip.style.left = e.clientX + 'px';
+              tip.style.top = e.clientY + 'px';
+            }
+          });
+          logo.addEventListener('mouseleave', function() {
+            if (!isMobileLogo) tip.classList.remove('visible');
+          });
+          window.addEventListener('resize', function() {
+            isMobileLogo = window.innerWidth <= 1080;
+            if (!isMobileLogo) tip.classList.remove('visible');
+          });
+        })();
+        (function initPreventPageTooltips() {
+          var naviButtons = document.querySelectorAll('.page-prevent-health .navi-coming-soon-subpage');
+          naviButtons.forEach(function(button) {
+            var tooltip = button.querySelector('.navi-tooltip-subpage');
+            if (!tooltip) return;
+            var tooltipTimeout;
+            var isMobile = window.innerWidth <= 1080;
+            button.addEventListener('mouseenter', function() {
+              if (!isMobile) tooltip.classList.add('visible');
+            });
+            button.addEventListener('mousemove', function(e) {
+              if (!isMobile) {
+                tooltip.style.left = e.clientX + 'px';
+                tooltip.style.top = e.clientY + 'px';
+              }
+            });
+            button.addEventListener('mouseleave', function() {
+              if (!isMobile) tooltip.classList.remove('visible');
+            });
+            button.addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              if (isMobile) {
+                naviButtons.forEach(function(other) {
+                  if (other !== button) {
+                    var t = other.querySelector('.navi-tooltip-subpage');
+                    if (t) t.classList.remove('visible');
+                  }
+                });
+                tooltip.style.left = e.clientX + 'px';
+                tooltip.style.top = e.clientY + 'px';
+                tooltip.classList.add('visible');
+                clearTimeout(tooltipTimeout);
+                tooltipTimeout = setTimeout(function() { tooltip.classList.remove('visible'); }, 3000);
+              }
+            });
+            window.addEventListener('resize', function() {
+              isMobile = window.innerWidth <= 1080;
+              if (!isMobile) tooltip.classList.remove('visible');
+            });
+          });
+          var reloadBtn = document.getElementById('prevent-reload');
+          if (reloadBtn) {
+            var reloadTooltip = reloadBtn.querySelector('.navi-tooltip-subpage');
+            if (reloadTooltip) {
+              var isMobileReload = window.innerWidth <= 1080;
+              reloadBtn.addEventListener('mouseenter', function() {
+                if (!isMobileReload) {
+                  reloadTooltip.classList.add('visible');
+                }
+              });
+              reloadBtn.addEventListener('mousemove', function(e) {
+                if (!isMobileReload) {
+                  reloadTooltip.style.left = e.clientX + 'px';
+                  reloadTooltip.style.top = e.clientY + 'px';
+                }
+              });
+              reloadBtn.addEventListener('mouseleave', function() {
+                if (!isMobileReload) reloadTooltip.classList.remove('visible');
+              });
+              window.addEventListener('resize', function() {
+                isMobileReload = window.innerWidth <= 1080;
+                if (!isMobileReload) reloadTooltip.classList.remove('visible');
+              });
+            }
+          }
+        })();
+      });
+    </script>
+</body>
+</html>

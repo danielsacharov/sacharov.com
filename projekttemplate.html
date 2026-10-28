@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <base href="./">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekttemplate | Daniel Sacharov</title>
+    <meta name="description" content="Projekttemplate — Swehl / Coda / Revolut / Cosmos / Jitter / Suno / Cob / Timeline sections.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swehl-hero.css?v=20260810b">
+    <link rel="stylesheet" href="css/coda-hero.css?v=20260810b">
+    <link rel="stylesheet" href="css/revolut-hero.css?v=20260810b">
+    <link rel="stylesheet" href="css/cosmos-hero.css?v=20260810">
+    <link rel="stylesheet" href="css/jitter-hero.css?v=20260810">
+    <link rel="stylesheet" href="css/suno-hero.css?v=20260810">
+    <link rel="stylesheet" href="css/cob-hero.css?v=20260810">
+    <link rel="stylesheet" href="css/timeline-04.css?v=20260810">
+    <style>
+      html, body { margin: 0; padding: 0; background: #fafafa; }
+    </style>
+</head>
+<body>
+
+    <!-- Swehl Hero (swehl.com) — 1:1 first viewport, design TBD -->
+    <section id="swehl-hero">
+      <div class="swehl-banner">
+        <p class="swehl-banner__text">So nice <em>The New York Times</em> wrote about us (thrice)</p>
+        <button class="swehl-banner__close" type="button" aria-label="Hide banner">
+          <svg width="12" height="12" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M14 1L1 14M1 1l13 13" stroke="currentColor" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="swehl-hero__media" aria-hidden="true">
+        <img src="assets/swehl-hero/hero.webp" alt="" fetchpriority="high">
+      </div>
+
+      <header class="swehl-header">
+        <div class="swehl-header__left">
+          <a class="swehl-header__logo" href="https://swehl.com/" aria-label="Swehl">
+            <svg viewBox="0 0 150 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M17.15 16.84c0 .86-.71 1.25-1.61 1.25-2.86 0-4.31-1.84-7.33-1.84-2.51 0-4 2.23-4 5.21 0 4 2.86 6.42 11.75 6.42 9.6 0 12.89-3.13 12.89-9.05 0-5.76-3.57-7.21-9.72-7.87-1.84-.16-2.82-.55-2.82-1.45 0-.78.63-1.21 1.8-1.21 2.86 0 4.54 1.53 7.01 1.53 1.57 0 2.74-1.06 2.74-3.02 0-2.74-2.31-4.58-11.36-4.58-8.9 0-11.22 2.98-11.22 6.82 0 4.82 3.25 5.8 9.44 6.43 1.73.11 2.43.5 2.43 1.36zm30.77-.7c1.1 0 1.41.9 1.25 2.66-.55 5.41.2 9.05 7.76 9.05 5.88 0 7.91-1.72 8.46-4.78.43-2.98-.67-5.48-.86-8.97-.27-3.45.39-6.23-.35-8.78-.74-2.27-2.08-3.21-4.82-3.21-3.96 0-4.27 2.86-3.49 6.03.67 2.31.71 4.11-1.72 4.11-2.39 0-2.66-1.61-1.96-4.07.59-3.41.24-5.88-4.27-5.88-4.54 0-4.86 2.47-4.27 5.88.67 2.47.43 4.07-1.96 4.07-2.47 0-2.39-1.8-1.76-4.11.82-3.17.51-6.03-3.49-6.03-2.7 0-4.04.94-4.78 3.21-.74 2.55-.12 5.33-.35 8.78-.24 3.49-1.33 5.99-.86 8.97.51 3.06 2.55 4.78 8.46 4.78 7.56 0 8.27-3.64 7.72-9.05-.12-1.76.2-2.66 1.29-2.66zm31.59 11.79c9.83 0 11.79-1.45 11.79-6.27 0-3.02-1.02-4.43-3.17-4.43-3.1 0-4.31.63-6.78.63-1.21 0-2.31-.39-2.31-1.61 0-.78.47-1.33 1.61-1.33 2.43 0 4.43.94 6.39.94 1.61 0 2.31-1.02 2.31-2.51 0-1.88-.67-2.7-2.31-2.7-2.43 0-3.84.78-6.35.78-1.17 0-1.65-.55-1.65-1.33 0-1.21.98-1.57 2.27-1.57 2.59 0 3.72.63 6.27.67 1.72 0 2.39-1.21 2.39-3.02 0-3.09-1.25-4.07-10.97-4.07-7.44 0-9.21 1.14-9.99 4.15-.67 2.82-.35 5.21-.59 7.84-.24 2.55-1.18 5.52-.82 8.58.5 3.6 2.82 5.25 11.91 5.25zm33.99 0c3.92 0 6.07-1.25 6.58-4.43.47-3.17-.98-5.37-1.21-9.48-.24-3.72.43-5.99-.27-8.58-.74-2.39-2.39-3.37-5.17-3.37-3.06 0-5.01 1.02-5.17 3.33-.04 1.61 1.18 2.23 1.06 3.53-.12.94-.47 1.41-3.02 1.41-2.62 0-2.98-.47-3.1-1.41-.08-1.29 1.14-1.92 1.06-3.53-.12-2.31-1.88-3.33-5.13-3.33-2.78 0-4.43.98-5.17 3.37-.71 2.59-.08 4.86-.27 8.58-.24 4.11-1.68 6.31-1.21 9.48.51 3.17 2.66 4.43 6.58 4.43 4.35 0 6.5-1.49 6.5-4.51 0-3.13-2.04-4.7-2.04-6.19 0-.94.51-1.45 2.78-1.45 2.23 0 2.66.51 2.66 1.45 0 1.49-1.96 3.06-1.96 6.19 0 3.02 2.27 4.51 6.5 4.51zm23.82-14.97c-.86 0-1.37.08-2.15.08-.94 0-1.68-.47-1.76-1.88-.08-1.68 1.53-3.13 1.45-5.37-.08-2.59-1.53-3.68-5.21-3.68-3.41 0-5.17 1.06-5.95 3.57-.86 2.94-.39 5.84-.63 8.42-.24 2.94-1.29 5.95-.63 9.13.55 2.62 2.66 4.62 8.7 4.62 7.4 0 10.15-1.92 10.15-7.64-.01-5.52-1.58-7.25-3.97-7.25zM140.5 4.85c0-1.53 1.1-2.64 2.64-2.64 1.53 0 2.64 1.11 2.64 2.64s-1.1 2.65-2.64 2.65-2.64-1.12-2.64-2.65zm2.64 2.07c1.21 0 2.04-.87 2.04-2.06s-.85-2.05-2.04-2.05-2.04.87-2.04 2.05c0 1.19.84 2.06 2.04 2.06zm-1.05-3.52h1.19c.62 0 .97.35.97.85 0 .32-.17.56-.38.66.21.12.29.3.32.58l.07.76h-.61l-.07-.67c-.02-.26-.13-.36-.36-.36h-.5v1.03h-.63V3.4zm1.13 1.27c.29 0 .41-.15.41-.36 0-.2-.12-.37-.41-.37h-.5v.73h.5z"/></svg>
+          </a>
+          <nav class="swehl-header__nav" aria-label="Primary">
+            <a href="https://swehl.com/collections/all">
+              <span>Shop</span>
+              <svg viewBox="0 0 9 9" fill="none" aria-hidden="true"><path d="M4.5 1V8M8 4.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://swehl.com/pages/learn">
+              <span>Learn</span>
+              <svg viewBox="0 0 9 9" fill="none" aria-hidden="true"><path d="M4.5 1V8M8 4.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+            <a href="https://swehl.com/pages/community">
+              <span>Community</span>
+              <svg viewBox="0 0 9 9" fill="none" aria-hidden="true"><path d="M4.5 1V8M8 4.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </a>
+          </nav>
+        </div>
+        <div class="swehl-header__actions">
+          <button type="button" aria-label="Open Search">
+            <svg class="swehl-icon-search" viewBox="0 0 25 27" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M23.4146 9.82655C23.4146 14.1707 19.893 17.6924 15.5488 17.6924C11.2046 17.6924 7.68293 14.1707 7.68293 9.82655C7.68293 5.48236 11.2046 1.96069 15.5488 1.96069C19.893 1.96069 23.4146 5.48236 23.4146 9.82655ZM24.9146 9.82655C24.9146 14.9992 20.7214 19.1924 15.5488 19.1924C13.6833 19.1924 11.9451 18.647 10.4852 17.7069L2.03033 26.1618C1.73744 26.4547 1.26256 26.4547 0.96967 26.1618C0.676777 25.8689 0.676777 25.394 0.96967 25.1011L9.28292 16.7878C7.37957 15.0735 6.18293 12.5898 6.18293 9.82655C6.18293 4.65393 10.3762 0.460693 15.5488 0.460693C20.7214 0.460693 24.9146 4.65393 24.9146 9.82655Z"/></svg>
+          </button>
+          <button type="button" aria-label="Login">
+            <svg class="swehl-icon-account" viewBox="0 0 29 29" fill="none" aria-hidden="true"><path d="M5.17687 12.5259C5.17687 12.5259 5.90415 15.6196 8.84461 15.9436C11.7851 16.2676 13.1716 12.5467 13.1716 12.5467M15.7339 12.5533C15.7339 12.5533 16.4612 15.647 19.4109 15.971C22.3605 16.295 23.7397 12.5741 23.7397 12.5741M14.3855 27.3909C21.5421 27.4095 27.3588 21.62 27.3774 14.4596C27.396 7.29927 21.6095 1.47959 14.4529 1.46098C7.29626 1.44238 1.4796 7.2319 1.46098 14.3923C1.44237 21.5526 7.22885 27.3723 14.3855 27.3909Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/></svg>
+          </button>
+          <button type="button" aria-label="Cart with 0 items">
+            <svg class="swehl-icon-cart" viewBox="0 0 24 30" fill="none" aria-hidden="true"><path d="M6.96935 11.279V6.36996C6.96935 3.65878 9.15818 1.46094 11.8582 1.46094C14.5583 1.46094 16.7471 3.65878 16.7471 6.36996V11.279M3.53846 28.4609H20.4615C21.8635 28.4609 23 27.3197 23 25.912V10.1465C23 8.73877 21.8635 7.59759 20.4615 7.59759H3.53846C2.13651 7.59759 1 8.73878 1 10.1465V25.912C1 27.3197 2.13651 28.4609 3.53846 28.4609Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="swehl-hero__content">
+        <h1 class="swehl-hero__title">Breastfeeding tools made for<br>this century</h1>
+        <div class="swehl-hero__ctas">
+          <a class="swehl-btn" href="https://swehl.com/collections/kits" aria-label="Shop Kits">
+            <span class="swehl-btn__shadow" aria-hidden="true"></span>
+            <span class="swehl-btn__face">Shop Kits</span>
+          </a>
+          <a class="swehl-btn" href="https://swehl.com/pages/learn" aria-label="Get Educated">
+            <span class="swehl-btn__shadow" aria-hidden="true"></span>
+            <span class="swehl-btn__face">Get Educated</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coda Hero (coda.co) — 1:1 first viewport, design TBD -->
+    <section id="coda-hero">
+      <header class="coda-header">
+        <a class="coda-header__logo" href="https://www.coda.co/" aria-label="Coda">
+          <svg viewBox="0 0 89 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M78.2342 0C70.658 0 68.3413 4.212 68.3413 12V23.538H77.3316V17.481H79.1397V23.538H88.1299V12C88.1299 4.212 85.8103 0 78.2371 0L78.2342 0ZM79.1397 12H77.3316V6.519H79.1397V12ZM56.026 0.462H46.1332V23.538H56.026C64.2225 23.538 66.7685 19.5 66.7685 12C66.7685 4.5 64.2255 0.462 56.026 0.462ZM56.9315 17.481H55.1235V6.519H56.9315V17.481ZM33.6944 0C25.4979 0 22.9519 4.212 22.9519 12C22.9519 19.788 25.495 24 33.6944 24C41.8938 24 44.4369 19.788 44.4369 12C44.4369 4.212 41.8938 0 33.6944 0ZM34.5999 17.481H32.7919V6.519H34.5999V17.481ZM11.645 11.076V6.519H9.83697V17.481H11.645V12.924H21.482C21.2556 20.136 18.5979 24 10.7395 24C2.88112 24 0 19.788 0 12C0 4.212 2.54303 0 10.7425 0C18.9419 0 21.2586 3.864 21.4849 11.076H11.648H11.645Z" fill="currentColor"></path></svg>
+        </a>
+        <nav class="coda-header__nav" aria-label="Primary">
+          <button type="button">Products</button>
+          <button type="button">Solutions</button>
+          <button type="button">Knowledge Center</button>
+          <button type="button">Company</button>
+        </nav>
+        <div class="coda-header__actions">
+          <button class="coda-lang" type="button" aria-label="Language">
+            <img src="assets/coda-hero/flag-us.svg" alt="" width="21" height="15">
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <a class="coda-btn coda-btn--ghost" href="https://www.coda.co/contact/">Contact us</a>
+          <a class="coda-btn coda-btn--solid" href="https://portal.coda.co/signup">Get Started</a>
+        </div>
+      </header>
+
+      <div class="coda-hero__content">
+        <a class="coda-badge" href="https://portal.coda.co/signup">
+          <span>Ready to grow? We're ready to go</span>
+          <span class="coda-badge__arrow" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.7197 8.21967C17.0126 7.92678 17.4874 7.92678 17.7803 8.21967L25.2803 15.7197C25.421 15.8603 25.5 16.0511 25.5 16.25C25.5 16.4489 25.421 16.6397 25.2803 16.7803L17.7803 24.2803C17.4874 24.5732 17.0126 24.5732 16.7197 24.2803C16.4268 23.9874 16.4268 23.5126 16.7197 23.2197L22.9393 17H6.75C6.33579 17 6 16.6642 6 16.25C6 15.8358 6.33579 15.5 6.75 15.5H22.9393L16.7197 9.28033C16.4268 8.98744 16.4268 8.51256 16.7197 8.21967Z" fill="currentColor"/></svg>
+          </span>
+        </a>
+
+        <div class="coda-hero__title" aria-hidden="true">
+          <span class="coda-hero__title-line">
+            CUSTOMIZE
+            <span class="coda-hero__icon"><img src="assets/coda-hero/icon-customize.svg" alt=""></span>
+            MONETIZE
+            <span class="coda-hero__icon"><img src="assets/coda-hero/icon-monetize.svg" alt=""></span>
+          </span>
+          <span class="coda-hero__title-line">
+            <span class="coda-hero__icon"><img src="assets/coda-hero/icon-maximize.svg" alt=""></span>
+            MAXIMIZE
+          </span>
+        </div>
+        <h1 class="coda-hero__sub">Accelerate Growth with Coda’s Merchant of Record and Payment Solutions</h1>
+      </div>
+
+      <div class="coda-hero__arc" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 770" preserveAspectRatio="xMidYMin slice">
+          <path d="M647.535,0.754 C1177.06,4.382 1339.56,273.38 1336.17,768.76 C1332.78,1264.14 1166.6,1530.89 637.076,1527.26 C129.459,1523.78 -40.497,1276.75 -51.962,817.963 L-51.157,700.54 C-33.407,241.955 139.918,-2.724 647.535,0.754 z" fill="currentColor"></path>
+        </svg>
+      </div>
+
+      <div class="coda-hero__grow" aria-hidden="true">
+        <div class="coda-hero__grow-inner">
+          <div class="coda-chip">Grow with us</div>
+          <div class="coda-hero__grow-line"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Revolut Hero (revolut.com) — 1:1 first viewport, design TBD -->
+    <section id="revolut-hero">
+      <div class="revolut-hero__stage" aria-hidden="true">
+        <img class="revolut-hero__bg" src="assets/revolut-hero/hero-bg.webp" alt="" fetchpriority="high">
+        <img class="revolut-hero__person" src="assets/revolut-hero/hero-layer.webp" alt="">
+      </div>
+
+      <header class="revolut-header">
+        <div class="revolut-header__inner">
+          <a class="revolut-header__logo" href="https://www.revolut.com/" aria-label="Revolut">
+            <svg fill="currentColor" viewBox="0 0 145 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path clip-rule="evenodd" d="m98.8039 0h5.6871v31.7312h-5.6871zm46.0571 13.3685v-4.92408h-5.881v-6.41996h-5.687v23.40534c0 2.1506.541 3.7895 1.608 4.8714 1.066 1.0828 2.728 1.6317 4.939 1.6317h5.021v-4.924h-3.674c-.799 0-1.372-.1757-1.704-.5226-.305-.3175-.503-1.1195-.503-2.043v-11.0748zm-84.6893 12.1865 5.8804-17.11125h5.9749l-8.4889 23.28775h-6.7327l-8.489-23.28775h5.9749zm63.8513-5.4451c0 1.4743-.224 2.7569-.664 3.8121-.437 1.0495-1.063 1.8541-1.861 2.3908s-1.779.8089-2.916.8089c-1.626 0-2.853-.5344-3.646-1.5878-.802-1.0646-1.209-2.6781-1.209-4.7954v-12.29412h-5.687v12.92272c0 2.0122.251 3.7189.748 5.0721.497 1.3573 1.18 2.4614 2.029 3.281.849.8187 1.84 1.41 2.946 1.7581 1.1.3463 2.284.5217 3.518.5217 1.778 0 3.25-.3225 4.373-.9586 1.024-.5819 1.883-1.2622 2.555-2.0251l.509 2.7148h4.992v-23.28672h-5.687zm-33.913-10.43745c-1.7923-.99372-3.9206-1.49716-6.3249-1.49716-2.3749 0-4.4953.50344-6.3024 1.49684-1.8092.99597-3.2308 2.40247-4.2254 4.18037-.9931 1.7763-1.4966 3.8817-1.4966 6.2574 0 2.3466.5035 4.4373 1.4966 6.2136.994 1.7773 2.4159 3.1835 4.2254 4.1793 1.8071.9935 3.9276 1.4969 6.3024 1.4969 2.4042 0 4.5325-.5034 6.3249-1.4972 1.7942-.9953 3.2082-2.4014 4.2026-4.179.9934-1.7773 1.4971-3.868 1.4971-6.2136 0-2.3748-.5037-4.4802-1.4971-6.2575-.995-1.7781-2.4087-3.1847-4.2026-4.17995zm-3.0047 16.63905c-.9162.5966-2.0332.8993-3.3199.8993-1.2572 0-2.367-.3026-3.2986-.8995-.9332-.5976-1.665-1.441-2.1757-2.5072-.5128-1.0672-.7732-2.3099-.7732-3.6942 0-1.4128.2601-2.6627.7732-3.7154.5104-1.0518 1.2428-1.8955 2.1769-2.5081.9313-.612 2.0408-.9222 3.2973-.9222 1.2861 0 2.4025.3102 3.319.9215.9191.613 1.6443 1.457 2.1559 2.5091.5125 1.0552.7725 2.3052.7725 3.7152 0 1.3811-.26 2.6242-.7725 3.6941-.5115 1.0664-1.2364 1.9099-2.1549 2.5074zm-81.19475-18.48035h-5.91055v23.90035h5.91055zm18.53525 1.36671c0-5.07148-4.1298-9.19751668-9.2063-9.19751668h-15.2395v5.10407668h14.5149c2.2974 0 4.2004 1.80488 4.2425 4.02316.021 1.11072-.3959 2.15902-1.1738 2.95172-.7782.7929-1.818 1.2299-2.9278 1.2299h-5.65434c-.20074 0-.36413.1631-.36413.3639v4.5363c0 .0772.02383.1509.06866.213l9.59341 13.3092h7.0225l-9.6157-13.3456c4.8425-.2431 8.7396-4.3118 8.7396-9.18814zm18.1745.33907c-1.7026-.90368-3.7242-1.36164-6.0087-1.36164-2.2874 0-4.3325.50376-6.0787 1.4978-1.7491.99501-3.1251 2.40181-4.0897 4.18061-.9636 1.7748-1.452 3.8949-1.452 6.3017 0 2.3457.4959 4.4357 1.4746 6.2123.9808 1.7807 2.3955 3.1797 4.2041 4.158 1.8052.9784 3.9706 1.4743 6.4354 1.4743 1.9554 0 3.7114-.3663 5.2192-1.0894 1.5081-.7249 2.7393-1.712 3.6596-2.9341.8742-1.1615 1.464-2.4752 1.7525-3.9042l.0311-.1525h-5.6559l-.0267.0916c-.3114 1.0659-.9156 1.9081-1.7964 2.5038-.9454.6405-2.1066.9654-3.4519.9654-1.1402 0-2.17-.2443-3.0605-.7261-.8862-.479-1.5791-1.164-2.059-2.0367-.4818-.8757-.756-1.9294-.8146-3.1254v-.187h17.0842l.0191-.1044c.0596-.3278.0979-.6656.1145-1.0053.0141-.331.0223-.6616.0223-.9953-.0305-2.2563-.5348-4.2409-1.4987-5.8993-.9677-1.6603-2.3215-2.9605-4.0238-3.86417zm-2.0724 4.38547c.9717.8178 1.5762 1.9799 1.7979 3.4564h-11.2467c.1285-.958.4466-1.7877.9463-2.4683.5242-.7139 1.1957-1.2748 1.9962-1.6672.8014-.3936 1.6813-.5934 2.6148-.5934 1.5781-.0001 2.8874.4281 3.8915 1.2725z" fill-rule="evenodd"></path></svg>
+          </a>
+          <nav class="revolut-header__nav" aria-label="Primary">
+            <a href="https://www.revolut.com/">Personal</a>
+            <a href="https://www.revolut.com/business/">Business</a>
+            <button type="button">
+              Kids &amp; Teens
+              <svg class="revolut-header__chevron" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <a href="https://www.revolut.com/about/">Company</a>
+          </nav>
+          <div class="revolut-header__actions">
+            <a class="revolut-btn revolut-btn--ghost" href="https://www.revolut.com/login/">Log in</a>
+            <a class="revolut-btn revolut-btn--white" href="https://www.revolut.com/signup/">Sign up</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="revolut-hero__copy">
+        <h1 class="revolut-hero__title">Banking &amp; Beyond</h1>
+        <p class="revolut-hero__sub">This is your bank, redefined. Get powerful daily banking and global freedom. Sign up for free in a tap.</p>
+        <a class="revolut-btn revolut-btn--dark revolut-hero__cta" href="https://www.revolut.com/app-download/">Download the app</a>
+      </div>
+
+      <div class="revolut-hero__cards" aria-hidden="true">
+        <div class="revolut-card revolut-card--side">
+          <img src="assets/revolut-hero/hero-left.webp" alt="" loading="lazy">
+        </div>
+        <div class="revolut-card revolut-card--center">
+          <img src="assets/revolut-hero/hero-center.webp" alt="" loading="eager">
+        </div>
+        <div class="revolut-card revolut-card--side">
+          <img src="assets/revolut-hero/hero-right.webp" alt="" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Cosmos Hero (cosmos.so) — 1:1 first viewport, design TBD -->
+    <section id="cosmos-hero">
+      <header class="cosmos-header">
+        <div class="cosmos-header__left">
+          <a class="cosmos-header__logo" href="https://www.cosmos.so/" aria-label="Cosmos">
+            <img src="assets/cosmos-hero/logo.svg" alt="" width="32" height="32">
+          </a>
+          <nav class="cosmos-header__nav" aria-label="Primary">
+            <a href="https://www.cosmos.so/discover">Entdecken</a>
+            <a href="https://www.cosmos.so/careers">Karriere</a>
+          </nav>
+        </div>
+
+        <div class="cosmos-search" role="search">
+          <svg class="cosmos-search__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.25" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16.2 16.2 20 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="cosmos-search__text">Versuche <em>'zwei seelen verschmelzen'</em></span>
+          <div class="cosmos-search__actions" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="4.5" y="4.5" width="15" height="15" rx="2.5" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M9 4.5v15M15 4.5v15M4.5 9h15M4.5 15h15" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+            </svg>
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="8" cy="12" r="3" fill="#f06"/>
+              <circle cx="14" cy="9" r="2.5" fill="#6cf"/>
+              <circle cx="15" cy="15" r="2.8" fill="#fc6"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="cosmos-header__right">
+          <a class="cosmos-btn cosmos-btn--ghost" href="https://www.cosmos.so/login">Log in</a>
+          <a class="cosmos-btn cosmos-btn--solid" href="https://www.cosmos.so/signup">Sign up</a>
+        </div>
+      </header>
+
+      <div class="cosmos-orbit" aria-hidden="true">
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-1.webp" alt="" loading="eager"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-2.webp" alt="" loading="eager"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-3.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-4.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-5.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-6.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-7.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-8.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-9.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-10.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-11.webp" alt="" loading="lazy"></div>
+        <div class="cosmos-tile"><img src="assets/cosmos-hero/tiles/tile-12.webp" alt="" loading="lazy"></div>
+      </div>
+
+      <div class="cosmos-hero__content">
+        <img class="cosmos-hero__brand" src="assets/cosmos-hero/wordmark.svg" alt="COSMOS" width="89" height="15">
+        <h1 class="cosmos-hero__title">Your space<br>for inspiration</h1>
+        <div class="cosmos-hero__ctas">
+          <a class="cosmos-btn cosmos-btn--solid cosmos-btn--lg" href="https://www.cosmos.so/signup">Sign up</a>
+          <a class="cosmos-btn cosmos-btn--outline" href="https://www.cosmos.so/download">App herunterladen</a>
+        </div>
+        <a class="cosmos-hero__film" href="https://www.cosmos.so/">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M8 17.221V6.779a.931.931 0 0 1 1.456-.77l7.657 5.222a.93.93 0 0 1 0 1.538L9.456 17.99A.931.931 0 0 1 8 17.221"></path>
+          </svg>
+          <span>Watch our new film (ft. Odessa A’zion)</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Jitter Hero (jitter.video) — 1:1, design TBD -->
+    <section id="jitter-hero">
+      <header class="jitter-header">
+        <a class="jitter-header__logo" href="https://jitter.video/" aria-label="Jitter Logo">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 82 28" width="82" height="28" aria-hidden="true"><path fill="currentColor" d="M8.214 27.812C3.805 27.812 0 25.148 0 19.744h4.37c0 2.548 1.81 3.86 3.844 3.86 1.997 0 3.768-1.196 3.768-4.168V0h4.41v19.821c-.001 5.675-3.882 7.99-8.178 7.99ZM22.437 5.686c-1.507 0-2.788-1.274-2.788-2.856 0-1.544 1.281-2.818 2.788-2.818 1.545 0 2.75 1.274 2.75 2.818 0 1.582-1.205 2.856-2.75 2.856Zm-2.072 2.553h4.145v19.448h-4.145V8.239Zm14.624 19.524c-3.618 0-6.443-2.046-6.443-6.408V2.905h4.145V8.27h4.56v3.783h-4.56v8.607c0 2.393 1.017 3.242 3.165 3.242.791 0 1.62-.116 2.223-.347v3.783c-.83.27-1.809.425-3.09.425Zm11.16 0c-3.617 0-6.442-2.046-6.442-6.408V2.905h4.145V8.27h5.353v3.783h-5.353v8.607c0 2.393 1.017 3.242 3.165 3.242.791 0 1.62-.116 2.223-.347v3.783c-.83.27-1.81.425-3.09.425ZM59.686 7.93c4.936 0 9.081 3.357 9.081 9.572 0 .425 0 .772-.037 1.389H53.92c.188 3.165 2.675 5.25 5.803 5.25 2.637 0 4.409-1.236 5.388-2.934l3.166 2.316C66.582 26.263 63.643 28 59.686 28c-5.727 0-9.834-4.169-9.834-10.036 0-5.673 4.107-10.035 9.834-10.035Zm-5.577 7.873h10.475c-.452-2.779-2.637-4.284-5.05-4.284-2.412 0-4.86 1.428-5.425 4.284Zm17.152-7.459h4.145v3.435c.716-2.2 2.826-3.628 4.974-3.628.527 0 1.055.038 1.62.154v4.362c-.716-.23-1.319-.347-2.073-.347-2.374 0-4.521 2.046-4.521 5.906v9.418h-4.145v-19.3Z"></path></svg>
+        </a>
+        <nav class="jitter-header__nav" aria-label="Primary">
+          <a href="https://jitter.video/product/">Product</a>
+          <a href="https://jitter.video/customers/">Customers</a>
+          <a href="https://jitter.video/templates/">Templates</a>
+          <a href="https://jitter.video/pricing/">Pricing</a>
+        </nav>
+        <div class="jitter-header__actions">
+          <a class="jitter-header__login" href="https://jitter.video/login/">Log in</a>
+          <a class="jitter-btn jitter-btn--black jitter-btn--small" href="https://jitter.video/join/">
+            <span class="jitter-btn__inner">Try for free</span>
+          </a>
+        </div>
+      </header>
+
+      <div class="jitter-hero">
+        <div class="jitter-hero__header">
+          <div class="jitter-hero__container">
+            <a class="jitter-pill" href="https://jitter.video/changelog/2026-07-09-ai-agents/" target="_blank" rel="noopener">
+              <h3><b>Superagents:</b> AI agents, built right into Jitter <span class="fake-link">Learn more</span></h3>
+            </a>
+            <h1 class="jitter-hero__title">Design in motion.<br>Now with AI.</h1>
+            <a class="jitter-btn jitter-btn--violet" href="https://jitter.video/join/">
+              <span class="jitter-btn__inner">Try Jitter for free</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="jitter-hero__social">
+          <p class="jitter-hero__proof"><strong>Over 20,000 creative teams use Jitter</strong> to create stunning animations online.</p>
+          <ul class="jitter-clients">
+              <li><img src="assets/jitter-hero/clients/google.svg" alt="Google" loading="lazy"></li>
+              <li><img src="assets/jitter-hero/clients/gamma.svg" alt="Gamma" loading="lazy"></li>
+              <li><img src="assets/jitter-hero/clients/perplexity.svg" alt="Perplexity" loading="lazy"></li>
+              <li><img src="assets/jitter-hero/clients/dept.svg" alt="DEPT" loading="lazy"></li>
+              <li><img src="assets/jitter-hero/clients/deliveroo.svg" alt="Deliveroo" loading="lazy"></li>
+              <li><img src="assets/jitter-hero/clients/tiktok.svg" alt="TikTok" loading="lazy"></li>
+              <li><img src="assets/jitter-hero/clients/huge.svg" alt="Huge" loading="lazy"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Suno DE Hero (suno.com/de) — 1:1, design TBD -->
+    <section id="suno-hero">
+      <div class="suno-hero__bg" aria-hidden="true">
+        <img src="assets/suno-hero/aura-hero.jpg" alt="" fetchpriority="high">
+        <div class="suno-hero__bg-fade"></div>
+      </div>
+      <div class="suno-hero__inner">
+        <header class="suno-hero__nav">
+          <a class="suno-hero__logo" href="https://suno.com/de" aria-label="Suno">
+            <svg viewBox="0 0 606 149" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-label="Suno Logo"><g fill-rule="evenodd" clip-rule="evenodd"><path d="M61.4512,148.002C49.5956,148.002 38.3407,146.172 27.6689,142.512C16.9971,138.851 7.77415,133.183 0,125.489C3.5337,118.583 7.0674,111.677 10.6011,104.771C18.2693,111.256 26.5028,116.125 35.3017,119.359C44.1007,122.611 54.1364,124.21 65.3912,124.21C74.3669,124.21 81.2046,122.593 85.8691,119.359C90.5336,116.107 92.8835,111.434 92.8835,105.304C92.8835,99.7952 90.1625,95.7794 84.7029,93.3273C79.261,90.8574 67.7235,88.121 50.1256,85.1181C33.2345,82.4705 21.3083,78.1882 14.3645,72.2356C7.42078,66.283 3.94008,57.3808 3.94008,45.4756C3.94008,32.6287 8.74592,21.9673 18.3223,13.5093C23.7829,8.70541 30.6743,5.25998 39,3.18286C45.3022,1.61055 52.4262,0.822266 60.3734,0.822266C65.8752,0.822266 71.2479,1.26797 76.5,2.16152C81.8908,3.07865 87.1545,4.46759 92.3004,6.33063C102.424,9.99103 110.428,15.0552 116.294,21.5586C113.17866666666666,28.162733333333332 110.06333333333333,34.766866666666665 106.948,41.371C99.7565,35.9159 92.2297,31.758 84.3849,28.8972C76.5401,26.0541 68.3596,24.6149 59.861,24.6149C51.9455,24.6149 45.7262,26.0364 41.1677,28.8616C36.6092,31.6869 34.33,36.0581 34.33,41.9751C34.33,47.519 37.1216,51.4993 42.6872,53.9158C45.8963,55.3092 51.1672,56.8267 58.5,58.4614C63.8845,59.6617 70.3808,60.9254 77.9889,62.2495C87.1465,63.8316 94.8149,65.9022 101,68.4643C106.068,70.5636 110.14,72.9929 113.22,75.7538C120.058,81.8664 123.468,90.8752 123.468,102.763C123.468,117.049 117.973,128.154 107.018,136.079C102.168,139.582 96.4964,142.311 90,144.266C81.7998,146.733 72.2856,148.002 61.4512,148.002"></path><path d="M165.456,135.546C170.458,140.232 178.495,143.675 188.131,145.879C196.702,147.839 206.538,148.819 216.628,148.819C216.63866666666667,148.819 216.64933333333332,148.819 216.66,148.819C226.752,148.819 236.587,147.839 245.157,145.878C254.788,143.674 262.823,140.231 267.832,135.546C273.041,130.665 276.814,124.309 279.152,116.482C281.056,110.108 282.008,95.5 282.008,94.4341C282.008,93.3682 278.5,71 278.5,58.5C278.5,46 282.008,29.5 282.008,27.485C282.008,25.47 282.008,2.47 282.008,2.47C271.77233333333334,2.47 261.53666666666663,2.47 251.301,2.47C251.301,2.47 251.301,11.985 251.301,23.5C251.301,35.015 270,49 269,58.5C268,68 252.5,86 251.301,91.9019C250.102,97.8038 249.253,111.66 245.157,116.482C241.044,121.304 228.336,123.707 216.644,123.707C204.952,123.707 192.227,121.304 188.131,116.482C184.035,111.66 181.986,103.5 181.986,91.9019C181.986,80.3038 181.986,61 181.986,52.5C181.986,44 181.986,36 181.986,27.485C181.986,18.97 181.986,2.47 181.986,2.47C171.75066666666666,2.47 161.51533333333333,2.47 151.28,2.47C151.28,2.47 151.28,18.97 151.28,27.485C151.28,36 151.28,43.5 151.28,52.5C151.28,61.5 151.28,85.8682 151.28,94.4341C151.28,103 152.231,110.111 154.133,116.482C156.471,124.311 160.245,130.663 165.456,135.546"></path><path d="M314,145.882C322.96866666666665,145.882 331.93733333333336,145.882 340.906,145.882C340.906,135.38566666666668 340.906,124.88933333333334 340.906,114.393C340.906,100.96666666666667 340.906,87.54033333333334 340.906,74.114C340.906,60.68766666666667 340.906,47.26133333333334 340.906,33.835C340.906,33.835 345.5,46 354,55.5C362.5,65 376.267,71.0558 381.5,80.5C386.648,89.7901 385.5,110.5 391,124C396.5,137.5 402.991,145.882 402.991,145.882C402.9963333333333,145.882 403.00166666666667,145.882 403.007,145.882C417.188,145.882 431.369,145.882 445.55,145.882C445.55,135.38566666666668 445.55,124.88933333333334 445.55,114.393C445.55,100.96666666666667 445.55,87.54033333333334 445.55,74.114C445.55,60.68766666666667 445.55,47.26133333333334 445.55,33.835C445.55,23.223333333333336 445.55,12.611666666666668 445.55,2C436.63933333333335,2 427.72866666666664,2 418.818,2C418.818,12.611666666666666 418.818,23.223333333333333 418.818,33.835C418.818,47.26133333333333 418.818,60.68766666666667 418.818,74.114C418.818,87.54033333333334 418.818,100.96666666666667 418.818,114.393C418.818,114.393 413.5,105 407,99C400.5,93 397,92.5 389,78.5C381,64.5 380.252,44.0312 372.5,30C364.748,15.9688 356.725,2 356.725,2C342.48333333333335,2 328.2416666666667,2 314,2C314,12.611666666666666 314,23.223333333333333 314,33.835C314,47.26133333333333 314,60.68766666666667 314,74.114C314,87.54033333333334 314,100.96666666666667 314,114.393C314,124.88933333333334 314,135.38566666666668 314,145.882"></path><path d="M490.573,135.564C495.897,140.161 503.844,143.563 513.043,145.769C521.513,147.8 531.044,148.816 540.568,148.816C540.5733333333333,148.816 540.5786666666667,148.816 540.584,148.816C550.236,148.816 559.887,147.774 568.436,145.692C577.5,143.484 585.325,140.108 590.595,135.564C596.007,130.89 599.992,125.181 602.543,118.438C604.812,112.442 605.948,105.5 605.948,97.9954C605.948,90.4908 605.948,88 605.948,74.7642C605.948,61.5284 605.948,59.066 605.948,51.533C605.948,44 604.813,36.8424 602.543,30.7481C600.005,23.9323 596.048,18.1597 590.675,13.43C585.41,8.79445 577.549,5.36036 568.436,3.12549C559.937,1.04122 550.349,0 540.761,0C531.173,0 521.57,1.04122 513.043,3.12549C503.9,5.36036 495.994,8.79445 490.67,13.43C485.226,18.1539 481.5,24.4962 480,30.7481C478.5,37 478,42 480.5,50.5C483,59 492.5,65.2642 492.5,78.5C492.5,91.7358 489,94 486,101.5C483,109 480.5,115.5 482,121.5C483.5,127.5 485.097,130.842 490.573,135.564M568.436,118.229C563.92,122.652 551.405,124.855 540.568,124.855C529.73,124.855 517.216,122.652 512.7,118.229C508.184,113.807 505.927,106 505.927,95.4519C505.927,84.9038 505.927,88 505.927,74.7642C505.927,61.5284 505.927,65.153 505.927,54.0765C505.927,43 508.184,35.2842 512.7,30.7481C517.216,26.212 529.73,23.944 540.568,23.944C551.405,23.944 563.92,26.1958 568.436,30.7481C572.951,35.3004 575.209,43.5 575.209,54.0765C575.209,64.653 575.209,61.5284 575.209,74.7642C575.209,88 575.209,84.9038 575.209,95.4519C575.209,106 572.951,113.807 568.436,118.229"></path></g></svg>
+          </a>
+          <div class="suno-hero__nav-actions">
+            <button type="button" class="suno-btn suno-btn--ghost">Anmelden</button>
+            <button type="button" class="suno-btn suno-btn--primary">Kostenlos bei Suno loslegen</button>
+          </div>
+        </header>
+
+        <div class="suno-hero__content">
+          <h1 class="suno-hero__title">Mach jeden Song, den du dir vorstellst<span class="suno-hero__caret" aria-hidden="true"></span></h1>
+          <h2 class="suno-hero__subtitle">Fang mit einer einfachen Idee an oder tauche in unsere Profi-Tools ein – dein nächster Track wartet schon.</h2>
+
+          <div class="suno-hero__composer-wrap">
+            <div class="suno-hero__composer">
+              <textarea rows="1" placeholder="Beschreibe deinen Song" aria-label="Beschreibe deinen Song"></textarea>
+              <div class="suno-hero__composer-bar">
+                <div class="suno-hero__composer-left">
+                  <button type="button" class="suno-icon-btn suno-icon-btn--square" aria-label="Hinzufügen"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4c-.631 0-1.143.512-1.143 1.143v5.714H5.143a1.143 1.143 0 0 0 0 2.286h5.714v5.714a1.143 1.143 0 0 0 2.286 0v-5.714h5.714a1.143 1.143 0 0 0 0-2.286h-5.714V5.143C13.143 4.512 12.63 4 12 4"></path></svg></button>
+                  <button type="button" class="suno-icon-btn" aria-label="Erweitert"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6.75A.75.75 0 0 1 4.75 6h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 4 6.75Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H4.75A.75.75 0 0 1 4 12Zm.75 4.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H4.75Z"/></svg><span>Erweitert</span></button>
+                </div>
+                <div class="suno-hero__composer-right">
+                  <button type="button" class="suno-icon-btn suno-icon-btn--square" aria-label="Zufällige Idee generieren"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm3.5 5.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm7 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM12 13.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM8.5 18a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm7 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z"/></svg></button>
+                  <button type="button" class="suno-btn suno-btn--aura"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor" class="suno-btn__icon" aria-hidden="true"><g><g><path d="m10.35 7.232-2.446.244a.865.865 0 0 0-.78.859v7.558a3 3 0 0 0-.521-.042C5.165 15.851 4 16.78 4 17.926 4 19.07 5.165 20 6.603 20c1.437 0 2.602-.929 2.602-2.074v-6.431l4.77-.475a3 3 0 0 1-.077-.173l-.572-1.395-1.4-.57a2.7 2.7 0 0 1-1.576-1.65M15.452 12.38v2.475a3 3 0 0 0-.521-.041c-1.437 0-2.603.929-2.603 2.074 0 1.146 1.166 2.075 2.603 2.075s2.603-.929 2.603-2.075V12.36a2.86 2.86 0 0 1-2.082.02M11.96 6.56a1.02 1.02 0 0 1 .647-1.004l1.67-.68a1.04 1.04 0 0 0 .57-.567l.682-1.664c.352-.86 1.575-.86 1.927 0l.682 1.664c.106.258.311.463.57.568l1.67.68c.344.14.551.417.621.722.017.407-.199.822-.646 1.004l-1.67.68c-.26.105-.465.31-.57.568l-.682 1.663c-.353.86-1.576.86-1.928 0l-.682-1.663a1.04 1.04 0 0 0-.57-.569l-1.67-.679a1.02 1.02 0 0 1-.62-.723"></path></g></g></svg><span>Erstellen</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="suno-hero__press" aria-label="Bekannt aus">
+          <img src="assets/suno-hero/logos/Forbes_logo.svg" alt="Forbes" loading="lazy">
+          <img src="assets/suno-hero/logos/Rolling_Stone_logo.svg" alt="Rolling Stone" loading="lazy">
+          <img src="assets/suno-hero/logos/Variety_logo.svg" alt="Variety" loading="lazy">
+          <img src="assets/suno-hero/logos/Wired_logo.svg" alt="Wired" loading="lazy">
+          <img src="assets/suno-hero/logos/Billboard_logo.svg" alt="Billboard" loading="lazy">
+          <img src="assets/suno-hero/logos/COMPLEX_Magazine_logo.svg" alt="Complex" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Cob Foods Hero (cobfoods.com) — 1:1, design TBD -->
+    <section id="cob-hero" class="layout-pb-row-hero-slider">
+      <div class="pb-row pb-row-hero-slider --is-first">
+        <div class="pb-row-hero-slider__slider swiper">
+          <div class="swiper-wrapper">
+
+            <div class="pb-row-hero-slider__slide swiper-slide --is-first swiper-slide-active" style="--slide-bg:#f79054;--slide-text:#3b0017;--color-highlight:#ffde17;">
+              <div class="pb-row-hero-slider__slide__content">
+                <p class="pb-row-hero-slider__slide__subtitle ff-heading"><strong>20,000+</strong> COBSTOMERS</p>
+                <div class="pb-row-hero-slider__slide__titleWrap">
+                  <h1 class="pb-row-hero-slider__slide__title ff-heading">THE CHIP THAT CHANGES THE GAME</h1>
+                </div>
+                <div class="pb-row-hero-slider__slide__text">
+                  <p>Introducing Our Corn-Free Tortilla Chips.</p>
+                </div>
+                <div class="pb-row-hero-slider__slide__ctaWrap">
+                  <a href="https://cobfoods.com/products/tortilla-chip-6-pack" class="btn --cta --cta-medium " aria-label="Shop now">
+  <span class="btn__bg" aria-hidden="true"><svg width="208" height="111" viewBox="0 0 208 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M172 13H36C24 13 13 25 13 36V75C13 86 24 98 36 98H172C184 98 195 86 195 75V36C195 25 184 13 172 13Z" fill="currentColor" stroke="currentColor"/>
+  <circle cx="31.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="73.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="52.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="94.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="115.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="136.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="155.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="176.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="31.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="73.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="52.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="94.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="115.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="136.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="155.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="176.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="20.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="41.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="63.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="85.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="20.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="41.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="63.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="85.5" r="11.5" fill="currentColor"/>
+</svg></span>
+  <span class="btn__label">Shop now</span>
+</a>
+                </div>
+              </div>
+              <div class="pb-row-hero-slider__slide__media">
+                <figure class="pb-row-hero-slider__slide__bgImage">
+                  <img src="assets/cob-hero/slide1.jpg" alt="" class="pb-row-hero-slider__slide__bgImg" width="1440" height="1782" loading="eager">
+                </figure>
+              </div>
+            </div>
+            <div class="pb-row-hero-slider__slide swiper-slide" style="--slide-bg:#ef98c1;--slide-text:#3b0017;--color-highlight:#ffde17;">
+              <div class="pb-row-hero-slider__slide__content">
+                <p class="pb-row-hero-slider__slide__subtitle ff-heading"><strong>20,000+</strong> COBSTOMERS</p>
+                <div class="pb-row-hero-slider__slide__titleWrap">
+                  <h1 class="pb-row-hero-slider__slide__title ff-heading">NEW NO. 1 FULLY LOADED CHIP</h1>
+                </div>
+                <div class="pb-row-hero-slider__slide__text">
+                  <p>Introducing Our Corn-Free Tortilla Chips.</p>
+                </div>
+                <div class="pb-row-hero-slider__slide__ctaWrap">
+                  <a href="https://cobfoods.com/products/tortilla-chip-6-pack" class="btn --cta --cta-medium " aria-label="Shop now">
+  <span class="btn__bg" aria-hidden="true"><svg width="208" height="111" viewBox="0 0 208 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M172 13H36C24 13 13 25 13 36V75C13 86 24 98 36 98H172C184 98 195 86 195 75V36C195 25 184 13 172 13Z" fill="currentColor" stroke="currentColor"/>
+  <circle cx="31.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="73.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="52.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="94.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="115.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="136.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="155.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="176.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="31.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="73.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="52.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="94.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="115.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="136.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="155.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="176.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="20.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="41.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="63.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="85.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="20.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="41.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="63.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="85.5" r="11.5" fill="currentColor"/>
+</svg></span>
+  <span class="btn__label">Shop now</span>
+</a>
+                </div>
+              </div>
+              <div class="pb-row-hero-slider__slide__media">
+                <figure class="pb-row-hero-slider__slide__bgImage">
+                  <img src="assets/cob-hero/slide2.png" alt="" class="pb-row-hero-slider__slide__bgImg" width="1440" height="1782" loading="lazy">
+                </figure>
+              </div>
+            </div>
+            <div class="pb-row-hero-slider__slide swiper-slide" style="--slide-bg:#f79054;--slide-text:#3b0017;--color-highlight:#ffde17;">
+              <div class="pb-row-hero-slider__slide__content">
+                <p class="pb-row-hero-slider__slide__subtitle ff-heading"><strong>20,000+</strong> COBSTOMERS</p>
+                <div class="pb-row-hero-slider__slide__titleWrap">
+                  <h1 class="pb-row-hero-slider__slide__title ff-heading">THE NEW NO. 1 BOUGIE BITE</h1>
+                </div>
+                <div class="pb-row-hero-slider__slide__text">
+                  <p>Introducing Our Corn-Free Tortilla Chips.</p>
+                </div>
+                <div class="pb-row-hero-slider__slide__ctaWrap">
+                  <a href="https://cobfoods.com/products/tortilla-chip-6-pack" class="btn --cta --cta-medium " aria-label="Shop now">
+  <span class="btn__bg" aria-hidden="true"><svg width="208" height="111" viewBox="0 0 208 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M172 13H36C24 13 13 25 13 36V75C13 86 24 98 36 98H172C184 98 195 86 195 75V36C195 25 184 13 172 13Z" fill="currentColor" stroke="currentColor"/>
+  <circle cx="31.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="73.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="52.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="94.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="115.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="136.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="155.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="176.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="31.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="73.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="52.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="94.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="115.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="136.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="155.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="176.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="20.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="41.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="63.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="85.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="20.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="41.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="63.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="85.5" r="11.5" fill="currentColor"/>
+</svg></span>
+  <span class="btn__label">Shop now</span>
+</a>
+                </div>
+              </div>
+              <div class="pb-row-hero-slider__slide__media">
+                <figure class="pb-row-hero-slider__slide__bgImage">
+                  <img src="assets/cob-hero/slide3.jpg" alt="" class="pb-row-hero-slider__slide__bgImg" width="1440" height="1782" loading="lazy">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pb-row-hero-slider__controls">
+          <button class="pb-row-hero-slider__prevBtn" type="button" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <button class="pb-row-hero-slider__nextBtn" type="button" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+        <div class="pb-row-hero-slider__footer">
+          <h2 class="pb-row-hero-slider__footer__subtitle">SNACK LIKE <span class="pb-row-hero-slider__footer__tennis" aria-hidden="true"><img src="assets/cob-hero/icon-tennis.png" alt="" width="323" height="237" loading="lazy"></span>NOVAK</h2>
+          <div class="pb-row-hero-slider__footer__text">
+            <p>The world’s greatest tennis player teamed up with the world’s greatest grain. Meet Cob, co-founded by Novak Djokovic and powered by sorghum: seriously delicious, incredibly nutritious.</p>
+          </div>
+          <a href="https://cobfoods.com/collections/all" class="btn --cta --cta-medium pb-row-hero-slider__footer__cta --cta-pink" aria-label="Shop now">
+  <span class="btn__bg" aria-hidden="true"><svg width="208" height="111" viewBox="0 0 208 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M172 13H36C24 13 13 25 13 36V75C13 86 24 98 36 98H172C184 98 195 86 195 75V36C195 25 184 13 172 13Z" fill="currentColor" stroke="currentColor"/>
+  <circle cx="31.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="73.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="52.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="94.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="115.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="136.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="155.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="176.5" cy="12.5" r="11.5" fill="currentColor"/>
+  <circle cx="31.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="73.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="52.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="94.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="115.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="136.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="155.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="176.5" cy="96.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="20.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="41.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="63.5" r="11.5" fill="currentColor"/>
+  <circle cx="195.5" cy="85.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="20.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="41.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="63.5" r="11.5" fill="currentColor"/>
+  <circle cx="12.5" cy="85.5" r="11.5" fill="currentColor"/>
+</svg></span>
+  <span class="btn__label">Shop now</span>
+</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline 04 (Cycle / Flowbase) — 1:1, design TBD -->
+    <section id="cycle-timeline-04" class="timeline_relative-wrapper">
+      <div class="section-medium">
+        <div class="container-medium">
+          <div class="timeline_content">
+            <div class="column-large">
+              <div class="text-size-xlarge text-weight-medium">[Timeline]</div>
+              <h2 class="heading-style-h1 text-balance">Our Journey Toward a Sustainable Future</h2>
+            </div>
+            <div swiper="timeline-04" class="timeline_card-slider">
+              <div class="timeline_swiper-cards swiper-wrapper">
+              <div class="timeline_slide-card swiper-slide swiper-slide-active">
+                <div class="text-size-medium">We launched Cycle 1.0 and partnered with pilot clients in manufacturing and logistics.</div>
+                <div class="column-3x-small">
+                  <div class="heading-style-h4 text-weight-medium">2025</div>
+                  <div class="text-size-medium">Phase 1</div>
+                </div>
+              </div>
+              <div class="timeline_slide-card swiper-slide">
+                <div class="text-size-medium">We launched Cycle 1.0 and partnered with pilot clients in manufacturing and logistics.</div>
+                <div class="column-3x-small">
+                  <div class="heading-style-h4 text-weight-medium">2026</div>
+                  <div class="text-size-medium">Phase 2</div>
+                </div>
+              </div>
+              <div class="timeline_slide-card swiper-slide">
+                <div class="text-size-medium">We launched Cycle 1.0 and partnered with pilot clients in manufacturing and logistics.</div>
+                <div class="column-3x-small">
+                  <div class="heading-style-h4 text-weight-medium">2027</div>
+                  <div class="text-size-medium">Phase 3</div>
+                </div>
+              </div>
+              <div class="timeline_slide-card swiper-slide">
+                <div class="text-size-medium">We launched Cycle 1.0 and partnered with pilot clients in manufacturing and logistics.</div>
+                <div class="column-3x-small">
+                  <div class="heading-style-h4 text-weight-medium">2028</div>
+                  <div class="text-size-medium">Phase</div>
+                </div>
+              </div>
+              <div class="timeline_slide-card swiper-slide">
+                <div class="text-size-medium">We launched Cycle 1.0 and partnered with pilot clients in manufacturing and logistics.</div>
+                <div class="column-3x-small">
+                  <div class="heading-style-h4 text-weight-medium">2029</div>
+                  <div class="text-size-medium">Phase</div>
+                </div>
+              </div>
+              <div class="timeline_slide-card swiper-slide">
+                <div class="text-size-medium">We launched Cycle 1.0 and partnered with pilot clients in manufacturing and logistics.</div>
+                <div class="column-3x-small">
+                  <div class="heading-style-h4 text-weight-medium">2030</div>
+                  <div class="text-size-medium">Phase</div>
+                </div>
+              </div>
+              <div class="timeline_slide-card swiper-slide">
+                <div class="text-size-medium">We launched Cycle 1.0 and partnered with pilot clients in manufacturing and logistics.</div>
+                <div class="column-3x-small">
+                  <div class="heading-style-h4 text-weight-medium">2031</div>
+                  <div class="text-size-medium">Phase</div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline_testimonial-block">
+        <div class="w-layout-grid contact_testimonial-grid">
+          <div class="contact_testimonial is-quote">
+            <p class="text-size-medium text-weight-medium">“It’s not just a reporting tool — it’s a strategic platform that helps us turn data into meaningful climate action.”</p>
+            <div class="icon w-embed"><img src="assets/timeline-04/lightbox-logo.svg" alt="Lightbox" width="97" height="28"></div>
+          </div>
+          <div class="contact_testimonial">
+            <div class="heading-style-h6 text-weight-semibold">40%</div>
+            <div class="text-size-medium text-color-secondary">Efficiency Gain</div>
+          </div>
+          <div class="contact_testimonial">
+            <div class="heading-style-h6 text-weight-semibold">28%</div>
+            <div class="text-size-medium text-color-secondary">Emission Reduction</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/suno-hero.js"></script>
+    <script src="js/cob-hero.js"></script>
+    <script src="js/timeline-04.js"></script>
+</body>
+</html>

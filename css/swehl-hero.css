@@ -1,0 +1,302 @@
+/* ===== Swehl Hero (swehl.com, 1:1 first viewport) ===== */
+@font-face {
+  font-family: "Caslon Rounded";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/swehl/CaslonRounded-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: Roobert;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/swehl/Roobert-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: Roobert;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/swehl/Roobert-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: Roobert;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/swehl/Roobert-SemiBold.woff2") format("woff2");
+}
+
+#swehl-hero {
+  --swehl-cream: #fffbf2;
+  --swehl-yellow: #ffd874;
+  --swehl-rust: #8b2a00;
+  --swehl-lilac: #ead1ff;
+
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: var(--swehl-cream);
+  color: var(--swehl-yellow);
+  font-family: Roobert, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#swehl-hero *,
+#swehl-hero *::before,
+#swehl-hero *::after {
+  box-sizing: border-box;
+}
+
+#swehl-hero a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#swehl-hero button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* --- Banner --- */
+#swehl-hero .swehl-banner {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 40px;
+  background: var(--swehl-lilac);
+  color: var(--swehl-rust);
+  text-align: center;
+}
+
+#swehl-hero .swehl-banner__text {
+  margin: 0;
+  font-family: "Caslon Rounded", Georgia, serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+#swehl-hero .swehl-banner__text em {
+  font-style: italic;
+}
+
+#swehl-hero .swehl-banner__close {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--swehl-rust);
+  opacity: 0.8;
+}
+
+/* --- Media --- */
+#swehl-hero .swehl-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#swehl-hero .swehl-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+}
+
+/* soft warm wash so low-res asset reads closer to live */
+#swehl-hero .swehl-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(139, 42, 0, 0.08);
+  pointer-events: none;
+}
+
+/* --- Header --- */
+#swehl-hero .swehl-header {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 30px 0;
+  color: var(--swehl-yellow);
+}
+
+#swehl-hero .swehl-header__left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  min-width: 0;
+}
+
+#swehl-hero .swehl-header__logo {
+  display: flex;
+  width: 152px;
+  height: 32px;
+  flex-shrink: 0;
+  color: var(--swehl-yellow);
+}
+
+#swehl-hero .swehl-header__logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#swehl-hero .swehl-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+#swehl-hero .swehl-header__nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.37;
+  color: var(--swehl-yellow);
+  white-space: nowrap;
+}
+
+#swehl-hero .swehl-header__nav a svg {
+  width: 9px;
+  height: 9px;
+}
+
+#swehl-hero .swehl-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+#swehl-hero .swehl-header__actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swehl-yellow);
+}
+
+#swehl-hero .swehl-header__actions svg {
+  display: block;
+}
+
+#swehl-hero .swehl-icon-search { width: 24px; height: 27px; }
+#swehl-hero .swehl-icon-account { width: 28px; height: 28px; }
+#swehl-hero .swehl-icon-cart { width: 20px; height: 28px; }
+
+/* --- Content --- */
+#swehl-hero .swehl-hero__content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 100px);
+  min-height: calc(100dvh - 100px);
+  padding: 40px 24px 80px;
+}
+
+#swehl-hero .swehl-hero__title {
+  margin: 0;
+  max-width: min(1369px, 92vw);
+  font-family: "Caslon Rounded", Georgia, serif;
+  font-size: clamp(42px, 6.2vw, 100px);
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--swehl-yellow);
+}
+
+#swehl-hero .swehl-hero__ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 44px;
+  flex-wrap: wrap;
+}
+
+#swehl-hero .swehl-btn {
+  position: relative;
+  display: block;
+  width: 153px;
+  height: 48px;
+  font-family: Roobert, system-ui, sans-serif;
+  color: var(--swehl-rust);
+}
+
+#swehl-hero .swehl-btn__shadow {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: currentColor;
+  transform: translate(0, 0);
+  transition: transform 0.3s ease;
+}
+
+#swehl-hero .swehl-btn:hover .swehl-btn__shadow {
+  transform: translate(6px, 6px);
+}
+
+#swehl-hero .swehl-btn__face {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  border-radius: 9999px;
+  border: 1px solid var(--swehl-rust);
+  background: var(--swehl-lilac);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.37;
+  text-transform: uppercase;
+  transition: transform 0.075s ease;
+}
+
+@media (max-width: 960px) {
+  #swehl-hero .swehl-header__nav {
+    display: none;
+  }
+
+  #swehl-hero .swehl-header {
+    padding: 14px 16px 0;
+  }
+
+  #swehl-hero .swehl-header__logo {
+    width: 120px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  #swehl-hero .swehl-hero__title {
+    max-width: 12ch;
+  }
+
+  #swehl-hero .swehl-btn {
+    width: 140px;
+  }
+}

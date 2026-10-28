@@ -1,0 +1,387 @@
+/* ===== Cosmos Hero (cosmos.so, 1:1 first viewport) ===== */
+@font-face {
+  font-family: cosmosOracle;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/cosmos/cosmos_oracle_book.woff2") format("woff2");
+}
+@font-face {
+  font-family: cosmosOracle;
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/cosmos/cosmos_oracle_book.woff2") format("woff2");
+}
+@font-face {
+  font-family: cosmosOracle;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/cosmos/cosmos_oracle_regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: cosmosOracle;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/cosmos/cosmos_oracle_medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: basisMono;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/cosmos/basis_mono.woff2") format("woff2");
+}
+
+#cosmos-hero {
+  --cosmos-bg: #f7f5f3;
+  --cosmos-ink: #0d0d0d;
+  --cosmos-muted: #6e6a69;
+  --cosmos-search-bg: #fcfbfa;
+  --cosmos-search-muted: #9a9796;
+  --cosmos-border: rgba(13, 13, 13, 0.12);
+
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: var(--cosmos-bg);
+  color: var(--cosmos-ink);
+  font-family: cosmosOracle, Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#cosmos-hero *,
+#cosmos-hero *::before,
+#cosmos-hero *::after {
+  box-sizing: border-box;
+}
+
+#cosmos-hero a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --- Header --- */
+#cosmos-hero .cosmos-header {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 32px 0;
+  height: 92px;
+}
+
+#cosmos-hero .cosmos-header__left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  min-width: 0;
+}
+
+#cosmos-hero .cosmos-header__logo {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+#cosmos-hero .cosmos-header__logo img,
+#cosmos-hero .cosmos-header__logo svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+#cosmos-hero .cosmos-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+#cosmos-hero .cosmos-header__nav a {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--cosmos-muted);
+  white-space: nowrap;
+}
+
+#cosmos-hero .cosmos-header__nav a:hover {
+  color: var(--cosmos-ink);
+}
+
+#cosmos-hero .cosmos-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(457px, 36vw);
+  height: 56px;
+  padding: 0 18px;
+  border-radius: 9999px;
+  border: 0.5px solid var(--cosmos-border);
+  background: var(--cosmos-search-bg);
+  flex-shrink: 0;
+}
+
+#cosmos-hero .cosmos-search__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--cosmos-ink);
+}
+
+#cosmos-hero .cosmos-search__text {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--cosmos-search-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#cosmos-hero .cosmos-search__text em {
+  font-style: normal;
+  color: var(--cosmos-search-muted);
+}
+
+#cosmos-hero .cosmos-search__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: var(--cosmos-muted);
+}
+
+#cosmos-hero .cosmos-search__actions svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+#cosmos-hero .cosmos-header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+#cosmos-hero .cosmos-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 16px 24px;
+  border-radius: 9999px;
+  border: 0.5px solid transparent;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+#cosmos-hero .cosmos-btn:hover {
+  opacity: 0.88;
+}
+
+#cosmos-hero .cosmos-btn--ghost {
+  background: transparent;
+  color: var(--cosmos-muted);
+}
+
+#cosmos-hero .cosmos-btn--solid {
+  background: var(--cosmos-ink);
+  color: #fff;
+}
+
+#cosmos-hero .cosmos-btn--outline {
+  height: 56px;
+  font-size: 16px;
+  background: transparent;
+  color: var(--cosmos-ink);
+  border-color: var(--cosmos-border);
+}
+
+#cosmos-hero .cosmos-btn--lg {
+  height: 56px;
+  font-size: 16px;
+}
+
+/* --- Floating tiles (canvas recreation) --- */
+#cosmos-hero .cosmos-orbit {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#cosmos-hero .cosmos-tile {
+  position: absolute;
+  border-radius: 18px;
+  overflow: hidden;
+  transform: translate(-50%, -50%) rotate(var(--r, 0deg)) scale(var(--s, 1));
+  filter: blur(var(--blur, 0px));
+  opacity: var(--o, 1);
+  will-change: transform;
+  animation: cosmos-float var(--dur, 12s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+#cosmos-hero .cosmos-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes cosmos-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: var(--fx, 0) var(--fy, -10px); }
+}
+
+/* Tile positions — approx. spiral around center copy */
+#cosmos-hero .cosmos-tile:nth-child(1)  { left: 11%; top: 18%; width: 148px; height: 186px; --r: -14deg; --blur: 1.5px; --o: 0.95; --s: 1; --fx: 6px; --fy: -14px; --dur: 14s; --delay: -1s; }
+#cosmos-hero .cosmos-tile:nth-child(2)  { left: 22%; top: 8%;  width: 110px; height: 138px; --r: 8deg;  --blur: 4px; --o: 0.75; --s: 0.95; --fx: -8px; --fy: -10px; --dur: 11s; --delay: -3s; }
+#cosmos-hero .cosmos-tile:nth-child(3)  { left: 34%; top: 14%; width: 92px;  height: 118px; --r: -6deg; --blur: 6px; --o: 0.55; --s: 0.9; --fx: 4px; --fy: -8px; --dur: 13s; --delay: -5s; }
+#cosmos-hero .cosmos-tile:nth-child(4)  { left: 68%; top: 10%; width: 120px; height: 152px; --r: 12deg; --blur: 3px; --o: 0.8; --s: 1; --fx: -6px; --fy: -12px; --dur: 12s; --delay: -2s; }
+#cosmos-hero .cosmos-tile:nth-child(5)  { left: 82%; top: 16%; width: 140px; height: 176px; --r: -10deg; --blur: 1px; --o: 0.95; --s: 1; --fx: 8px; --fy: -16px; --dur: 15s; --delay: -4s; }
+#cosmos-hero .cosmos-tile:nth-child(6)  { left: 91%; top: 32%; width: 100px; height: 128px; --r: 16deg; --blur: 5px; --o: 0.65; --s: 0.92; --fx: -5px; --fy: -9px; --dur: 10s; --delay: -6s; }
+#cosmos-hero .cosmos-tile:nth-child(7)  { left: 8%;  top: 42%; width: 124px; height: 156px; --r: 7deg;  --blur: 2px; --o: 0.9; --s: 1; --fx: 7px; --fy: -11px; --dur: 13s; --delay: -2.5s; }
+#cosmos-hero .cosmos-tile:nth-child(8)  { left: 18%; top: 62%; width: 132px; height: 166px; --r: -18deg; --blur: 0.5px; --o: 1; --s: 1.02; --fx: -4px; --fy: -14px; --dur: 14s; --delay: -7s; }
+#cosmos-hero .cosmos-tile:nth-child(9)  { left: 6%;  top: 78%; width: 108px; height: 136px; --r: 11deg; --blur: 7px; --o: 0.45; --s: 0.88; --fx: 5px; --fy: -8px; --dur: 11s; --delay: -1.5s; }
+#cosmos-hero .cosmos-tile:nth-child(10) { left: 78%; top: 58%; width: 156px; height: 196px; --r: -8deg; --blur: 0px; --o: 1; --s: 1.05; --fx: -7px; --fy: -15px; --dur: 16s; --delay: -3.5s; }
+#cosmos-hero .cosmos-tile:nth-child(11) { left: 90%; top: 72%; width: 118px; height: 148px; --r: 9deg;  --blur: 3.5px; --o: 0.7; --s: 0.95; --fx: 6px; --fy: -10px; --dur: 12s; --delay: -8s; }
+#cosmos-hero .cosmos-tile:nth-child(12) { left: 62%; top: 82%; width: 130px; height: 164px; --r: -12deg; --blur: 5px; --o: 0.55; --s: 0.9; --fx: -5px; --fy: -9px; --dur: 13s; --delay: -4.5s; }
+
+/* --- Center content --- */
+#cosmos-hero .cosmos-hero__content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: calc(100vh - 92px);
+  min-height: calc(100dvh - 92px);
+  padding: 40px 24px 80px;
+  text-align: center;
+}
+
+#cosmos-hero .cosmos-hero__brand {
+  display: block;
+  width: 100px;
+  height: auto;
+  color: var(--cosmos-ink);
+}
+
+#cosmos-hero .cosmos-hero__title {
+  margin: 0;
+  max-width: 10ch;
+  font-size: clamp(42px, 5.2vw, 74px);
+  font-weight: 350;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--cosmos-ink);
+}
+
+#cosmos-hero .cosmos-hero__ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+#cosmos-hero .cosmos-hero__film {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cosmos-ink);
+}
+
+#cosmos-hero .cosmos-hero__film svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--cosmos-muted);
+}
+
+#cosmos-hero .cosmos-hero__film:hover {
+  opacity: 0.75;
+}
+
+/* Soft edge fade so tiles dissolve into bg */
+#cosmos-hero .cosmos-orbit::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to bottom, var(--cosmos-bg) 0%, transparent 12%, transparent 88%, var(--cosmos-bg) 100%),
+    linear-gradient(to right, var(--cosmos-bg) 0%, transparent 8%, transparent 92%, var(--cosmos-bg) 100%);
+  opacity: 0.55;
+}
+
+@media (max-width: 960px) {
+  #cosmos-hero .cosmos-header {
+    padding: 12px 16px 0;
+    height: auto;
+    min-height: 72px;
+    flex-wrap: wrap;
+  }
+
+  #cosmos-hero .cosmos-search {
+    order: 3;
+    width: 100%;
+    max-width: none;
+    height: 48px;
+    margin-top: 4px;
+  }
+
+  #cosmos-hero .cosmos-header__nav {
+    display: none;
+  }
+
+  #cosmos-hero .cosmos-tile:nth-child(n+9) {
+    display: none;
+  }
+
+  #cosmos-hero .cosmos-hero__content {
+    min-height: calc(100vh - 130px);
+    padding-bottom: 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  #cosmos-hero .cosmos-header__right .cosmos-btn--ghost {
+    display: none;
+  }
+
+  #cosmos-hero .cosmos-hero__title {
+    letter-spacing: -0.04em;
+  }
+
+  #cosmos-hero .cosmos-tile {
+    width: 88px !important;
+    height: 110px !important;
+  }
+}

@@ -1,0 +1,241 @@
+/* ===== Team 03 (Klarheit / Flowbase, 1:1) ===== */
+#klarheit-team-03 {
+  --brand--500: #0d00ff;
+  --accent--flame-orange: #ff5310;
+  --neutral--black: #000;
+  --neutral--950: #313131;
+  --neutral--600: #5d5d5d;
+  --neutral--300: #b0b0b0;
+  --neutral--200: #d1d1d1;
+  --neutral--100: #e7e7e7;
+  --neutral--white: white;
+  --text-color--primary: var(--neutral--black);
+  --text-color--secondary: var(--neutral--950);
+  --text-color--tertiary: var(--neutral--600);
+  --text-color--muted: var(--neutral--300);
+  --text-color--alternate: var(--neutral--white);
+  --text-color--accent-orange: var(--accent--flame-orange);
+  --background-color--brand-primary: var(--brand--500);
+  --background-color--accent-orange: var(--accent--flame-orange);
+  --border-color--secondary: var(--neutral--200);
+  --_layout---spacing--x-small: 0.5rem;
+  --_typography---font-family--heading: "Faculty Glyphic", sans-serif;
+  --_typography---font-size--h5: 2rem;
+  --_typography---line-height--h5: 1.25;
+  --_typography---font-weight--heading: 400;
+  --_typography---letter-spacing--h5: -0.03em;
+
+  background-color: #fff;
+  color: var(--text-color--primary);
+  padding: 8rem 5%;
+  position: relative;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#klarheit-team-03 .container-large {
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#klarheit-team-03 .max-width-xlarge {
+  width: 100%;
+  max-width: 45rem;
+}
+
+#klarheit-team-03 .max-width-large {
+  width: 100%;
+  max-width: 32rem;
+}
+
+#klarheit-team-03 .column {
+  flex-flow: column;
+  display: flex;
+}
+
+#klarheit-team-03 .w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+#klarheit-team-03 .w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+#klarheit-team-03 .overline {
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+#klarheit-team-03 .heading-style-h5 {
+  font-family: var(--_typography---font-family--heading);
+  font-size: var(--_typography---font-size--h5);
+  line-height: var(--_typography---line-height--h5);
+  font-weight: var(--_typography---font-weight--heading);
+  letter-spacing: var(--_typography---letter-spacing--h5);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+#klarheit-team-03 .text-size-medium {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#klarheit-team-03 .text-size-xsmall {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+#klarheit-team-03 .text-weight-medium {
+  font-weight: 500;
+}
+
+#klarheit-team-03 .eyebrow {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  flex-flow: column;
+  display: flex;
+}
+
+#klarheit-team-03 .eyebrow_base {
+  background-color: #e7e7e780;
+  width: 100%;
+  height: 1px;
+  position: relative;
+}
+
+#klarheit-team-03 .eyebrow_base-bar {
+  background-color: var(--border-color--secondary);
+  width: 100%;
+  height: 1px;
+}
+
+#klarheit-team-03 .team3_header {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  flex-flow: column;
+  margin-bottom: 5rem;
+  display: flex;
+}
+
+#klarheit-team-03 .team3_header-grid {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: end;
+  display: grid;
+}
+
+#klarheit-team-03 .team3_grid {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  perspective: 75rem;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(26.25rem, 1fr));
+  display: grid;
+}
+
+#klarheit-team-03 .team3_member {
+  grid-column-gap: var(--_layout---spacing--x-small);
+  grid-row-gap: var(--_layout---spacing--x-small);
+  color: var(--text-color--primary);
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  text-decoration: none;
+  display: grid;
+}
+
+#klarheit-team-03 .team3_member-avatar {
+  background-color: var(--text-color--secondary);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+#klarheit-team-03 .team3_member-avatar.is-light {
+  background-color: var(--text-color--tertiary);
+}
+
+#klarheit-team-03 .team3_member-details {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  background-color: var(--background-color--brand-primary);
+  color: var(--neutral--white);
+  border-radius: 1rem;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  display: flex;
+}
+
+#klarheit-team-03 .team3_member-details.is-orange {
+  background-color: var(--background-color--accent-orange);
+}
+
+#klarheit-team-03 .team_image {
+  z-index: 1;
+  object-fit: cover;
+  object-position: 50% 0%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  #klarheit-team-03 .heading-style-h5 {
+    font-size: 1.75rem;
+  }
+
+  #klarheit-team-03 .team3_header-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #klarheit-team-03 .team3_header {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #klarheit-team-03 .heading-style-h5 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #klarheit-team-03 .team3_member {
+    grid-template-columns: 1fr;
+  }
+
+  #klarheit-team-03 .team3_member-avatar {
+    aspect-ratio: 1;
+  }
+
+  #klarheit-team-03 .team3_member-details {
+    order: 9999;
+  }
+
+  #klarheit-team-03 .team3_grid {
+    grid-template-columns: 1fr;
+  }
+}

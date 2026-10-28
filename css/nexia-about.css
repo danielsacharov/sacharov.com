@@ -1,0 +1,433 @@
+/* Nexia Agency — section.about (scoped) */
+.nexia-about {
+  --_colors---background-color--dark: #151515;
+  --_colors---background-color--orange: #ff723a;
+  --_colors---background-color--pixel-pink: #ff64e0;
+  --_colors---background-color--secondary-color: #11a858;
+  --_colors---background-color--skywave-blue: #5d9bff;
+  --_colors---border-color--yellow-light: #fefae6;
+  --_colors---button-color--button-grey: #eaeaea;
+  --_colors---text-color--light: #fff;
+  --_colors---text-color--primary-color: #f25144;
+  --_colors---about-bg: #f2d045;
+  --_sizes---border-radius--radius-soft: 3.75rem;
+  --_sizes---container--max-width: 87rem;
+  --_sizes---default-sizes--width: 100%;
+  --_sizes---spacing--spacing-big: 2rem;
+  --_sizes---spacing--spacing-colossal: 3.75rem;
+  --_sizes---spacing--spacing-jumbo: 2rem;
+  --_sizes---spacing--spacing-large: 2.25rem;
+  --_sizes---spacing--spacing-massive: 2.5rem;
+  --_sizes---spacing--spacing-medium: 1rem;
+  --_sizes---spacing--spacing-normal: 1.25rem;
+  --_sizes---spacing--spacing-regular: 1rem;
+  --_sizes---spacing--spacing-small: 1rem;
+  --_sizes---spacing--spacing-xxsmall: 0.625rem;
+  --_typography---heading-font-sizes--h3: 2.75rem;
+  --_typography---heading-letter-spacing--h3: 0rem;
+  --_typography---heading-line-height--h3: 115%;
+  --_typography---texts-font-sizes--paragraph-m: 1rem;
+  --_typography---texts-font-sizes--paragraph-s: 0.875rem;
+  --_typography---texts-letter-spacing--paragraph-m: 0rem;
+  --_typography---texts-letter-spacing--paragraph-s: 0rem;
+  --_typography---texts-line-height--paragraph-m: 140%;
+  --_typography---texts-line-height--paragraph-s: 142.857%;
+  --font-family--display: "Zalando Sans Expanded", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family--body: "Google Sans Flex", "Google Sans", system-ui, sans-serif;
+  --font-weight--bold: 700;
+  --font-weight--semi-bold: 600;
+  font-family: var(--font-family--body);
+  color: var(--_colors---background-color--dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+.nexia-about .section.about {
+  background-color: var(--_colors---about-bg);
+  margin-top: -0.1rem;
+}
+
+.nexia-about .container {
+  width: var(--_sizes---default-sizes--width);
+  max-width: var(--_sizes---container--max-width);
+  padding-right: var(--_sizes---spacing--spacing-small);
+  padding-left: var(--_sizes---spacing--spacing-small);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nexia-about .wrapper {
+  padding-top: var(--_sizes---spacing--spacing-colossal);
+  padding-bottom: var(--_sizes---spacing--spacing-colossal);
+  grid-column-gap: var(--_sizes---spacing--spacing-jumbo);
+  grid-row-gap: var(--_sizes---spacing--spacing-jumbo);
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.nexia-about .wrapper.about {
+  grid-column-gap: var(--_sizes---spacing--spacing-massive);
+  grid-row-gap: var(--_sizes---spacing--spacing-massive);
+  padding-bottom: var(--_sizes---spacing--spacing-colossal);
+}
+
+.nexia-about .about-top {
+  width: var(--_sizes---default-sizes--width);
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50.4375rem;
+  display: flex;
+  position: relative;
+}
+
+.nexia-about .subtitle {
+  font-family: var(--font-family--body);
+  color: var(--_colors---background-color--dark);
+  font-size: var(--_typography---texts-font-sizes--paragraph-s);
+  line-height: var(--_typography---texts-line-height--paragraph-s);
+  font-weight: var(--font-weight--semi-bold);
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: none;
+}
+
+.nexia-about .subtitle.w-variant-6d1b91dd-f7bb-09e9-d75d-cd5fa252e5c2 {
+  color: var(--_colors---background-color--dark);
+  text-transform: none;
+}
+
+.nexia-about .about-title {
+  margin-top: var(--_sizes---spacing--spacing-big);
+  margin-bottom: var(--_sizes---spacing--spacing-normal);
+  font-family: var(--font-family--display);
+  color: var(--_colors---background-color--dark);
+  font-size: var(--_typography---heading-font-sizes--h3);
+  line-height: var(--_typography---heading-line-height--h3);
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.nexia-about .about-title.mob {
+  display: none;
+}
+
+.nexia-about .nexa-blank {
+  opacity: 0;
+}
+
+.nexia-about .about-para {
+  width: var(--_sizes---default-sizes--width);
+  max-width: 47.6875rem;
+  margin: 0;
+  color: var(--_colors---background-color--dark);
+  font-family: var(--font-family--body);
+  font-size: var(--_typography---texts-font-sizes--paragraph-m);
+  line-height: var(--_typography---texts-line-height--paragraph-m);
+  text-align: center;
+  letter-spacing: var(--_typography---texts-letter-spacing--paragraph-m);
+}
+
+.nexia-about .primary-button {
+  padding: var(--_sizes---spacing--spacing-xxsmall) var(--_sizes---spacing--spacing-medium);
+  border-radius: var(--_sizes---border-radius--radius-soft);
+  background-color: var(--_colors---button-color--button-grey);
+  color: var(--_colors---background-color--dark);
+  font-weight: var(--font-weight--semi-bold);
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  font-family: var(--font-family--inter);
+  font-size: 1rem;
+}
+
+.nexia-about .primary-button.w-variant-b40dcd44-b707-5b8f-a2a6-302004093bf4,
+.nexia-about .primary-button.white {
+  background-color: var(--_colors---text-color--light);
+}
+
+.nexia-about .button-texts {
+  height: 1.5rem;
+  position: relative;
+  overflow: clip;
+}
+
+.nexia-about .button-text {
+  line-height: 1.5rem;
+  white-space: nowrap;
+  transition: transform 0.35s ease;
+}
+
+.nexia-about .button-text._01 {
+  transform: translateY(0);
+}
+
+.nexia-about .button-text._02 {
+  position: absolute;
+  inset: 0;
+  transform: translateY(110%);
+}
+
+.nexia-about .primary-button:hover .button-text._01 {
+  transform: translateY(-110%);
+}
+
+.nexia-about .primary-button:hover .button-text._02 {
+  transform: translateY(0);
+}
+
+.nexia-about .about-title.desk {
+  line-height: 1.35;
+}
+
+.nexia-about .about-icon {
+  display: inline-block;
+  width: 4.25rem;
+  height: auto;
+  vertical-align: middle;
+  position: relative;
+  inset: auto;
+  margin: 0 0.15em;
+}
+
+.nexia-about .about-icon._02 {
+  width: 4.5rem;
+  transform: rotate(8deg);
+}
+
+.nexia-about .about-icon._03 {
+  width: 2.5rem;
+}
+
+.nexia-about .about-icon._04 {
+  width: 2.6rem;
+}
+
+.nexia-about .growth-text {
+  background-color: var(--_colors---background-color--skywave-blue);
+  font-size: var(--_typography---texts-font-sizes--paragraph-s);
+  line-height: var(--_typography---texts-line-height--paragraph-s);
+  font-weight: var(--font-weight--bold);
+  text-align: center;
+  letter-spacing: var(--_typography---texts-letter-spacing--paragraph-s);
+  text-transform: uppercase;
+  border-radius: 0.375rem;
+  padding: 0.62rem;
+  position: absolute;
+  inset: 8.5rem 14rem auto auto;
+  transform: rotate(-7deg);
+  color: var(--_colors---background-color--dark);
+  font-family: var(--font-family--fredoka);
+}
+
+.nexia-about .growth-text._02 {
+  background-color: var(--_colors---background-color--pixel-pink);
+  inset: auto auto 14.5rem 9.5rem;
+  transform: rotate(7deg);
+}
+
+.nexia-about .pill-drops {
+  width: var(--_sizes---default-sizes--width);
+  justify-content: center;
+  align-items: flex-end;
+  height: 18rem;
+  display: flex;
+  overflow: clip;
+}
+
+.nexia-about .about-bottom {
+  width: var(--_sizes---default-sizes--width);
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 26rem;
+  display: flex;
+  position: relative;
+}
+
+.nexia-about .about-pills {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.nexia-about .about-pill {
+  border: 1px solid var(--_colors---text-color--primary-color);
+  border-radius: var(--_sizes---border-radius--radius-soft);
+  background-color: var(--_colors---border-color--yellow-light);
+  perspective: none;
+  font-family: var(--font-family--fredoka);
+  color: var(--_colors---background-color--dark);
+  font-size: var(--_typography---texts-font-sizes--paragraph-m);
+  line-height: var(--_typography---texts-line-height--paragraph-m);
+  font-weight: var(--font-weight--semi-bold);
+  letter-spacing: var(--_typography---texts-letter-spacing--paragraph-m);
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  padding: 0.62rem 1.25rem;
+  display: flex;
+  will-change: transform;
+}
+
+.nexia-about .about-pill._01 {
+  z-index: 3;
+  position: relative;
+  transform: translate(1rem, -0.25rem) rotate(-5.928deg);
+}
+
+.nexia-about .about-pill._02 {
+  z-index: 1;
+  position: relative;
+  transform: translate(-0.4rem);
+}
+
+.nexia-about .about-pill._03 {
+  transform: translate(-1.1rem, -0.4rem) rotate(13.667deg);
+}
+
+.nexia-about .about-pill._04 {
+  z-index: 3;
+  position: relative;
+  transform: translate(1.5rem);
+}
+
+.nexia-about .about-pill._05 {
+  z-index: 2;
+  position: relative;
+  transform: translate(0.8rem, 0.1rem) rotate(16.59deg);
+}
+
+.nexia-about .about-pill._06 {
+  z-index: 4;
+  position: relative;
+  transform: translate(1.25rem) rotate(-12.011deg);
+}
+
+.nexia-about .about-pill._07 {
+  z-index: 4;
+  position: relative;
+  transform: translate(-1.5rem, -1.5rem) rotate(48.236deg);
+}
+
+.nexia-about .about-pill._08 {
+  z-index: 4;
+  position: relative;
+  transform: translate(-0.7rem) rotate(-12.163deg);
+}
+
+.nexia-about .about-pill._09 {
+  z-index: 4;
+  position: relative;
+  transform: translate(-2.75rem, 1rem);
+}
+
+.nexia-about .about-pill._10 {
+  z-index: 5;
+  position: relative;
+  transform: rotate(-13.011deg);
+}
+
+.nexia-about .about-pill._11 {
+  transform: translate(-2.1rem, 1.2rem) rotate(-5.643deg);
+}
+
+.nexia-about .about-slate {
+  max-width: 19.75rem;
+  height: auto;
+}
+
+.nexia-about .about-continue {
+  width: 6.5rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  inset: -4.5rem 0% auto 4rem;
+}
+
+@media screen and (max-width: 991px) {
+  .nexia-about {
+    --_typography---heading-font-sizes--h3: 2.25rem;
+  }
+
+  .nexia-about .about-top {
+    max-width: 42rem;
+  }
+
+  .nexia-about .wrapper.about {
+    padding-top: var(--_sizes---spacing--spacing-small);
+  }
+
+  .nexia-about .growth-text {
+    display: none;
+  }
+
+  .nexia-about .pill-drops {
+    height: 12rem;
+  }
+
+  .nexia-about .about-slate {
+    max-width: 14rem;
+  }
+
+  .nexia-about .about-continue {
+    width: 5rem;
+    top: -3.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nexia-about {
+    --_typography---heading-font-sizes--h3: 1.5rem;
+  }
+
+  .nexia-about .about-top {
+    max-width: 30rem;
+  }
+
+  .nexia-about .about-title {
+    margin-top: var(--_sizes---spacing--spacing-regular);
+    margin-bottom: var(--_sizes---spacing--spacing-medium);
+  }
+
+  .nexia-about .about-title.desk {
+    display: none;
+  }
+
+  .nexia-about .about-title.mob {
+    display: block;
+  }
+
+  .nexia-about .wrapper.about {
+    padding-top: var(--_sizes---spacing--spacing-colossal);
+    grid-column-gap: var(--_sizes---spacing--spacing-large);
+    grid-row-gap: var(--_sizes---spacing--spacing-large);
+  }
+
+  .nexia-about .about-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .nexia-about {
+    --_typography---heading-font-sizes--h3: 1.25rem;
+  }
+
+  .nexia-about .about-title {
+    margin-bottom: var(--_sizes---spacing--spacing-xxsmall);
+  }
+
+  .nexia-about .about-pill {
+    font-size: var(--_typography---texts-font-sizes--paragraph-s);
+    line-height: var(--_typography---texts-line-height--paragraph-s);
+    letter-spacing: var(--_typography---texts-letter-spacing--paragraph-s);
+    padding: 0.5rem 0.9rem;
+  }
+}

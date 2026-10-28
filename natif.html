@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="de" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <base href="./">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI, made usable — natif.ai App Redesign | Daniel Sacharov</title>
+    <meta name="description" content="Case Study natif.ai: From chaos to clarity — product redesign for a complex AI app.">
+    <meta name="keywords" content="natif.ai, App Redesign, UX Case Study, UI Design, Design System, B2B SaaS, Product Design, Daniel Sacharov">
+    <meta name="author" content="Daniel Sacharov">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://www.sacharov.com/natif.html">
+    <link rel="alternate" hreflang="de" href="https://www.sacharov.com/natif.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.sacharov.com/natif.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="From chaos to clarity — natif.ai | Daniel Sacharov">
+    <meta property="og:description" content="natif.ai: from a cluttered UI to a clean product redesign.">
+    <meta property="og:url" content="https://www.sacharov.com/natif.html">
+    <meta property="og:site_name" content="Daniel Sacharov – UX/UI Designer">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://www.sacharov.com/assets/projects/natif1/workflow-overview-nachher.jpg">
+    <meta property="og:image:width" content="2226">
+    <meta property="og:image:height" content="1935">
+    <meta property="og:image:alt" content="natif.ai App Redesign — From chaos to clarity">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="From chaos to clarity — natif.ai | Daniel Sacharov">
+    <meta name="twitter:description" content="App redesign: from a chaotic interface to a clear product.">
+    <meta name="twitter:image" content="https://www.sacharov.com/assets/projects/natif1/workflow-overview-nachher.jpg">
+    <meta name="twitter:image:alt" content="natif.ai App Redesign — From chaos to clarity">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.sacharov.com/#website",
+          "url": "https://www.sacharov.com",
+          "name": "Daniel Sacharov – UX/UI Designer"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.sacharov.com/natif.html#webpage",
+          "url": "https://www.sacharov.com/natif.html",
+          "name": "From chaos to clarity — natif.ai | Daniel Sacharov",
+          "description": "From chaos to clarity — app redesign for natif.ai.",
+          "inLanguage": "de",
+          "isPartOf": { "@id": "https://www.sacharov.com/#website" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://www.sacharov.com/assets/projects/natif1/workflow-overview-nachher.jpg",
+            "width": 2226,
+            "height": 1935
+          },
+          "mainEntity": { "@id": "https://www.sacharov.com/natif.html#project" },
+          "breadcrumb": { "@id": "https://www.sacharov.com/natif.html#breadcrumb" }
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://www.sacharov.com/natif.html#project",
+          "name": "natif.ai App Redesign",
+          "headline": "From chaos to clarity — App redesign for natif.ai",
+          "description": "Product redesign: from a messy UI to a coherent app.",
+          "author": { "@id": "https://www.sacharov.com/#person" },
+          "image": "https://www.sacharov.com/assets/projects/natif1/workflow-overview-nachher.jpg",
+          "genre": "Design case study",
+          "keywords": "UX Research, UX Design, UI Design, Digital Health, Blood test results, Patient experience"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.sacharov.com/#person",
+          "name": "Daniel Sacharov",
+          "url": "https://www.sacharov.com",
+          "jobTitle": "UX/UI Designer",
+          "sameAs": ["https://www.linkedin.com/in/sacharov/"]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.sacharov.com/natif.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Start",
+              "item": "https://www.sacharov.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "From chaos to clarity",
+              "item": "https://www.sacharov.com/natif.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32-1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css?v=20260907-phone">
+    <link rel="stylesheet" href="css/nerdstack-footer.css?v=20260827-f">
+    <script async src="https://plausible.io/js/pa--3S-kQAgYRJ7SBbwj0ShH.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+    <script src="js/vendor/gsap.min.js"></script>
+    <script src="js/vendor/ScrollTrigger.min.js"></script>
+</head>
+<body class="page-prevent-health page-natif page-transition-enter">
+    <script src="js/page-transition.js?v=20260831-hash2"></script>
+    <div class="container" id="main-container">
+        <div class="wrapper">
+            <div class="main-content main-content--case">
+                <div class="header-wrapper header-wrapper--home">
+                    <div class="logo logo--home">
+                        <a href="/"><img id="logo-img-natif" src="images/logo-normal.svg" alt="Daniel Sacharov Logo"></a>
+                        <span class="logo-tooltip" id="logo-tooltip-natif">To Homepage</span>
+                    </div>
+                                        <div class="header__navs">
+                    <nav class="header__nav header__nav--left" aria-label="Main">
+<a data-elastic-pulse-btn="" href="/" class="elastic-pulse-btn-navi">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Start</span>
+                            </div>
+                        </a>
+<a data-elastic-pulse-btn="" href="#" class="elastic-pulse-btn-navi navi-coming-soon">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">About</span>
+                            </div>
+                            <span class="navi-tooltip">Coming Soon</span>
+                        </a>
+<a data-elastic-pulse-btn="" href="/#success-stories" class="elastic-pulse-btn-navi">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Work</span>
+                            </div>
+                        </a>
+                    </nav>
+                    <nav class="header__nav header__nav--right" aria-label="More">
+<a data-elastic-pulse-btn="" href="#" class="elastic-pulse-btn-navi navi-coming-soon">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Skills</span>
+                            </div>
+                            <span class="navi-tooltip">Coming Soon</span>
+                        </a>
+<a data-elastic-pulse-btn="" href="#" class="elastic-pulse-btn-navi navi-coming-soon">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Blog</span>
+                            </div>
+                            <span class="navi-tooltip">Coming Soon</span>
+                        </a>
+<a data-elastic-pulse-btn="" href="mailto:daniel@sacharov.com" class="elastic-pulse-btn-navi">
+                            <div data-elastic-pulse-target="" class="elastic-pulse-btn-navi__content">
+                                <span class="elastic-pulse-btn-navi__span">Contact</span>
+                            </div>
+                        </a>
+                    </nav>
+                    </div>
+                </div>
+
+                <section class="prevent-hero">
+                    <div class="prevent-hero__video-wrap">
+                        <video class="prevent-hero__video" autoplay muted loop playsinline aria-hidden="true">
+                            <source src="assets/projects/natif1/hero.mp4" type="video/mp4">
+                        </video>
+                        <div class="prevent-hero__overlay"></div>
+                    </div>
+                    <div class="prevent-hero__content">
+                        <h1 class="hero-title prevent-hero__title" style="opacity: 0;">AI, made usable</h1>
+                        <div class="prevent-hero__text slide-up" style="animation-delay: 1.4s; opacity: 0;">
+                            <p class="hero-subtitle">Turning a complex AI platform into a clear, scalable product experience</p>
+                        </div>
+                        <div class="prevent-hero__tags slide-up" style="animation-delay: 1.6s; opacity: 0;">
+                            <span class="prevent-hero__tag">Desktop</span>
+                            <span class="prevent-hero__tag">UX</span>
+                            <span class="prevent-hero__tag">Research</span>
+                            <span class="prevent-hero__tag">UI</span>
+                            <span class="prevent-hero__tag">Redesign</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <nav class="case-crumbs" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Start</a></li>
+                <li aria-current="page">AI, made usable</li>
+            </ol>
+        </nav>
+
+        <section class="prevent-context prevent-context--first prevent-context--image-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Context</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Powerful functionality hidden behind growing product complexity</li>
+                        <li class="prevent-context__item">Weak hierarchy making onboarding and core workflows difficult to understand</li>
+                        <li class="prevent-context__item">Redesign focused on clarity, scalability, and faster time to value</li>
+                    </ul>
+                </div>
+                <div class="prevent-context__illustration">
+                    <img src="assets/projects/natif1/ai-training.jpg" alt="natif.ai — current training metrics on a laptop, from the legacy product" width="2514" height="2514" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--image-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__illustration">
+                    <img src="assets/projects/natif1/interview.jpg" alt="Research interviews with existing natif.ai customers" width="1200" height="900" loading="lazy">
+                </div>
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Research</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Customer interviews to uncover real friction across key workflows</li>
+                        <li class="prevent-context__item">Competitive analysis to understand established patterns and opportunities</li>
+                        <li class="prevent-context__item">Priorities driven by observed user problems rather than assumptions</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="natif-ba" aria-label="Before and after comparison">
+            <div class="natif-ba__grid">
+                <div class="natif-ba__col natif-ba__col--main">
+                    <div class="natif-ba__slider" data-ba-press tabindex="0" role="button" aria-pressed="false" aria-label="Press and hold to see the before">
+                        <img
+                            class="natif-ba__img natif-ba__img--after"
+                            src="assets/projects/natif1/workflow-overview-nachher.jpg"
+                            alt="Workflow overview — after the redesign"
+                            width="2226"
+                            height="1935"
+                            draggable="false"
+                            loading="lazy"
+                        >
+                        <div class="natif-ba__before" data-ba-before aria-hidden="true">
+                            <img
+                                class="natif-ba__img natif-ba__img--before"
+                                src="assets/projects/natif1/workflow-overview-vorher.jpg"
+                                alt="Workflow overview — before the redesign"
+                                width="2226"
+                                height="1935"
+                                draggable="false"
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="natif-ba__layer" data-ba-layer aria-hidden="true">
+                            <span class="natif-ba__layer-label">
+                                <span class="natif-ba__layer-icon" aria-hidden="true">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                        <path d="M8.5 11.5V7.8a1.8 1.8 0 0 1 3.6 0V11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                                        <path d="M12.1 11.2V8.6a1.6 1.6 0 0 1 3.2 0V12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                                        <path d="M15.3 12.1v-1.4a1.5 1.5 0 0 1 3 0v3.8c0 2.7-1.7 5-4.8 5.5-2.2.35-4.5-.4-5.7-2.1L6 15.2a1.7 1.7 0 0 1 2.5-2.3l1.2 1.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                Press and hold to see the before
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-three-images prevent-reveal">
+            <div class="prevent-three-images__grid">
+                <div class="prevent-three-images__col prevent-three-images__col--bento">
+                    <div class="prevent-bento">
+                        <div class="prevent-bento__cell"><img src="assets/projects/natif1/custom-fields.jpg" alt="natif.ai — custom fields UI" width="400" height="300" loading="lazy"></div>
+                        <div class="prevent-bento__cell"><img src="assets/projects/natif1/upload.jpg" alt="natif.ai — upload new training data on a laptop" width="1471" height="1470" loading="lazy"></div>
+                        <div class="prevent-bento__cell prevent-bento__cell--wide"><img src="assets/projects/natif1/doc-specs.jpg" alt="natif.ai — document specs UI" width="400" height="300" loading="lazy"></div>
+                    </div>
+                </div>
+                <div class="prevent-three-images__col">
+                    <img src="assets/projects/natif1/figma.jpg" alt="natif.ai — Figma overview of the product" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--image-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Progressive disclosure</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Complex configuration broken into clear levels and decisions</li>
+                        <li class="prevent-context__item">Advanced options revealed only when relevant</li>
+                        <li class="prevent-context__item">Lower cognitive load without removing flexibility for expert users</li>
+                    </ul>
+                </div>
+                <div class="prevent-context__illustration" aria-hidden="true">
+                    <div class="natif-dyn" data-natif-dyn data-step="0">
+                        <div class="natif-dyn__scene">
+                            <div class="natif-dyn__card">
+                                <div class="natif-dyn__header">
+                                    <span class="natif-dyn__header-title">Optional Settings</span>
+                                    <span class="natif-dyn__chevron natif-dyn__chevron--up">
+                                        <img src="assets/projects/natif1/chevron-up.svg" alt="" width="14" height="7">
+                                    </span>
+                                </div>
+                                <div class="natif-dyn__body">
+                                    <div class="natif-dyn__section-title">
+                                        <img class="natif-dyn__section-icon" src="assets/projects/natif1/calendar-cog.svg" alt="" width="20" height="20">
+                                        <span>Interpretation Rule for Incomplete Dates</span>
+                                    </div>
+                                    <p class="natif-dyn__question">
+                                        Can it happen that date values are incomplete in your documents (e.g. “12 June” without a year)?
+                                        <img class="natif-dyn__help" src="assets/projects/natif1/question-mark.svg" alt="" width="18" height="18">
+                                    </p>
+                                    <div class="natif-dyn__field">
+                                        <div class="natif-dyn__select">
+                                            <span class="natif-dyn__value" data-dyn-value>No, Always Complete (Default)</span>
+                                            <span class="natif-dyn__label">Answer</span>
+                                            <span class="natif-dyn__chevron natif-dyn__chevron--select">
+                                                <img src="assets/projects/natif1/chevron-sm.svg" alt="" width="8" height="4">
+                                            </span>
+                                        </div>
+                                        <div class="natif-dyn__menu">
+                                            <div class="natif-dyn__viewport" data-dyn-viewport>
+                                                <div class="natif-dyn__track" data-dyn-track>
+                                                    <div class="natif-dyn__panel" data-dyn-panel="0">
+                                                        <div class="natif-dyn__option">No, Always Complete (Default)</div>
+                                                        <div class="natif-dyn__option" data-dyn-yes>Yes, Can Be Incomplete</div>
+                                                    </div>
+                                                    <div class="natif-dyn__panel" data-dyn-panel="1">
+                                                        <div class="natif-dyn__option natif-dyn__option--back">
+                                                            <span class="natif-dyn__caret natif-dyn__caret--back"><img src="assets/projects/natif1/chevron-nav.svg" alt="" width="6" height="3"></span>
+                                                            Yes, Can Be Partial
+                                                        </div>
+                                                        <div class="natif-dyn__hint">What might be missing?</div>
+                                                        <div class="natif-dyn__option">
+                                                            <span class="natif-dyn__caret natif-dyn__caret--next"><img src="assets/projects/natif1/chevron-nav.svg" alt="" width="6" height="3"></span>
+                                                            Year
+                                                        </div>
+                                                        <div class="natif-dyn__option">
+                                                            <span class="natif-dyn__caret natif-dyn__caret--next"><img src="assets/projects/natif1/chevron-nav.svg" alt="" width="6" height="3"></span>
+                                                            Month
+                                                        </div>
+                                                        <div class="natif-dyn__option" data-dyn-day>
+                                                            <span class="natif-dyn__caret natif-dyn__caret--next"><img src="assets/projects/natif1/chevron-nav.svg" alt="" width="6" height="3"></span>
+                                                            Day
+                                                        </div>
+                                                    </div>
+                                                    <div class="natif-dyn__panel" data-dyn-panel="2">
+                                                        <div class="natif-dyn__option natif-dyn__option--back">
+                                                            <span class="natif-dyn__caret natif-dyn__caret--back"><img src="assets/projects/natif1/chevron-nav.svg" alt="" width="6" height="3"></span>
+                                                            Fill Missing Day With Constant
+                                                        </div>
+                                                        <div class="natif-dyn__hint natif-dyn__hint--note">Note the limited number of days in different months. For example, February has only 28 days. If a day exceeds the limit (e.g., 30 for February), it will automatically adjust to the last valid day of that month.</div>
+                                                        <div class="natif-dyn__days" data-dyn-days></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="natif-dyn__cursor" data-dyn-cursor>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M5.5 3.5 18 12.2l-5.4 1.2 2.5 6.3-2.4.9-2.6-6.4L5.5 18.8V3.5Z" fill="#111" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--image-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__illustration">
+                    <img src="assets/projects/natif1/dashboard.jpg" alt="natif.ai — dynamic workflow dashboard on a laptop" width="2000" height="2001" loading="lazy">
+                </div>
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Highly dynamic</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Interface adapting to workflow, configuration, and system state</li>
+                        <li class="prevent-context__item">Relevant tools and information surfaced contextually</li>
+                        <li class="prevent-context__item">Complex workflows kept flexible without overwhelming the workspace</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--image-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Guidance</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Contextual guidance at critical decision points</li>
+                        <li class="prevent-context__item">Clear paths for new users without slowing down experienced users</li>
+                        <li class="prevent-context__item">Help integrated into the workflow instead of separated from it</li>
+                    </ul>
+                </div>
+                <div class="prevent-context__illustration">
+                    <img src="assets/projects/natif1/help.jpg" alt="natif.ai — Master Data Matching guide on a laptop" width="2663" height="2663" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="prevent-context prevent-context--image-only prevent-reveal">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__illustration">
+                    <img src="assets/projects/natif1/accessibility.jpg?v=20260829-orig" alt="natif.ai — transcription workspace with virtual keyboard" width="1751" height="1752" loading="lazy">
+                </div>
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Accessibility</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">Keyboard navigation, contrast, hierarchy, and clear interaction states</li>
+                        <li class="prevent-context__item">Accessible patterns considered as part of the core experience</li>
+                        <li class="prevent-context__item">Virtual keyboard supporting workflows without physical keyboard access</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="prevent-context prevent-context--image-only prevent-reveal" aria-label="Impact">
+            <div class="prevent-context__grid">
+                <div class="prevent-context__text">
+                    <h2 class="prevent-context__title">Impact</h2>
+                    <ul class="prevent-context__list">
+                        <li class="prevent-context__item">2.4× more new users trained at least one AI agent</li>
+                        <li class="prevent-context__item">37% reduction in time to first live workflow</li>
+                        <li class="prevent-context__item">Faster setup and clearer workflows from onboarding to advanced configuration</li>
+                    </ul>
+                </div>
+                <div class="prevent-context__illustration">
+                    <img src="assets/projects/natif1/laptop.jpg" alt="natif.ai — master data matching rules on a laptop" width="1561" height="1562" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="natif-ba natif-ba--stack prevent-reveal" aria-label="Fields and training data before and after">
+            <div class="natif-ba__grid natif-ba__grid--stack">
+                <div class="natif-ba__slider" data-ba-press tabindex="0" role="button" aria-pressed="false" aria-label="Press and hold to see the before — fields">
+                    <img
+                        class="natif-ba__img natif-ba__img--after"
+                        src="assets/projects/natif1/fields-nachher.jpg"
+                        alt="Custom fields — after the redesign"
+                        draggable="false"
+                        loading="lazy"
+                    >
+                    <div class="natif-ba__before" data-ba-before aria-hidden="true">
+                        <img
+                            class="natif-ba__img natif-ba__img--before"
+                            src="assets/projects/natif1/fields-vorher.jpg"
+                            alt="Custom fields — before the redesign"
+                            draggable="false"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="natif-ba__layer" data-ba-layer aria-hidden="true">
+                        <span class="natif-ba__layer-label">
+                            <span class="natif-ba__layer-icon" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.5 11.5V7.8a1.8 1.8 0 0 1 3.6 0V11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                                    <path d="M12.1 11.2V8.6a1.6 1.6 0 0 1 3.2 0V12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                                    <path d="M15.3 12.1v-1.4a1.5 1.5 0 0 1 3 0v3.8c0 2.7-1.7 5-4.8 5.5-2.2.35-4.5-.4-5.7-2.1L6 15.2a1.7 1.7 0 0 1 2.5-2.3l1.2 1.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            Press and hold to see the before
+                        </span>
+                    </div>
+                </div>
+                <div class="natif-ba__slider" data-ba-press tabindex="0" role="button" aria-pressed="false" aria-label="Press and hold to see the before — training data">
+                    <img
+                        class="natif-ba__img natif-ba__img--after"
+                        src="assets/projects/natif1/training-data-nachher.jpg"
+                        alt="Training data — after the redesign"
+                        draggable="false"
+                        loading="lazy"
+                    >
+                    <div class="natif-ba__before" data-ba-before aria-hidden="true">
+                        <img
+                            class="natif-ba__img natif-ba__img--before"
+                            src="assets/projects/natif1/training-data-vorher.jpg"
+                            alt="Training data — before the redesign"
+                            draggable="false"
+                            loading="lazy"
+                        >
+                    </div>
+                    <div class="natif-ba__layer" data-ba-layer aria-hidden="true">
+                        <span class="natif-ba__layer-label">
+                            <span class="natif-ba__layer-icon" aria-hidden="true">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.5 11.5V7.8a1.8 1.8 0 0 1 3.6 0V11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                                    <path d="M12.1 11.2V8.6a1.6 1.6 0 0 1 3.2 0V12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                                    <path d="M15.3 12.1v-1.4a1.5 1.5 0 0 1 3 0v3.8c0 2.7-1.7 5-4.8 5.5-2.2.35-4.5-.4-5.7-2.1L6 15.2a1.7 1.7 0 0 1 2.5-2.3l1.2 1.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            Press and hold to see the before
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-next" aria-label="More work">
+            <h2 class="case-next__heading">More work</h2>
+            <nav class="case-next__grid">
+                <a class="case-next__card case-next__card--prevent" href="/prevent.html">
+                    <video class="case-next__card-video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/prevent/smartphone.mp4" type="video/mp4">
+                    </video>
+                    <h3>Results into action</h3>
+                    <p>Prevent Health App — from static lab results to clear next steps.</p>
+                </a>
+                <a class="case-next__card case-next__card--native" href="/native.html">
+                    <video class="case-next__card-video" autoplay muted loop playsinline aria-hidden="true">
+                        <source src="assets/projects/native-experience/phone.mp4?v=2" type="video/mp4">
+                    </video>
+                    <h3>Same product, native experience</h3>
+                    <p>Cross-platform analytics app, rebuilt on native iOS and Android patterns.</p>
+                </a>
+            </nav>
+        </section>
+
+    </div>
+    <!-- Nerdstack Footer 1 (BYQ) — adapted -->
+    <footer class="ns-footer" aria-label="Footer">
+      <div class="ns-footer__inner">
+        <div class="master-footer">
+          <div class="footer_top-tile">
+            <div class="left-footer">
+              <a class="brand_footer" href="/" aria-label="Daniel Sacharov — home">
+                <img loading="lazy" src="images/logo-normal.svg" alt="Daniel Sacharov">
+              </a>
+            </div>
+            <div class="right-footer">
+              <div class="footer_columns">
+                <div class="footer-column">
+                  <div class="footer-column__title">Explore</div>
+                  <div class="footer_links-column">
+                    <a class="link_footer" href="/"><div>Start</div></a>
+                    <a class="link_footer" href="#"><div>About</div></a>
+                    <a class="link_footer" href="#"><div>Work</div></a>
+                    <a class="link_footer" href="#"><div>Skills</div></a>
+                    <a class="link_footer" href="#"><div>Blog</div></a>
+                    <a class="link_footer" href="mailto:daniel@sacharov.com"><div>Contact</div></a>
+                  </div>
+                </div>
+                <div class="footer-column">
+                  <div class="footer-column__title">Connect</div>
+                  <div class="footer_links-column">
+                    <a class="link_footer" href="mailto:daniel@sacharov.com"><div>daniel@sacharov.com</div></a>
+                    <a class="link_footer" href="tel:+491792064054"><div>+49 179 2064 054</div></a>
+                  </div>
+                </div>
+                <div class="footer-column">
+                  <div class="footer-column__title">Legal</div>
+                  <div class="footer_links-column">
+                    <a class="link_footer" href="/impressum.html"><div>Impressum</div></a>
+                    <a class="link_footer" href="/datenschutz.html"><div>Datenschutz</div></a>
+                  </div>
+                </div>
+                <div class="footer-column">
+                  <div class="footer-column__title">Social</div>
+                  <div class="footer_links-column">
+                    <a class="link_footer" href="https://www.instagram.com/sacharovcom/" target="_blank" rel="noopener noreferrer"><div>Instagram</div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom-tile">
+            <p class="footer_copy">© 2026 Daniel Sacharov</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="modal-impressum" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-impressum-title">
+        <button class="modal__close" type="button" data-modal-close>&times;</button>
+        <h2 id="modal-impressum-title" class="modal__title">Impressum</h2>
+        <p class="modal__text">Angaben gemäß § 5 TMG</p>
+        <p class="modal__text">
+          Daniel Sacharov<br>
+          Peter-Eich-Str. 65<br>
+          66386 Sankt Ingbert
+        </p>
+        <p class="modal__text">
+          E-Mail: <a href="mailto:daniel@sacharov.com">daniel@sacharov.com</a><br>
+          Telefon: <a href="tel:+491792064054">0179 20 64 054</a>
+        </p>
+        <p class="modal__text">
+          USt-IdNr.: DE321885908
+        </p>
+      </div>
+    </div>
+
+    <!-- Datenschutz Modal -->
+    <div class="modal" id="modal-datenschutz" aria-hidden="true">
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-datenschutz-title">
+        <button class="modal__close" type="button" data-modal-close>&times;</button>
+        <h2 id="modal-datenschutz-title" class="modal__title">Datenschutzerklärung</h2>
+        
+        <p class="modal__text"><strong>1. Verantwortlicher</strong></p>
+        <p class="modal__text">Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>
+        <p class="modal__text">
+          Daniel Sacharov<br>
+          Peter-Eich-Str. 65<br>
+          66386 Sankt Ingbert
+        </p>
+        <p class="modal__text">
+          E-Mail: <a href="mailto:daniel@sacharov.com">daniel@sacharov.com</a><br>
+          Telefon: <a href="tel:+491792064054">0179 20 64 054</a><br>
+          USt-IdNr.: DE321885908
+        </p>
+
+        <p class="modal__text"><strong>2. Allgemeine Hinweise</strong></p>
+        <p class="modal__text">
+          Der Schutz Ihrer persönlichen Daten ist mir ein besonderes Anliegen.
+          Ich verarbeite personenbezogene Daten ausschließlich im Rahmen der gesetzlichen Bestimmungen der Datenschutz-Grundverordnung (DSGVO) sowie der geltenden nationalen Datenschutzgesetze.
+        </p>
+        <p class="modal__text">
+          Diese Website ist eine statische Website und dient der Bereitstellung von Informationen.
+          Es werden keine Formulare, keine externen Plugins und keine eingebetteten Inhalte von Drittanbietern verwendet.
+          Für die Webanalyse wird Plausible Analytics eingesetzt, ein datenschutzfreundlicher Dienst ohne Cookies.
+        </p>
+
+        <p class="modal__text"><strong>3. Erhebung und Speicherung personenbezogener Daten</strong></p>
+        <p class="modal__text">
+          Beim Aufruf dieser Website werden durch den Hosting-Provider automatisch folgende Daten erhoben und temporär in sogenannten Server-Logfiles gespeichert:
+        </p>
+        <ul class="modal__text" style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
+          <li>IP-Adresse</li>
+          <li>Datum und Uhrzeit der Anfrage</li>
+          <li>Browsertyp und Browserversion</li>
+          <li>verwendetes Betriebssystem</li>
+          <li>Referrer-URL</li>
+          <li>aufgerufene Seite/Datei</li>
+        </ul>
+        <p class="modal__text">
+          Diese Daten sind technisch erforderlich, um die Website korrekt auszuliefern und die Systemsicherheit zu gewährleisten.
+          Eine Zusammenführung dieser Daten mit anderen Datenquellen erfolgt nicht.
+        </p>
+        <p class="modal__text">
+          <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der sicheren und stabilen Bereitstellung der Website)
+        </p>
+
+        <p class="modal__text"><strong>4. Cookies</strong></p>
+        <p class="modal__text">Diese Website verwendet keine Cookies. Das eingesetzte Analysetool Plausible Analytics arbeitet ohne Cookies und speichert keine personenbezogenen Daten.</p>
+
+        <p class="modal__text"><strong>5. Tracking- und Analysetools</strong></p>
+        <p class="modal__text">
+          Diese Website verwendet Plausible Analytics, einen datenschutzfreundlichen Webanalysedienst. Plausible Analytics verwendet keine Cookies und speichert keine personenbezogenen Daten. Es werden ausschließlich aggregierte, anonymisierte Daten erfasst (z. B. Seitenaufrufe, Verweildauer, Herkunftsländer). Die Daten werden auf Servern in der EU gespeichert.
+        </p>
+        <p class="modal__text">
+          <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Analyse der Website-Nutzung zur Verbesserung des Angebots)
+        </p>
+        <p class="modal__text">
+          Weitere Informationen finden Sie in der Datenschutzerklärung von Plausible: <a href="https://plausible.io/data-policy" target="_blank" rel="noopener">https://plausible.io/data-policy</a>
+        </p>
+
+        <p class="modal__text"><strong>6. Externe Inhalte und Dienste</strong></p>
+        <p class="modal__text">
+          Diese Website bindet keine externen Inhalte ein (z. B. YouTube, Google Maps, Social Media Plugins oder externe Skripte von Drittanbietern).
+          Für die Webanalyse wird Plausible Analytics verwendet, ein datenschutzfreundlicher Dienst, der keine personenbezogenen Daten erfasst.
+        </p>
+
+        <p class="modal__text"><strong>7. Kontaktaufnahme</strong></p>
+        <p class="modal__text">
+          Eine Kontaktaufnahme ist ausschließlich über die angegebenen Kontaktdaten (E-Mail oder Telefon) möglich.
+          Dabei werden die übermittelten personenbezogenen Daten nur zum Zweck der Bearbeitung der Anfrage gespeichert und nicht an Dritte weitergegeben.
+        </p>
+        <p class="modal__text">
+          <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Vorvertrag) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Kommunikation)
+        </p>
+
+        <p class="modal__text"><strong>8. Weitergabe von Daten</strong></p>
+        <p class="modal__text">Eine Weitergabe personenbezogener Daten an Dritte findet nicht statt.</p>
+
+        <p class="modal__text"><strong>9. Speicherdauer</strong></p>
+        <p class="modal__text">
+          Personenbezogene Daten werden nur so lange gespeichert, wie dies zur Erreichung des jeweiligen Zwecks erforderlich ist oder gesetzliche Aufbewahrungsfristen bestehen.
+        </p>
+
+        <p class="modal__text"><strong>10. Rechte der betroffenen Person</strong></p>
+        <p class="modal__text">Sie haben jederzeit das Recht auf:</p>
+        <ul class="modal__text" style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
+          <li>Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)</li>
+          <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+          <li>Löschung Ihrer Daten (Art. 17 DSGVO)</li>
+          <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+          <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+          <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+        </ul>
+        <p class="modal__text">
+          Außerdem haben Sie das Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde.
+        </p>
+
+        <p class="modal__text"><strong>11. Datensicherheit</strong></p>
+        <p class="modal__text">
+          Diese Website nutzt technische und organisatorische Sicherheitsmaßnahmen, um Ihre Daten vor Manipulation, Verlust oder unbefugtem Zugriff zu schützen.
+        </p>
+
+        <p class="modal__text"><strong>12. Aktualität und Änderung dieser Datenschutzerklärung</strong></p>
+        <p class="modal__text">
+          Diese Datenschutzerklärung ist aktuell gültig und hat den Stand: Januar 2026.
+          Ich behalte mir vor, diese Datenschutzerklärung anzupassen, um sie an rechtliche Anforderungen oder Änderungen der Website anzupassen.
+        </p>
+      </div>
+    </div>
+
+    <div class="natif-lightbox" id="natif-lightbox" hidden aria-hidden="true">
+      <button type="button" class="natif-lightbox__close" data-lightbox-close aria-label="Close">&times;</button>
+      <div class="natif-lightbox__stage" data-lightbox-stage>
+        <img class="natif-lightbox__img" alt="" draggable="false">
+      </div>
+      <div class="natif-lightbox__zoom" role="group" aria-label="Zoom">
+        <button type="button" class="natif-lightbox__zoom-btn" data-lightbox-zoom="in" aria-label="Zoom in">+</button>
+        <button type="button" class="natif-lightbox__zoom-btn" data-lightbox-zoom="out" aria-label="Zoom out">&minus;</button>
+      </div>
+    </div>
+
+    <script src="js/script.js?v=20260907-navtouch"></script>
+    <script>
+      (function initNatifProgressiveDisclosure() {
+        function run() {
+          var root = document.querySelector('[data-natif-pd]');
+          if (!root) return;
+          var yes = root.querySelector('[data-pd-yes]');
+          var cursor = root.querySelector('[data-pd-cursor]');
+          if (!yes || !cursor) return;
+          var timer = null;
+          var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+          function placeCursorOnYes(offsetX, offsetY) {
+            var rootRect = root.getBoundingClientRect();
+            var yesRect = yes.getBoundingClientRect();
+            var x = yesRect.left + yesRect.width * 0.62 - rootRect.left + (offsetX || 0);
+            var y = yesRect.top + yesRect.height * 0.55 - rootRect.top + (offsetY || 0);
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+          }
+
+          function setExpanded(on) {
+            root.classList.toggle('is-expanded', !!on);
+            yes.classList.toggle('is-pressed', !!on);
+          }
+
+          function sleep(ms) {
+            return new Promise(function(resolve) { timer = setTimeout(resolve, ms); });
+          }
+
+          async function cycle() {
+            if (reduced) {
+              setExpanded(true);
+              cursor.style.opacity = '0';
+              return;
+            }
+            root.classList.add('is-animating');
+            while (root.isConnected) {
+              setExpanded(false);
+              placeCursorOnYes(-56, -40);
+              cursor.style.transition = 'none';
+              cursor.style.opacity = '0';
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(40);
+              cursor.style.transition = 'opacity 0.35s ease, transform 1.1s cubic-bezier(0.22, 1, 0.36, 1), left 1.1s cubic-bezier(0.22, 1, 0.36, 1), top 1.1s cubic-bezier(0.22, 1, 0.36, 1)';
+              cursor.style.opacity = '1';
+              placeCursorOnYes(0, 0);
+              await sleep(1150);
+              cursor.style.transform = 'translate(-8px, -2px) scale(0.86)';
+              await sleep(140);
+              setExpanded(true);
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(2200);
+              cursor.style.opacity = '0';
+              await sleep(350);
+              setExpanded(false);
+              await sleep(900);
+            }
+          }
+
+          if (typeof IntersectionObserver !== 'undefined') {
+            var started = false;
+            var io = new IntersectionObserver(function(entries) {
+              entries.forEach(function(entry) {
+                if (!entry.isIntersecting || started) return;
+                started = true;
+                cycle();
+                io.disconnect();
+              });
+            }, { threshold: 0.35 });
+            io.observe(root);
+          } else {
+            cycle();
+          }
+
+          window.addEventListener('resize', function() {
+            if (root.classList.contains('is-expanded')) placeCursorOnYes(0, 0);
+          });
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', run);
+        } else {
+          run();
+        }
+      })();
+    </script>
+    <script>
+      (function initNatifDynamicDropdown() {
+        function run() {
+          var root = document.querySelector('[data-natif-dyn]');
+          if (!root) return;
+          var yes = root.querySelector('[data-dyn-yes]');
+          var day = root.querySelector('[data-dyn-day]');
+          var cursor = root.querySelector('[data-dyn-cursor]');
+          var viewport = root.querySelector('[data-dyn-viewport]');
+          var valueEl = root.querySelector('[data-dyn-value]');
+          var daysRoot = root.querySelector('[data-dyn-days]');
+          var panels = root.querySelectorAll('[data-dyn-panel]');
+          if (!yes || !day || !cursor || !viewport || !valueEl || !daysRoot || !panels.length) return;
+
+          if (!daysRoot.childElementCount) {
+            for (var i = 1; i <= 31; i++) {
+              var item = document.createElement('div');
+              item.className = 'natif-dyn__option';
+              item.textContent = String(i);
+              daysRoot.appendChild(item);
+            }
+            var last = document.createElement('div');
+            last.className = 'natif-dyn__option';
+            last.textContent = 'Last of Month';
+            daysRoot.appendChild(last);
+          }
+
+          var timer = null;
+          var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          var MENU_MAX = window.matchMedia('(max-width: 1080px)').matches ? 360 : 268;
+
+          function sleep(ms) {
+            return new Promise(function(resolve) { timer = setTimeout(resolve, ms); });
+          }
+
+          function placeCursorOn(el, offsetX, offsetY) {
+            var rootRect = root.getBoundingClientRect();
+            var rect = el.getBoundingClientRect();
+            cursor.style.left = (rect.left + rect.width * 0.62 - rootRect.left + (offsetX || 0)) + 'px';
+            cursor.style.top = (rect.top + rect.height * 0.55 - rootRect.top + (offsetY || 0)) + 'px';
+          }
+
+          function setPressed(el, on) {
+            if (el) el.classList.toggle('is-pressed', !!on);
+          }
+
+          function fitViewport(step) {
+            var panel = panels[step];
+            if (!panel) return;
+            Array.prototype.forEach.call(panels, function(p) {
+              p.style.height = 'auto';
+              p.style.overflow = 'visible';
+              p.scrollTop = 0;
+            });
+            viewport.style.height = 'auto';
+            var natural = panel.scrollHeight;
+            var next = Math.min(natural, MENU_MAX);
+            viewport.style.height = next + 'px';
+            if (natural > MENU_MAX) {
+              panel.style.height = next + 'px';
+              panel.style.overflowY = 'auto';
+            }
+          }
+
+          function setStep(step) {
+            root.setAttribute('data-step', String(step));
+            fitViewport(step);
+            if (step === 0) valueEl.textContent = 'No, Always Complete (Default)';
+            if (step >= 1) valueEl.textContent = 'Yes, Can Be Incomplete';
+          }
+
+          function scrollPanel(step, top, ms) {
+            var panel = panels[step];
+            if (!panel) return;
+            panel.style.scrollBehavior = ms ? 'smooth' : 'auto';
+            panel.scrollTop = top;
+            if (ms) return sleep(ms);
+          }
+
+          async function cycle() {
+            setStep(0);
+            root.classList.add('is-ready');
+            if (reduced) {
+              setStep(2);
+              cursor.style.opacity = '0';
+              return;
+            }
+            while (root.isConnected) {
+              setPressed(yes, false);
+              setPressed(day, false);
+              setStep(0);
+              placeCursorOn(yes, -56, -40);
+              cursor.style.transition = 'none';
+              cursor.style.opacity = '0';
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(40);
+              cursor.style.transition = 'opacity 0.35s ease, transform 1.1s cubic-bezier(0.22, 1, 0.36, 1), left 1.1s cubic-bezier(0.22, 1, 0.36, 1), top 1.1s cubic-bezier(0.22, 1, 0.36, 1)';
+              cursor.style.opacity = '1';
+              placeCursorOn(yes, 0, 0);
+              await sleep(1150);
+              cursor.style.transform = 'translate(-8px, -2px) scale(0.86)';
+              setPressed(yes, true);
+              await sleep(140);
+              setStep(1);
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(900);
+              placeCursorOn(day, 0, 0);
+              await sleep(900);
+              cursor.style.transform = 'translate(-8px, -2px) scale(0.86)';
+              setPressed(day, true);
+              await sleep(140);
+              setPressed(yes, false);
+              setStep(2);
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(500);
+              cursor.style.opacity = '0.35';
+              scrollPanel(2, 420, 1400);
+              await sleep(1600);
+              cursor.style.opacity = '0';
+              await sleep(900);
+              setPressed(day, false);
+              setStep(0);
+              await sleep(800);
+            }
+          }
+
+          if (typeof IntersectionObserver !== 'undefined') {
+            var started = false;
+            var io = new IntersectionObserver(function(entries) {
+              entries.forEach(function(entry) {
+                if (!entry.isIntersecting || started) return;
+                started = true;
+                cycle();
+                io.disconnect();
+              });
+            }, { threshold: 0.35 });
+            io.observe(root);
+          } else {
+            cycle();
+          }
+
+          window.addEventListener('resize', function() {
+            var step = parseInt(root.getAttribute('data-step') || '0', 10);
+            fitViewport(step);
+          });
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', run);
+        } else {
+          run();
+        }
+      })();
+    </script>
+    <script>
+      (function initNatifHighlyDynamic() {
+        function run() {
+          var root = document.querySelector('[data-natif-hd]');
+          if (!root) return;
+          var add = root.querySelector('[data-hd-add]');
+          var cursor = root.querySelector('[data-hd-cursor]');
+          if (!add || !cursor) return;
+          var timer = null;
+          var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+          function sleep(ms) {
+            return new Promise(function(resolve) { timer = setTimeout(resolve, ms); });
+          }
+
+          function placeCursorOn(el, offsetX, offsetY) {
+            var rootRect = root.getBoundingClientRect();
+            var rect = el.getBoundingClientRect();
+            cursor.style.left = (rect.left + rect.width * 0.62 - rootRect.left + (offsetX || 0)) + 'px';
+            cursor.style.top = (rect.top + rect.height * 0.55 - rootRect.top + (offsetY || 0)) + 'px';
+          }
+
+          function setStep(step) {
+            root.setAttribute('data-step', String(step));
+            add.textContent = step === 0 ? 'Add Mappings' : 'Add';
+            add.classList.toggle('is-pressed', step >= 1);
+          }
+
+          async function cycle() {
+            if (reduced) {
+              setStep(2);
+              cursor.style.opacity = '0';
+              return;
+            }
+            while (root.isConnected) {
+              setStep(0);
+              placeCursorOn(add, -48, -36);
+              cursor.style.transition = 'none';
+              cursor.style.opacity = '0';
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(40);
+              cursor.style.transition = 'opacity 0.35s ease, transform 1.05s cubic-bezier(0.22, 1, 0.36, 1), left 1.05s cubic-bezier(0.22, 1, 0.36, 1), top 1.05s cubic-bezier(0.22, 1, 0.36, 1)';
+              cursor.style.opacity = '1';
+              placeCursorOn(add, 0, 0);
+              await sleep(1100);
+              cursor.style.transform = 'translate(-8px, -2px) scale(0.86)';
+              await sleep(140);
+              setStep(1);
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(2200);
+              setStep(2);
+              cursor.style.opacity = '0';
+              await sleep(2800);
+              setStep(0);
+              await sleep(900);
+            }
+          }
+
+          if (typeof IntersectionObserver !== 'undefined') {
+            var started = false;
+            var io = new IntersectionObserver(function(entries) {
+              entries.forEach(function(entry) {
+                if (!entry.isIntersecting || started) return;
+                started = true;
+                cycle();
+                io.disconnect();
+              });
+            }, { threshold: 0.35 });
+            io.observe(root);
+          } else {
+            cycle();
+          }
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', run);
+        } else {
+          run();
+        }
+      })();
+    </script>
+    <script>
+      (function initNatifGuidance() {
+        function run() {
+          var root = document.querySelector('[data-natif-gd]');
+          if (!root) return;
+          var open = root.querySelector('[data-gd-open]');
+          var cursor = root.querySelector('[data-gd-cursor]');
+          if (!open || !cursor) return;
+          var timer = null;
+          var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+          function sleep(ms) {
+            return new Promise(function(resolve) { timer = setTimeout(resolve, ms); });
+          }
+
+          function placeCursorOn(el, offsetX, offsetY) {
+            var rootRect = root.getBoundingClientRect();
+            var rect = el.getBoundingClientRect();
+            cursor.style.left = (rect.left + rect.width * 0.62 - rootRect.left + (offsetX || 0)) + 'px';
+            cursor.style.top = (rect.top + rect.height * 0.55 - rootRect.top + (offsetY || 0)) + 'px';
+          }
+
+          function setStep(step) {
+            root.setAttribute('data-step', String(step));
+            open.classList.toggle('is-pressed', step >= 1);
+          }
+
+          async function cycle() {
+            if (reduced) {
+              setStep(1);
+              cursor.style.opacity = '0';
+              return;
+            }
+            while (root.isConnected) {
+              setStep(0);
+              placeCursorOn(open, -48, -36);
+              cursor.style.transition = 'none';
+              cursor.style.opacity = '0';
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(40);
+              cursor.style.transition = 'opacity 0.35s ease, transform 1.05s cubic-bezier(0.22, 1, 0.36, 1), left 1.05s cubic-bezier(0.22, 1, 0.36, 1), top 1.05s cubic-bezier(0.22, 1, 0.36, 1)';
+              cursor.style.opacity = '1';
+              placeCursorOn(open, 0, 0);
+              await sleep(1100);
+              cursor.style.transform = 'translate(-8px, -2px) scale(0.86)';
+              await sleep(140);
+              setStep(1);
+              cursor.style.transform = 'translate(-8px, -2px) scale(1)';
+              await sleep(400);
+              cursor.style.opacity = '0';
+              await sleep(3200);
+              setStep(0);
+              await sleep(900);
+            }
+          }
+
+          if (typeof IntersectionObserver !== 'undefined') {
+            var started = false;
+            var io = new IntersectionObserver(function(entries) {
+              entries.forEach(function(entry) {
+                if (!entry.isIntersecting || started) return;
+                started = true;
+                cycle();
+                io.disconnect();
+              });
+            }, { threshold: 0.35 });
+            io.observe(root);
+          } else {
+            cycle();
+          }
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', run);
+        } else {
+          run();
+        }
+      })();
+    </script>
+    <script>
+      (function initNatifLightbox() {
+        var box = document.getElementById('natif-lightbox');
+        if (!box) return;
+        var stage = box.querySelector('[data-lightbox-stage]');
+        var img = box.querySelector('.natif-lightbox__img');
+        var btnIn = box.querySelector('[data-lightbox-zoom="in"]');
+        var btnOut = box.querySelector('[data-lightbox-zoom="out"]');
+        var lastFocus = null;
+        var scale = 1;
+        var minScale = 1;
+        var maxScale = 4;
+        var tx = 0;
+        var ty = 0;
+        var dragging = false;
+        var didDrag = false;
+        var dragStartX = 0;
+        var dragStartY = 0;
+        var dragOriginX = 0;
+        var dragOriginY = 0;
+        var naturalW = 0;
+        var naturalH = 0;
+        var DRAG_THRESHOLD = 6;
+
+        function clamp(n, a, b) {
+          return Math.max(a, Math.min(b, n));
+        }
+
+        function fitScale() {
+          if (!naturalW || !naturalH || !stage) return 1;
+          var pad = 48;
+          var sw = stage.clientWidth - pad;
+          var sh = stage.clientHeight - pad;
+          if (sw <= 0 || sh <= 0) return 1;
+          return Math.min(sw / naturalW, sh / naturalH, 1);
+        }
+
+        function applyTransform() {
+          if (!img) return;
+          img.style.transform =
+            'translate(-50%, -50%) translate(' + tx + 'px, ' + ty + 'px) scale(' + scale + ')';
+          if (btnIn) btnIn.disabled = scale >= maxScale - 0.001;
+          if (btnOut) btnOut.disabled = scale <= minScale + 0.001;
+          if (stage) {
+            stage.style.cursor = scale > minScale + 0.001 ? (dragging ? 'grabbing' : 'grab') : 'zoom-in';
+          }
+        }
+
+        function resetView() {
+          minScale = fitScale();
+          scale = minScale;
+          maxScale = Math.max(minScale * 4, minScale + 1);
+          tx = 0;
+          ty = 0;
+          applyTransform();
+        }
+
+        function zoomBy(factor, cx, cy) {
+          if (!stage) return;
+          var rect = stage.getBoundingClientRect();
+          var pivotX = (cx != null ? cx : rect.left + rect.width / 2) - rect.left - rect.width / 2;
+          var pivotY = (cy != null ? cy : rect.top + rect.height / 2) - rect.top - rect.height / 2;
+          var next = clamp(scale * factor, minScale, maxScale);
+          if (next === scale) return;
+          var ratio = next / scale;
+          tx = pivotX - (pivotX - tx) * ratio;
+          ty = pivotY - (pivotY - ty) * ratio;
+          scale = next;
+          if (scale <= minScale + 0.001) {
+            scale = minScale;
+            tx = 0;
+            ty = 0;
+          }
+          applyTransform();
+        }
+
+        function openLightbox(src, alt) {
+          if (!src || !img) return;
+          lastFocus = document.activeElement;
+          img.onload = function() {
+            naturalW = img.naturalWidth || img.width;
+            naturalH = img.naturalHeight || img.height;
+            resetView();
+          };
+          img.src = src;
+          img.alt = alt || '';
+          if (img.complete && img.naturalWidth) {
+            naturalW = img.naturalWidth;
+            naturalH = img.naturalHeight;
+            resetView();
+          }
+          box.hidden = false;
+          box.setAttribute('aria-hidden', 'false');
+          document.documentElement.classList.add('natif-lightbox-open');
+          var closeBtn = box.querySelector('.natif-lightbox__close');
+          if (closeBtn) closeBtn.focus();
+        }
+
+        function closeLightbox() {
+          box.hidden = true;
+          box.setAttribute('aria-hidden', 'true');
+          document.documentElement.classList.remove('natif-lightbox-open');
+          dragging = false;
+          if (stage) stage.classList.remove('is-dragging');
+          if (img) {
+            img.onload = null;
+            img.removeAttribute('src');
+            img.alt = '';
+            img.style.transform = '';
+          }
+          if (lastFocus && typeof lastFocus.focus === 'function') {
+            try { lastFocus.focus(); } catch (_) {}
+          }
+          lastFocus = null;
+        }
+
+        window.openNatifLightbox = openLightbox;
+        window.closeNatifLightbox = closeLightbox;
+
+        box.querySelectorAll('[data-lightbox-close]').forEach(function(el) {
+          el.addEventListener('click', function(e) {
+            e.preventDefault();
+            closeLightbox();
+          });
+        });
+
+        if (btnIn) {
+          btnIn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            zoomBy(1.35);
+          });
+        }
+        if (btnOut) {
+          btnOut.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            zoomBy(1 / 1.35);
+          });
+        }
+
+        if (stage) {
+          stage.addEventListener('pointerdown', function(e) {
+            if (e.button != null && e.button !== 0) return;
+            dragging = true;
+            didDrag = false;
+            dragStartX = e.clientX;
+            dragStartY = e.clientY;
+            dragOriginX = tx;
+            dragOriginY = ty;
+            try { stage.setPointerCapture(e.pointerId); } catch (_) {}
+          });
+          stage.addEventListener('pointermove', function(e) {
+            if (!dragging) return;
+            var dx = e.clientX - dragStartX;
+            var dy = e.clientY - dragStartY;
+            if (!didDrag && (Math.abs(dx) > DRAG_THRESHOLD || Math.abs(dy) > DRAG_THRESHOLD)) {
+              if (scale <= minScale + 0.001) return;
+              didDrag = true;
+              stage.classList.add('is-dragging');
+            }
+            if (!didDrag) return;
+            tx = dragOriginX + dx;
+            ty = dragOriginY + dy;
+            applyTransform();
+          });
+          function endPointer(e) {
+            if (!dragging) return;
+            var wasDrag = didDrag;
+            dragging = false;
+            stage.classList.remove('is-dragging');
+            if (!wasDrag) {
+              if (scale >= maxScale - 0.05) {
+                scale = minScale;
+                tx = 0;
+                ty = 0;
+                applyTransform();
+              } else {
+                zoomBy(1.45, e.clientX, e.clientY);
+              }
+            } else {
+              applyTransform();
+            }
+            didDrag = false;
+          }
+          stage.addEventListener('pointerup', endPointer);
+          stage.addEventListener('pointercancel', function() {
+            dragging = false;
+            didDrag = false;
+            stage.classList.remove('is-dragging');
+            applyTransform();
+          });
+          stage.addEventListener('wheel', function(e) {
+            e.preventDefault();
+            zoomBy(e.deltaY < 0 ? 1.12 : 1 / 1.12, e.clientX, e.clientY);
+          }, { passive: false });
+        }
+
+        window.addEventListener('resize', function() {
+          if (box.hidden) return;
+          var prevMin = minScale;
+          minScale = fitScale();
+          maxScale = Math.max(minScale * 4, minScale + 1);
+          if (scale <= prevMin + 0.05) {
+            scale = minScale;
+            tx = 0;
+            ty = 0;
+          } else {
+            scale = clamp(scale, minScale, maxScale);
+          }
+          applyTransform();
+        });
+
+        document.addEventListener('keydown', function(e) {
+          if (box.hidden) return;
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === '+' || e.key === '=') zoomBy(1.35);
+          if (e.key === '-' || e.key === '_') zoomBy(1 / 1.35);
+        });
+
+        function isProjectImage(el) {
+          if (!el || el.tagName !== 'IMG') return false;
+          if (el.closest('.natif-lightbox')) return false;
+          if (el.closest('header') || el.closest('nav') || el.closest('footer') || el.closest('.modal')) return false;
+          if (el.closest('.ns-footer')) return false;
+          if (el.id && el.id.indexOf('logo') !== -1) return false;
+          if (el.closest('[data-natif-dyn]') || el.closest('[data-natif-hd]') || el.closest('[data-natif-gd]')) return false;
+          return !!(
+            el.closest('.prevent-context__illustration') ||
+            el.closest('.prevent-three-images') ||
+            el.closest('.natif-ba')
+          );
+        }
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+          if (!isProjectImage(target)) return;
+          if (target.closest('[data-ba-press]')) return;
+          e.preventDefault();
+          openLightbox(target.currentSrc || target.src, target.alt || '');
+        });
+      })();
+    </script>
+    <script>
+      (function initNatifBeforeAfterBoot() {
+        function run() {
+          var roots = Array.prototype.slice.call(document.querySelectorAll('.natif-ba [data-ba-press]'));
+          if (!roots.length) return;
+          var active = null;
+          var pressTimer = null;
+          var pressRoot = null;
+          var longPressArmed = false;
+          var HOLD_MS = 280;
+
+          function dismissHint(root) {
+            var layer = root.querySelector('[data-ba-layer]');
+            if (!layer) return;
+            layer.classList.remove('is-highlighted');
+            layer.classList.remove('is-intro');
+            layer.classList.add('is-dismissed');
+            layer.setAttribute('aria-hidden', 'true');
+          }
+
+          function clearPressTimer() {
+            if (pressTimer) {
+              clearTimeout(pressTimer);
+              pressTimer = null;
+            }
+          }
+
+          function showBefore(root, e) {
+            if (e && e.pointerId != null) {
+              try { root.setPointerCapture(e.pointerId); } catch (_) {}
+            }
+            if (active && active !== root) hideBefore(active);
+            var before = root.querySelector('[data-ba-before]');
+            if (!before) return;
+            active = root;
+            longPressArmed = true;
+            root.classList.add('is-pressed');
+            root.setAttribute('aria-pressed', 'true');
+            before.setAttribute('aria-hidden', 'false');
+            dismissHint(root);
+          }
+
+          function hideBefore(root) {
+            if (!root) return;
+            var before = root.querySelector('[data-ba-before]');
+            root.classList.remove('is-pressed');
+            root.setAttribute('aria-pressed', 'false');
+            if (before) before.setAttribute('aria-hidden', 'true');
+            if (active === root) active = null;
+          }
+
+          function openAfterLightbox(root) {
+            var after = root.querySelector('.natif-ba__img--after');
+            if (!after || typeof window.openNatifLightbox !== 'function') return;
+            window.openNatifLightbox(after.currentSrc || after.src, after.alt || '');
+          }
+
+          roots.forEach(function(root) {
+            function onDown(e) {
+              if (typeof e.button === 'number' && e.pointerType === 'mouse' && e.button !== 0) return;
+              if (e.type === 'mousedown' && e.button !== 0) return;
+              clearPressTimer();
+              pressRoot = root;
+              longPressArmed = false;
+              if (e && e.pointerId != null) {
+                try { root.setPointerCapture(e.pointerId); } catch (_) {}
+              }
+              pressTimer = setTimeout(function() {
+                pressTimer = null;
+                if (pressRoot === root) showBefore(root);
+              }, HOLD_MS);
+            }
+            function onUp(e) {
+              if (e && pressRoot && pressRoot !== root) return;
+              var wasLong = longPressArmed || active === root;
+              clearPressTimer();
+              if (active === root) hideBefore(root);
+              if (!wasLong && pressRoot === root) {
+                dismissHint(root);
+                openAfterLightbox(root);
+              }
+              if (pressRoot === root) {
+                pressRoot = null;
+                longPressArmed = false;
+              }
+            }
+            function onCancel() {
+              if (pressRoot !== root && active !== root) return;
+              clearPressTimer();
+              if (active === root) hideBefore(root);
+              if (pressRoot === root) {
+                pressRoot = null;
+                longPressArmed = false;
+              }
+            }
+
+            if (window.PointerEvent) {
+              root.addEventListener('pointerdown', onDown);
+              root.addEventListener('pointerup', onUp);
+              root.addEventListener('pointercancel', onCancel);
+            } else {
+              root.addEventListener('mousedown', onDown);
+              root.addEventListener('mouseup', onUp);
+              root.addEventListener('touchstart', onDown, { passive: true });
+              root.addEventListener('touchend', onUp);
+              root.addEventListener('touchcancel', onCancel);
+            }
+            root.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+            root.addEventListener('keydown', function(e) {
+              if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                showBefore(root);
+              }
+            });
+            root.addEventListener('keyup', function(e) {
+              if (e.key === ' ' || e.key === 'Enter') {
+                e.preventDefault();
+                hideBefore(root);
+              }
+            });
+            root.addEventListener('blur', function() { hideBefore(root); });
+          });
+
+          window.addEventListener('pointerup', function() {
+            if (active) {
+              clearPressTimer();
+              hideBefore(active);
+              pressRoot = null;
+              longPressArmed = false;
+            }
+          });
+          window.addEventListener('mouseup', function() {
+            if (active) {
+              clearPressTimer();
+              hideBefore(active);
+              pressRoot = null;
+              longPressArmed = false;
+            }
+          });
+
+          (function initHintOverlays() {
+            function showHint(root) {
+              var layer = root.querySelector('[data-ba-layer]');
+              if (!layer || layer.dataset.hintShown === '1' || layer.classList.contains('is-dismissed')) return;
+              layer.dataset.hintShown = '1';
+              layer.classList.add('is-intro', 'is-highlighted');
+              setTimeout(function() {
+                layer.classList.remove('is-highlighted');
+                layer.classList.remove('is-intro');
+              }, 2800);
+            }
+
+            function isHintVisible(root) {
+              var r = root.getBoundingClientRect();
+              if (!r.height) return false;
+              var vh = window.innerHeight || document.documentElement.clientHeight || 0;
+              var visible = Math.min(r.bottom, vh) - Math.max(r.top, 0);
+              return visible >= r.height * 0.4;
+            }
+
+            roots.forEach(function(root) {
+              if (!root.querySelector('[data-ba-layer]')) return;
+
+              function check() {
+                if (isHintVisible(root)) showHint(root);
+              }
+
+              if (typeof IntersectionObserver !== 'undefined') {
+                var io = new IntersectionObserver(function(entries) {
+                  entries.forEach(function(entry) {
+                    if (entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+                      showHint(root);
+                      io.disconnect();
+                    }
+                  });
+                }, { threshold: [0, 0.25, 0.4, 0.75, 1] });
+                io.observe(root);
+              }
+
+              window.addEventListener('scroll', check, { passive: true });
+              document.body.addEventListener('scroll', check, { passive: true });
+            });
+          })();
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', run);
+        } else {
+          run();
+        }
+      })();
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var viewport = document.getElementById('prevent-screen-viewport');
+
+        (function initVideoPauseButtons() {
+          var videos = document.querySelectorAll('video');
+          videos.forEach(function(video) {
+            if (video.classList.contains('prevent-hero__video')) return;
+            if (video.closest('.case-next')) return;
+            if (video.dataset.pauseToggleReady === '1') return;
+            video.dataset.pauseToggleReady = '1';
+            var container = video.parentElement;
+            if (!container) return;
+            if (window.getComputedStyle(container).position === 'static') {
+              container.style.position = 'relative';
+            }
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'video-pause-toggle';
+            btn.setAttribute('aria-label', 'Pause video');
+            var svgPlay = '<svg class="video-pause-toggle__icon" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>';
+            btn.textContent = 'II';
+            function toggleVideo() {
+              if (video.paused) {
+                var playPromise = video.play();
+                if (playPromise && typeof playPromise.catch === 'function') playPromise.catch(function() {});
+                btn.textContent = 'II';
+                btn.setAttribute('aria-label', 'Pause video');
+              } else {
+                video.pause();
+                btn.innerHTML = svgPlay;
+                btn.setAttribute('aria-label', 'Play video');
+              }
+            }
+            btn.addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              toggleVideo();
+            });
+            video.addEventListener('click', function(e) {
+              e.preventDefault();
+              toggleVideo();
+            });
+            container.appendChild(btn);
+          });
+        })();
+        (function initSwipeNav() {
+          if (!viewport) return;
+          var registrierenBtn = document.querySelector('.prevent-screen--first .prevent-screen__btn');
+          var reloadBtn = document.getElementById('prevent-reload');
+          var screen2 = document.getElementById('prevent-screen-2');
+          var screen3 = document.getElementById('prevent-screen-3');
+          var screen4 = document.getElementById('prevent-screen-4');
+          var screen5 = document.getElementById('prevent-screen-5');
+          var startX = 0;
+          var lastX = 0;
+          var minSwipe = 50;
+          var didSwipeLeft = false;
+          var didSwipeRight = false;
+          var activePointerId = null;
+          var currentStep = 1;
+          function applyStep() {
+            viewport.classList.remove('show-second-screen', 'show-third-screen', 'show-fourth-screen', 'show-fifth-screen');
+            if (currentStep >= 2) viewport.classList.add('show-second-screen');
+            if (currentStep >= 3) viewport.classList.add('show-third-screen');
+            if (currentStep >= 4) viewport.classList.add('show-fourth-screen');
+            if (currentStep >= 5) viewport.classList.add('show-fifth-screen');
+          }
+          function isScreen2Visible() {
+            return currentStep === 2;
+          }
+          function isScreen3Visible() {
+            return currentStep === 3;
+          }
+          function isScreen4Visible() {
+            return currentStep === 4;
+          }
+          function isScreen5Visible() {
+            return currentStep === 5;
+          }
+          function canSwipe() {
+            return currentStep >= 2 && currentStep < 5;
+          }
+          function advance() {
+            if (currentStep < 5) {
+              currentStep += 1;
+              applyStep();
+            }
+          }
+          function goBack() {
+            if (currentStep > 2) {
+              currentStep -= 1;
+              applyStep();
+            }
+          }
+          viewport.addEventListener('click', function(e) {
+            if (didSwipeLeft || didSwipeRight) return;
+            if (currentStep === 1 || currentStep === 5) return;
+            if (!viewport.contains(e.target)) return;
+            if (currentStep === 2 && screen2 && !screen2.contains(e.target)) return;
+            if (currentStep === 3 && screen3 && !screen3.contains(e.target)) return;
+            if (currentStep === 4 && screen4 && !screen4.contains(e.target)) return;
+            e.preventDefault();
+            advance();
+          });
+          if (registrierenBtn) {
+            registrierenBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              currentStep = 2;
+              applyStep();
+            });
+          }
+          if (reloadBtn) {
+            reloadBtn.addEventListener('click', function() {
+              currentStep = 1;
+              applyStep();
+            });
+          }
+          var backBtn = document.querySelector('.prevent-form__back');
+          if (backBtn) {
+            backBtn.addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              goBack();
+            });
+          }
+          viewport.addEventListener('pointerdown', function(e) {
+            if (activePointerId !== null) return;
+            if (backBtn && e.target && backBtn.contains && backBtn.contains(e.target)) return;
+            if (!canSwipe() || !viewport.contains(e.target)) return;
+            activePointerId = e.pointerId;
+            startX = e.clientX;
+            lastX = startX;
+            didSwipeLeft = false;
+            didSwipeRight = false;
+            e.currentTarget.setPointerCapture(e.pointerId);
+          });
+          viewport.addEventListener('pointermove', function(e) {
+            if (e.pointerId !== activePointerId) return;
+            lastX = e.clientX;
+            if (startX - lastX > minSwipe) {
+              didSwipeLeft = true;
+              e.preventDefault();
+            } else if (lastX - startX > minSwipe) {
+              didSwipeRight = true;
+              e.preventDefault();
+            }
+          });
+          viewport.addEventListener('pointerup', function(e) {
+            if (e.pointerId !== activePointerId) return;
+            activePointerId = null;
+            var endX = e.clientX;
+            if (startX - endX > minSwipe) didSwipeLeft = true;
+            else if (endX - startX > minSwipe) didSwipeRight = true;
+            if (didSwipeLeft) advance();
+            else if (didSwipeRight) goBack();
+          });
+          viewport.addEventListener('pointercancel', function(e) {
+            if (e.pointerId === activePointerId) activePointerId = null;
+          });
+        })();
+        if (typeof initSubpageLogoTooltip === 'function') {
+          initSubpageLogoTooltip();
+        }
+        (function initPreventLogoTooltip() {
+          var logo = document.querySelector('.page-prevent-health .logo--home');
+          var tip = document.getElementById('logo-tooltip-natif');
+          if (!logo || !tip) return;
+          var isMobileLogo = window.innerWidth <= 1080;
+          logo.addEventListener('mouseenter', function() {
+            if (!isMobileLogo) tip.classList.add('visible');
+          });
+          logo.addEventListener('mousemove', function(e) {
+            if (!isMobileLogo) {
+              tip.style.left = e.clientX + 'px';
+              tip.style.top = e.clientY + 'px';
+            }
+          });
+          logo.addEventListener('mouseleave', function() {
+            if (!isMobileLogo) tip.classList.remove('visible');
+          });
+          window.addEventListener('resize', function() {
+            isMobileLogo = window.innerWidth <= 1080;
+            if (!isMobileLogo) tip.classList.remove('visible');
+          });
+        })();
+        (function initPreventPageTooltips() {
+          var naviButtons = document.querySelectorAll('.page-prevent-health .navi-coming-soon-subpage');
+          naviButtons.forEach(function(button) {
+            var tooltip = button.querySelector('.navi-tooltip-subpage');
+            if (!tooltip) return;
+            var tooltipTimeout;
+            var isMobile = window.innerWidth <= 1080;
+            button.addEventListener('mouseenter', function() {
+              if (!isMobile) tooltip.classList.add('visible');
+            });
+            button.addEventListener('mousemove', function(e) {
+              if (!isMobile) {
+                tooltip.style.left = e.clientX + 'px';
+                tooltip.style.top = e.clientY + 'px';
+              }
+            });
+            button.addEventListener('mouseleave', function() {
+              if (!isMobile) tooltip.classList.remove('visible');
+            });
+            button.addEventListener('click', function(e) {
+              e.preventDefault();
+              e.stopPropagation();
+              if (isMobile) {
+                naviButtons.forEach(function(other) {
+                  if (other !== button) {
+                    var t = other.querySelector('.navi-tooltip-subpage');
+                    if (t) t.classList.remove('visible');
+                  }
+                });
+                tooltip.style.left = e.clientX + 'px';
+                tooltip.style.top = e.clientY + 'px';
+                tooltip.classList.add('visible');
+                clearTimeout(tooltipTimeout);
+                tooltipTimeout = setTimeout(function() { tooltip.classList.remove('visible'); }, 3000);
+              }
+            });
+            window.addEventListener('resize', function() {
+              isMobile = window.innerWidth <= 1080;
+              if (!isMobile) tooltip.classList.remove('visible');
+            });
+          });
+          var reloadBtn = document.getElementById('prevent-reload');
+          if (reloadBtn) {
+            var reloadTooltip = reloadBtn.querySelector('.navi-tooltip-subpage');
+            if (reloadTooltip) {
+              var isMobileReload = window.innerWidth <= 1080;
+              reloadBtn.addEventListener('mouseenter', function() {
+                if (!isMobileReload) {
+                  reloadTooltip.classList.add('visible');
+                }
+              });
+              reloadBtn.addEventListener('mousemove', function(e) {
+                if (!isMobileReload) {
+                  reloadTooltip.style.left = e.clientX + 'px';
+                  reloadTooltip.style.top = e.clientY + 'px';
+                }
+              });
+              reloadBtn.addEventListener('mouseleave', function() {
+                if (!isMobileReload) reloadTooltip.classList.remove('visible');
+              });
+              window.addEventListener('resize', function() {
+                isMobileReload = window.innerWidth <= 1080;
+                if (!isMobileReload) reloadTooltip.classList.remove('visible');
+              });
+            }
+          }
+        })();
+      });
+    </script>
+</body>
+</html>

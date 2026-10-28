@@ -1,0 +1,297 @@
+/* ===== Timeline 04 (Cycle / Flowbase, 1:1) ===== */
+#cycle-timeline-04 {
+  --brand--400: #05df72;
+  --brand--500: #00c950;
+  --neutral--black: black;
+  --neutral--white: white;
+  --neutral--50: #fafafa;
+  --neutral--100: #f4f4f5;
+  --neutral--200: #e4e4e7;
+  --neutral--300: #d4d4d8;
+  --neutral--500: #71717b;
+  --neutral--700: #3f3f46;
+  --background--alternate: var(--neutral--black);
+  --background--brand-primary: var(--brand--400);
+  --background--light: var(--neutral--white);
+  --background--primary: var(--neutral--50);
+  --background--secondary: var(--neutral--100);
+  --background--tertiary: var(--neutral--200);
+  --border--primary: var(--neutral--300);
+  --text--alternate: var(--neutral--white);
+  --text--primary: var(--neutral--black);
+  --text--secondary: var(--neutral--700);
+  --text--tertiary: var(--neutral--500);
+  --_layout---container--medium: 74rem;
+  --_layout---width--medium: 28rem;
+  --_layout---radius--medium: 1rem;
+  --_layout---section--medium: 4rem;
+  --_layout---section--page: 5%;
+  --_layout---spacing--3x-small: 0.25rem;
+  --_layout---spacing--x-small: 0.75rem;
+  --_layout---spacing--medium: 1.25rem;
+  --_layout---spacing--large: 1.5rem;
+  --_layout---spacing--x-large: 2rem;
+  --_layout---spacing--4x-large: 5rem;
+  --_typography---font-family--heading: "Host Grotesk", sans-serif;
+  --_typography---font-family--body: "Instrument Sans", sans-serif;
+  --_typography---font-size--h1: 4rem;
+  --_typography---font-size--h4: 2.5rem;
+  --_typography---font-size--h6: 1.625rem;
+  --_typography---font-size--x-large: 1.25rem;
+  --_typography---font-size--medium: 1rem;
+  --_typography---font-weight--heading: 400;
+  --_typography---font-weight--body: 400;
+  --_typography---letter-spacing--h1: -0.05em;
+  --_typography---letter-spacing--h4: -0.035em;
+  --_typography---letter-spacing--h6: -0.03em;
+  --_typography---letter-spacing--body: 0px;
+  --_typography---line-height--h1: 1.15;
+  --_typography---line-height--h4: 1.25;
+  --_typography---line-height--h6: 1.25;
+  --_typography---line-height--body: 1.75;
+
+  position: relative;
+  overflow: hidden;
+  color: var(--text--primary);
+  font-family: var(--_typography---font-family--body);
+  font-size: 16px;
+  line-height: var(--_typography---line-height--body);
+  font-weight: var(--_typography---font-weight--body);
+  letter-spacing: var(--_typography---letter-spacing--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#cycle-timeline-04 .section-medium {
+  padding: var(--_layout---section--medium) var(--_layout---section--page);
+  background-color: var(--background--primary);
+  position: relative;
+}
+
+#cycle-timeline-04 .container-medium {
+  max-width: var(--_layout---container--medium);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#cycle-timeline-04 .w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+#cycle-timeline-04 .column-large {
+  grid-column-gap: var(--_layout---spacing--large);
+  grid-row-gap: var(--_layout---spacing--large);
+  flex-flow: column;
+  display: flex;
+}
+
+#cycle-timeline-04 .column-3x-small {
+  grid-column-gap: var(--_layout---spacing--3x-small);
+  grid-row-gap: var(--_layout---spacing--3x-small);
+  flex-flow: column;
+  display: flex;
+}
+
+#cycle-timeline-04 .heading-style-h1 {
+  font-family: var(--_typography---font-family--heading);
+  font-size: var(--_typography---font-size--h1);
+  line-height: var(--_typography---line-height--h1);
+  font-weight: var(--_typography---font-weight--heading);
+  letter-spacing: var(--_typography---letter-spacing--h1);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+#cycle-timeline-04 .heading-style-h4 {
+  font-family: var(--_typography---font-family--heading);
+  font-size: var(--_typography---font-size--h4);
+  line-height: var(--_typography---line-height--h4);
+  font-weight: var(--_typography---font-weight--heading);
+  letter-spacing: var(--_typography---letter-spacing--h4);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+#cycle-timeline-04 .heading-style-h6 {
+  font-family: var(--_typography---font-family--heading);
+  font-size: var(--_typography---font-size--h6);
+  line-height: var(--_typography---line-height--h6);
+  font-weight: var(--_typography---font-weight--heading);
+  letter-spacing: var(--_typography---letter-spacing--h6);
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+}
+
+#cycle-timeline-04 .text-size-xlarge {
+  font-size: var(--_typography---font-size--x-large);
+  line-height: var(--_typography---line-height--body);
+  margin-bottom: 0;
+}
+
+#cycle-timeline-04 .text-size-medium {
+  font-size: var(--_typography---font-size--medium);
+  line-height: var(--_typography---line-height--body);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#cycle-timeline-04 .text-weight-medium {
+  font-weight: 500;
+}
+
+#cycle-timeline-04 .text-weight-semibold {
+  font-weight: 600;
+}
+
+#cycle-timeline-04 .text-balance {
+  text-wrap: balance;
+}
+
+#cycle-timeline-04 .text-color-secondary {
+  color: var(--text--secondary);
+}
+
+#cycle-timeline-04 .icon {
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#cycle-timeline-04 .icon img,
+#cycle-timeline-04 .icon svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#cycle-timeline-04 .timeline_content {
+  grid-column-gap: var(--_layout---spacing--4x-large);
+  grid-row-gap: var(--_layout---spacing--4x-large);
+  flex-flow: column;
+  max-width: 55%;
+  margin-left: auto;
+  display: flex;
+}
+
+#cycle-timeline-04 .timeline_card-slider {
+  -webkit-clip-path: polygon(0 0, 400% 0, 400% 100%, 0% 100%);
+  clip-path: polygon(0 0, 400% 0, 400% 100%, 0% 100%);
+  width: 20rem;
+  overflow: visible;
+}
+
+#cycle-timeline-04 .timeline_swiper-cards,
+#cycle-timeline-04 .swiper-wrapper {
+  cursor: grab;
+  flex-flow: row;
+  display: flex;
+}
+
+#cycle-timeline-04 .timeline_slide-card {
+  padding: var(--_layout---spacing--large);
+  grid-column-gap: var(--_layout---spacing--large);
+  grid-row-gap: var(--_layout---spacing--large);
+  border: 1px solid var(--border--primary);
+  border-radius: var(--_layout---radius--medium);
+  background-color: var(--background--light);
+  flex-flow: column;
+  flex: none;
+  justify-content: space-between;
+  width: 100%;
+  height: 30rem;
+  box-sizing: border-box;
+  transition: color 0.5s, background-color 0.5s;
+  display: flex;
+}
+
+#cycle-timeline-04 .timeline_slide-card.swiper-slide-active {
+  opacity: 1;
+  background-color: var(--background--alternate);
+  color: var(--text--alternate);
+}
+
+#cycle-timeline-04 .timeline_testimonial-block {
+  z-index: 1;
+  padding: var(--_layout---spacing--x-large) var(--_layout---section--page);
+  background-image: url("../assets/timeline-04/landscape-11.avif");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  display: flex;
+  position: absolute;
+  inset: 0% auto 0% 0%;
+  overflow: hidden;
+}
+
+#cycle-timeline-04 .contact_testimonial-grid {
+  max-width: var(--_layout---width--medium);
+  grid-column-gap: var(--_layout---spacing--x-small);
+  grid-row-gap: var(--_layout---spacing--x-small);
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+#cycle-timeline-04 .contact_testimonial {
+  padding: var(--_layout---spacing--medium);
+  grid-column-gap: var(--_layout---spacing--3x-small);
+  grid-row-gap: var(--_layout---spacing--3x-small);
+  border-radius: var(--_layout---radius--medium);
+  background-color: var(--background--primary);
+  flex-flow: column;
+  display: flex;
+  overflow: hidden;
+}
+
+#cycle-timeline-04 .contact_testimonial.is-quote {
+  grid-column-gap: var(--_layout---spacing--x-large);
+  grid-row-gap: var(--_layout---spacing--x-large);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#cycle-timeline-04 .contact_testimonial-grid > .contact_testimonial.is-quote {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+#cycle-timeline-04 .timeline_slider-script {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  #cycle-timeline-04 {
+    --_layout---section--medium: 3rem;
+    --_layout---spacing--4x-large: 2.5rem;
+    --_layout---spacing--x-large: 1.75rem;
+    --_typography---font-size--h1: 3rem;
+    --_typography---font-size--h4: 2.25rem;
+  }
+
+  #cycle-timeline-04 .timeline_content {
+    max-width: none;
+  }
+
+  #cycle-timeline-04 .timeline_testimonial-block {
+    width: 100%;
+    min-height: 40vh;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #cycle-timeline-04 .timeline_card-slider {
+    width: 90vw;
+  }
+}

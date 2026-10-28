@@ -1,0 +1,385 @@
+/* DreamMotion FAQ + CTA — from dreammotion.framer.website */
+.dm-faq,
+.dm-cta {
+  --dm-bg: #0a0a0a;
+  --dm-card: rgba(255, 255, 255, 0.05);
+  --dm-row: rgba(95, 95, 113, 0.2);
+  --dm-border: rgba(255, 255, 255, 0.14);
+  --dm-muted: #858585;
+  --dm-text: #ffffff;
+  --dm-lime: rgb(213, 255, 69);
+  --dm-ink: #0f0f0f;
+  background: var(--dm-bg);
+  color: var(--dm-text);
+  font-family: Satoshi, "DM Sans", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+}
+
+.dm-faq *,
+.dm-cta * {
+  box-sizing: border-box;
+}
+
+.dm-faq a,
+.dm-cta a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dm-faq__inner,
+.dm-cta__inner {
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 112px 24px;
+}
+
+.dm-faq__head,
+.dm-cta__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.dm-faq__eyebrow,
+.dm-cta__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 40px;
+  background: var(--dm-card);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dm-faq__eyebrow-dot,
+.dm-cta__eyebrow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dm-lime);
+  box-shadow: 0 0 12px rgba(213, 255, 69, 0.55);
+}
+
+.dm-faq__title,
+.dm-cta__title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  max-width: 18ch;
+}
+
+.dm-faq__title span,
+.dm-cta__title span {
+  color: var(--dm-muted);
+}
+
+.dm-faq__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.dm-faq__item {
+  border-radius: 24px;
+  background: var(--dm-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.dm-faq__q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dm-faq__icon {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(213, 255, 69, 0.12);
+  color: var(--dm-lime);
+  display: grid;
+  place-items: center;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.dm-faq__item.is-open .dm-faq__icon {
+  transform: rotate(45deg);
+  background: var(--dm-lime);
+  color: var(--dm-ink);
+}
+
+.dm-faq__a {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.dm-faq__item.is-open .dm-faq__a {
+  grid-template-rows: 1fr;
+}
+
+.dm-faq__a-inner {
+  overflow: hidden;
+}
+
+.dm-faq__a p {
+  margin: 0;
+  padding: 0 22px 20px;
+  color: var(--dm-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* CTA */
+.dm-cta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 128px;
+}
+
+.dm-cta__desc {
+  margin: 0;
+  max-width: 42ch;
+  color: var(--dm-muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.dm-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 28px;
+  border-radius: 100px;
+  background: var(--dm-lime);
+  color: var(--dm-ink);
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.dm-cta__btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.dm-cta__visual {
+  position: relative;
+  width: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  aspect-ratio: 1774 / 887;
+}
+
+.dm-cta__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dm-cta__promo {
+  position: absolute;
+  right: 4%;
+  bottom: 8%;
+  width: min(280px, 42%);
+  display: grid;
+  gap: 10px;
+}
+
+.dm-cta__promo-card {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(10, 10, 10, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.dm-cta__promo-card:hover {
+  transform: translateY(-2px);
+}
+
+.dm-cta__promo-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.dm-cta__promo-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.dm-cta__promo-meta span:last-child {
+  color: var(--dm-ink);
+  background: var(--dm-lime);
+  border-radius: 100px;
+  padding: 4px 8px;
+}
+
+.dm-cta__code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 100px;
+  background: var(--dm-lime);
+  color: var(--dm-ink);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 809px) {
+  .dm-faq__inner,
+  .dm-cta__inner {
+    padding: 80px 16px;
+  }
+
+  .dm-faq__list {
+    grid-template-columns: 1fr;
+  }
+
+  .dm-cta__promo {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+    padding: 0 16px 16px;
+  }
+
+  .dm-cta__visual {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dm-cta__visual > img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* ===== Site design adaptation ===== */
+.dm-faq--site,
+.dm-cta--site {
+  --dm-bg: #0d0d0d;
+  --dm-card: rgba(255, 255, 255, 0.06);
+  --dm-row: rgba(255, 255, 255, 0.06);
+  --dm-border: rgba(255, 255, 255, 0.1);
+  --dm-muted: rgba(255, 255, 255, 0.58);
+  --dm-text: #ffffff;
+  --dm-lime: #4D05AB;
+  --dm-ink: #ffffff;
+  background: var(--dm-bg);
+  color: var(--dm-text);
+  font-family: "Google Sans Flex", "Google Sans", system-ui, sans-serif;
+}
+
+.dm-faq--site .dm-faq__title,
+.dm-cta--site .dm-cta__title {
+  font-family: "Zalando Sans Expanded", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  max-width: 22ch;
+}
+
+.dm-faq--site .dm-faq__title span {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.dm-faq--site .dm-faq__item {
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dm-faq--site .dm-faq__q {
+  font-family: "Google Sans Flex", "Google Sans", system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.dm-faq--site .dm-faq__icon {
+  background: rgba(77, 5, 171, 0.22);
+  color: #c9a8ff;
+}
+
+.dm-faq--site .dm-faq__item.is-open .dm-faq__icon {
+  background: #4D05AB;
+  color: #fff;
+}
+
+.dm-faq--site .dm-faq__a p {
+  font-family: "Google Sans Flex", "Google Sans", system-ui, sans-serif;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.dm-cta--site .dm-cta__inner {
+  gap: 24px;
+  padding-top: 64px;
+  padding-bottom: 112px;
+}
+
+.dm-cta--site .dm-cta__copy {
+  margin-bottom: 0;
+  gap: 18px;
+}
+
+.dm-cta--site .dm-cta__desc {
+  font-family: "Google Sans Flex", "Google Sans", system-ui, sans-serif;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.dm-cta--site .dm-cta__btn {
+  background: #4D05AB;
+  color: #fff;
+  border: none;
+  font-family: "Google Sans Flex", "Google Sans", system-ui, sans-serif;
+}
+
+.dm-cta--site .dm-cta__btn:hover {
+  background: #3a0485;
+  filter: none;
+}
+
+.dm-cta--site .dm-cta__visual,
+.dm-cta--site .dm-cta__promo {
+  display: none !important;
+}

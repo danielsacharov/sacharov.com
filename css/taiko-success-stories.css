@@ -1,0 +1,228 @@
+/* ===== Success Stories (Taikonauten layout, site-aligned) ===== */
+.tko-stories {
+  --tko-bg: #f8f8f8;
+  --tko-ink: #111218;
+  --tko-radius: 0.75rem;
+  --tko-font-display: "Zalando Sans Expanded", -apple-system, BlinkMacSystemFont, sans-serif;
+  --tko-home-align: var(--home-gutter, 56px);
+  --tko-gap: 1.5rem;
+  width: 100%;
+  margin-top: var(--home-edge-pad, 20px);
+  background: var(--tko-bg);
+  color: var(--tko-ink);
+  border-radius: 20px;
+  overflow: hidden;
+  isolation: isolate;
+  scroll-margin-top: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tko-stories__inner {
+  margin: 0 auto;
+  max-width: none;
+  padding: 4rem var(--tko-home-align) var(--tko-gap);
+  box-sizing: border-box;
+}
+
+.tko-stories__headline {
+  font-family: var(--tko-font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04rem;
+  line-height: 1.25;
+  color: var(--tko-ink);
+  text-align: left;
+  margin: 0 0 calc(1.5rem - 14px);
+}
+
+.tko-stories__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--tko-gap);
+}
+
+.tko-stories__col {
+  box-sizing: border-box;
+  width: 100%;
+  container-type: inline-size;
+}
+
+.tko-tile {
+  --tko-tile-color: var(--tko-ink);
+  height: auto;
+  color: var(--tko-tile-color);
+  overflow: visible;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.tko-tile__media {
+  height: auto;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+  border-radius: var(--tko-radius);
+}
+
+.tko-tile__media img,
+.tko-tile__media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  pointer-events: none;
+}
+
+.tko-tile figure {
+  height: 100%;
+  margin: 0;
+}
+
+.tko-tile__media--pending figure {
+  background: #141414;
+}
+
+.tko-tile__scrim {
+  display: none;
+}
+
+.tko-tile__bottom {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.85rem;
+  padding: 0 0.1rem;
+}
+
+.tko-tile__headline {
+  font-family: var(--tko-font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.045rem;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--tko-ink);
+}
+
+.tko-tile__line {
+  display: block;
+  white-space: nowrap;
+}
+
+.tko-tile .prevent-hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  overflow: visible;
+  mask-image: none;
+  -webkit-mask-image: none;
+  cursor: inherit;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.tko-tile .prevent-hero__tag {
+  pointer-events: none;
+  color: var(--tko-ink);
+  border-color: rgba(17, 18, 24, 0.28);
+}
+
+.tko-tile.work-coming-soon {
+  cursor: default !important;
+}
+
+.tko-tile--soon .tko-tile__media {
+  filter: blur(18px) saturate(0.75);
+  transform: scale(1.12);
+}
+
+.tko-tile--soon .tko-tile__media figure {
+  background:
+    radial-gradient(ellipse at 28% 22%, rgba(255, 255, 255, 0.22), transparent 52%),
+    radial-gradient(ellipse at 78% 68%, rgba(255, 255, 255, 0.1), transparent 48%),
+    #141414;
+}
+
+.tko-tile--odd,
+.tko-tile--even {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .tko-stories {
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .tko-stories {
+    --tko-gap: 2.5rem;
+  }
+
+  .tko-stories__inner {
+    padding: 5rem var(--tko-home-align) var(--tko-gap);
+  }
+
+  .tko-stories__headline {
+    font-size: 3rem;
+    letter-spacing: -0.12rem;
+    line-height: 1.1667;
+    margin-bottom: calc(3rem - 14px);
+  }
+
+  .tko-stories__col {
+    width: calc(50% - var(--tko-gap) / 2);
+    flex: 0 0 calc(50% - var(--tko-gap) / 2);
+  }
+
+  .tko-tile--odd,
+  .tko-tile--even {
+    margin-top: 0;
+  }
+
+  .tko-tile__headline {
+    font-size: 1.75rem;
+    letter-spacing: -0.03rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .tko-stories {
+    --tko-gap: 4.5rem;
+  }
+
+  .tko-stories__inner {
+    padding: 3rem var(--tko-home-align) var(--tko-gap);
+  }
+
+  .tko-stories__headline {
+    font-size: 5rem;
+    letter-spacing: -0.2rem;
+    line-height: 1.1;
+    margin-bottom: calc(3rem - 14px);
+  }
+
+  .tko-stories__col {
+    width: calc(50% - var(--tko-gap) / 2);
+    flex: 0 0 calc(50% - var(--tko-gap) / 2);
+  }
+
+  .tko-tile--odd,
+  .tko-tile--even {
+    margin-top: 0;
+  }
+
+  .tko-tile__headline {
+    font-size: 2.5rem;
+    letter-spacing: -0.06rem;
+    line-height: 1.08;
+  }
+
+  .tko-tile__bottom {
+    margin-top: 1.1rem;
+  }
+}

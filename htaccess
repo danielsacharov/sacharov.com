@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^video/?$ https://www.loom.com/share/1075b43de45245aeb97be65dd37fd87b [R=302,L]
+</IfModule>

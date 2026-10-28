@@ -1,0 +1,259 @@
+/* Last-loaded homepage phone safety net. Beats taiko / style / later custom rules. */
+
+.page-home .tko-tile .prevent-hero__tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+  align-content: flex-start !important;
+  gap: 8px !important;
+  row-gap: 8px !important;
+  overflow: visible !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  margin-top: 14px !important;
+}
+
+.page-home .tko-tile .prevent-hero__tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  position: static !important;
+  float: none !important;
+  flex: 0 0 auto !important;
+  line-height: 1.2 !important;
+  font-size: 10px !important;
+  padding: 7px 10px !important;
+  margin: 0 !important;
+  white-space: nowrap !important;
+  color: #111218 !important;
+  border-color: rgba(17, 18, 24, 0.28) !important;
+}
+
+/* Smartphone only — desktop starts at 1167px */
+@media (max-width: 1166px) {
+  .page-home {
+    --home-edge-pad: 8px;
+    --home-gutter: 8px;
+    --home-logo-height: 104px;
+    --home-nav-height: 56px;
+  }
+
+  .page-home.is-edge-padded {
+    --home-edge-pad: 8px;
+  }
+
+  .page-home #main-container {
+    overflow-x: hidden;
+    padding: 8px !important;
+  }
+
+  .page-home .wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .page-home .main-content--home,
+  .page-home .tko-stories,
+  .page-home .em-vf-5,
+  .page-home #arcana-integration-03.section-medium,
+  .page-home .ns-footer {
+    margin-top: 8px;
+    border-radius: 16px !important;
+  }
+
+  .page-home .main-content--home {
+    margin-top: 0;
+    overflow: hidden !important;
+    isolation: isolate;
+  }
+
+  .page-home .header-wrapper--home {
+    --home-logo-height: 104px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    grid-template-columns: none !important;
+    grid-template-areas: none !important;
+    gap: 12px !important;
+    padding: 14px 0 0 !important;
+    overflow: visible !important;
+  }
+
+  .page-home .header__nav--left,
+  .page-home .header__nav--right {
+    display: contents !important;
+  }
+
+  .page-home .header__navs {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    clip-path: inset(0 0 20px 0);
+    gap: 4px !important;
+    width: 100% !important;
+    padding: 12px 4px 28px !important;
+    margin: 0 0 -20px !important;
+    cursor: grab !important;
+    touch-action: pan-x !important;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    user-select: none;
+  }
+
+  .page-home .elastic-pulse-btn-navi {
+    padding: 6px 4px !important;
+  }
+
+  .page-home .elastic-pulse-btn-navi__content {
+    padding: 16px 28px !important;
+  }
+
+  .page-home .elastic-pulse-btn-navi__span {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+  }
+
+  .page-home .hero-stage--home {
+    padding: calc(14px + var(--home-logo-height, 104px) + 12px + var(--home-nav-height, 56px) + 8px) 8px 48px !important;
+  }
+
+  .page-home .hero-copy--home .hero-title,
+  .page-home .tko-stories__headline {
+    font-size: clamp(3rem, 13vw, 3.8rem) !important;
+    letter-spacing: -0.06em !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .page-home .hero-copy--home .hero-title {
+    line-height: 1.32 !important;
+    word-spacing: 0.2em !important;
+  }
+
+  .page-home .tko-stories__headline {
+    line-height: 0.92 !important;
+  }
+
+  .page-home .hero-copy--home .hero-title__line {
+    white-space: normal !important;
+    overflow: visible !important;
+    max-width: 100% !important;
+    line-height: inherit !important;
+  }
+
+  .page-home .hero-copy--home .hero-title__word:not(:last-child) {
+    margin-right: 0.4em !important;
+  }
+
+  .page-home .tko-stories {
+    --tko-home-align: 8px;
+    --tko-gap: 40px;
+  }
+
+  .page-home .tko-stories__inner {
+    padding: 48px 8px 12px !important;
+  }
+
+  .page-home .tko-stories__headline {
+    margin: 0 0 16px !important;
+  }
+
+  .page-home .tko-stories__col {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    padding-bottom: 4px;
+  }
+
+  .page-home .tko-tile--odd,
+  .page-home .tko-tile--even {
+    margin-top: 0 !important;
+  }
+
+  .page-home .tko-tile__media {
+    aspect-ratio: 16 / 9 !important;
+  }
+
+  .page-home .tko-tile__bottom {
+    margin-top: 12px !important;
+    padding: 0 2px !important;
+  }
+
+  .page-home .tko-tile__headline {
+    font-size: clamp(1.35rem, 6vw, 1.75rem) !important;
+    letter-spacing: -0.04em !important;
+    line-height: 1.1 !important;
+    color: #111218 !important;
+  }
+
+  .page-home .em-vf-5 .main-container {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .page-home .em-vf-5 .section {
+    padding-top: 100px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .page-home .em-vf-5 .headline-home-b-about {
+    margin-bottom: 48px !important;
+  }
+
+  .page-home .em-vf-5 .home-b-about-images {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto auto !important;
+    align-items: start !important;
+    column-gap: 12px !important;
+    row-gap: 24px !important;
+  }
+
+  .page-home .em-vf-5 .left-home-b-about {
+    max-width: none !important;
+    width: 100%;
+  }
+
+  .page-home .em-vf-5 .left-home-b-about .home-b-about-image {
+    height: 220px !important;
+  }
+
+  .page-home .em-vf-5 .right-home-b-about {
+    display: contents !important;
+    max-width: none !important;
+  }
+
+  .page-home .em-vf-5 .home-b-about-image.small {
+    height: 180px !important;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .page-home .em-vf-5 .text-wrap-home-b-about {
+    grid-column: 1 / -1 !important;
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  .page-home #arcana-integration-03.section-medium {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .page-home .ns-footer {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-home .hero-copy--home .hero-title {
+    line-height: 0.88 !important;
+    word-spacing: 0.4em !important;
+    letter-spacing: -0.03em !important;
+  }
+}
+
+
